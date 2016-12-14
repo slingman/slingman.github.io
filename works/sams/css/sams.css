@@ -1,0 +1,276 @@
+body {
+  font-family: 'aktiv_grotesk';
+  color:#424242;
+  min-height: 600px;
+  padding-top: 70px;
+}
+
+h1, h2, h3, h4, h5 {
+ font-family: 'bree_serifregular';
+}
+
+a {
+  color:rgba(25, 119, 211, 1);
+}
+
+a:hover {
+  color:rgba(25, 119, 211, 0.7);
+  text-decoration:none;
+}
+
+.btn {
+  font-size:16px;
+  max-height:40px;
+  min-height:40px;
+  text-align:center;
+  border-radius:2px;
+}
+
+.btn-primary {
+  background:rgba(76, 169, 12, 1);
+  color:#fff;
+  border:none;
+}
+
+.btn-primary:hover {
+  background:rgba(76, 169, 12, 0.7);
+}
+
+.btn-secondary {
+  background:#fff;
+  border:1px solid #4ca90c;
+  color:#4ca90c;
+}
+
+.btn-secondary:hover {
+  background:rgba(76, 169, 12, .1);
+  color:#4ca90c;
+}
+
+/***********************************************
+product tiles
+************************************************/
+
+.list_tiles,
+.grid_tiles {
+  font-size:12px;
+  padding:12px;
+  margin:20px 0;
+  border:1px solid #eee;
+  position:relative;
+}
+
+.list_tiles .img_wrap,
+.list_tiles .tile_info {
+  display:table-cell;
+  vertical-align:top;
+  max-width:100%;
+}
+
+.grid_tiles .img_wrap {
+  margin:0 auto;
+  text-align:center;
+  width:100%;
+}
+
+.grid_tiles .img_wrap img,
+.list_tiles .img_wrap img {
+  display:block;
+  text-align:center;
+  margin:0 auto;
+}
+
+.grid_tiles .tile_info .title,
+.list_tiles .tile_info .title {
+  font-size:14px;
+  line-height:1.3;
+  max-height:32px;
+  margin-bottom:10px;
+}
+
+.grid_tiles .rating,
+.list_tiles .rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  margin-bottom:5px;
+  cursor:pointer;
+}
+
+.grid_tiles .rating > span,
+.list_tiles .rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.grid_tiles .rating > span:hover:before,
+.grid_tiles .rating > span:hover ~ span:before,
+.list_tiles .rating > span:hover:before,
+.list_tiles .rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   color:#eea139;
+}
+
+.grid_tiles .rating > span.number,
+.list_tiles .rating > span.number {
+  margin-left:10px;
+}
+
+.grid_tiles .rating > span.number:hover:before,
+.grid_tiles .rating > span.number:hover ~ span.number:before,
+.list_tiles .rating > span.number:hover:before,
+.list_tiles .rating > span.number:hover ~ span.number:before {
+  content:"";
+}
+
+.grid_tiles .promo_msg1,
+.list_tiles .promo_msg1 {
+  font-size:14px;
+  font-weight:500;
+  margin-top:10px;
+}
+
+.grid_tiles .promo_msg2,
+.list_tiles .promo_msg2 {
+}
+
+.grid_tiles .pricing,
+.list_tiles .pricing {
+  margin-bottom:5px;
+  margin-top:0;
+}
+
+.grid_tiles .pricing sup,
+.list_tiles .pricing sup {
+  padding:0;
+  margin:0;
+  top:-.82em;
+}
+
+.grid_tiles .pricing .sign,
+.list_tiles .pricing .sign {
+  font-weight:600;
+  font-size:14px;
+}
+
+.grid_tiles .pricing .dollar,
+.list_tiles .pricing .dollar {
+  font-weight:600;
+  font-size:24px;
+}
+
+.grid_tiles .pricing .cents,
+.list_tiles .pricing .cents {
+  font-weight:600;
+  font-size:14px;
+}
+
+.grid_tiles .fulfillment,
+.list_tiles .fulfillment {
+  width:100%;
+}
+
+.grid_tiles .fulfillment .online,
+.grid_tiles .fulfillment .in-club,
+.list_tiles .fulfillment .online,
+.list_tiles .fulfillment .in-club {
+  display:table-cell;
+  vertical-align: top;
+}
+
+.grid_tiles .fulfillment .online .heading,
+.grid_tiles .fulfillment .in-club .heading,
+.list_tiles .fulfillment .online .heading,
+.list_tiles .fulfillment .in-club .heading {
+  font-weight:500;
+  margin-bottom:5px;
+}
+
+.grid_tiles .fulfillment .online .stock,
+.grid_tiles .fulfillment .in-club .stock,
+.list_tiles .fulfillment .online .stock,
+.list_tiles .fulfillment .in-club .stock {
+  margin-bottom:5px;
+}
+
+.grid_tiles .fulfillment .online .status.shipping,
+.list_tiles .fulfillment .online .status.shipping {
+  color:#4ca90c;
+}
+
+.grid_tiles .actions,
+.list_tiles .actions {
+  margin-top:10px;
+  white-space: nowrap;
+}
+
+.grid_tiles .actions .btn-primary,
+.list_tiles .actions .btn-primary {
+  margin-right:10px;
+}
+/***********************************************
+320 list tiles
+************************************************/
+
+.list320 {
+  max-width:320px;
+  min-width:320px;
+}
+
+.list320 .img_wrap {
+  padding-right:12px;
+}
+
+.list320 .fulfillment .online,
+.list320 .fulfillment .in-club {
+  min-width:95px;
+}
+
+.list320 .actions .btn-primary {
+  min-width:135px;
+}
+
+/***********************************************
+480 list tiles
+************************************************/
+
+.list480 {
+  max-width:480px;
+  min-width:480px;
+}
+
+.list480 .img_wrap {
+  padding-right:12px;
+}
+
+.list480 .fulfillment .online,
+.list480 .fulfillment .in-club {
+  min-width:152px;
+}
+
+.list480 .actions .btn-primary {
+  min-width:240px;
+}
+
+/***********************************************
+480 grid tiles
+************************************************/
+
+.grid480 {
+  max-width:240px;
+  min-width:240px;
+  padding:16px;
+}
+
+.grid480 .img_wrap {
+  margin-bottom:12px;
+}
+
+.grid480 .fulfillment .online,
+.grid480 .fulfillment .in-club {
+  min-width:108px;
+}
+
+.grid480 .actions .btn-primary {
+  min-width:156px;
+}

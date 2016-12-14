@@ -1,0 +1,101 @@
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+
+.modal-dialog.details {
+  position:relative;
+  padding:0;
+}
+
+.modal-dialog.details .modal-header {
+  padding:0;
+  position:relative;
+}
+
+.modal-dialog.details .modal-header .crop-height {
+  max-width:1080px;
+  max-height:260px;
+  overflow:hidden;
+}
+
+.modal-dialog.details .modal-header img.scale {
+    /* corrects inline gap in enclosing div */
+  display: block;
+  max-width: 100%;
+  /* just in case, to force correct aspect ratio */
+  height: auto !important;
+  width: auto\9; /* ie8+9 */
+  /* lt ie8 */
+  -ms-interpolation-mode: bicubic; 
+}
+
+.modal-dialog.details .modal-header img {
+  min-width:100%;
+  height:auto;
+}
+
+.modal-dialog.details .modal-header .modal-header-img-title {
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:0 15px;
+  width:100%;
+  height:50px;
+  line-height:50px;
+  background: rgba(204, 204, 204, 0.5);
+  color:#eee;
+  font-size:1.5em;
+  margin:0 auto;
+  text-align:left;
+  vertical-align:middle;
+}
+
+.close.details {
+  position:absolute;
+  z-index:99999;
+  top:-10px;
+  right:-10px;
+  opacity:1;
+  text-shadow:none;
+  color:#999;
+}
+
+.modal-body {
+  max-height: calc(72vh - 180px);
+  overflow-y:auto;
+}
+
+.progress .counter {
+  width:100%; 
+  text-align:center; 
+  display:block
+}
+
+.about a:hover {
+  text-decoration:none;
+}
+
+/* iPhone 5 */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+
+  h1 {
+    font-size:1.4em;
+  }
+
+  h4 {
+    font-size:1em;
+  }
+  
+  h5 {
+    font-size:1.05em;
+  }
+
+  .modal-dialog.details .modal-header .crop-height {
+    max-height:200px;
+  }
+
+}
