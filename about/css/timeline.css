@@ -216,9 +216,9 @@ Main components
 .cd-timeline-content h2 {
   color: #303e49;
 }
-.cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-  font-size: 18px;
-  font-size: 1.24rem;
+.cd-timeline-content p, .cd-timeline-content ul, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+  font-size: 16px;
+  font-size: 1.22rem;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
@@ -258,7 +258,7 @@ Main components
   }
   .cd-timeline-content p {
     font-size: 16px;
-    font-size: 1.24rem;
+    font-size: 1.22rem;
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     
