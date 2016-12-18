@@ -263,6 +263,10 @@ Main components
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     
   }
+
+  .cd-timeline-content .cd-date {
+    line-height:1.5em;
+  }
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
