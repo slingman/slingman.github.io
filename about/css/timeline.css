@@ -50,7 +50,7 @@ Main components
   /* this is the vertical line */
   content: '';
   position: absolute;
-  top: -5px;
+  top: -10px;
   left: 18px;
   height: 100%;
   width: 4px;
