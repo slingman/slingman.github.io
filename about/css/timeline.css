@@ -270,9 +270,9 @@ Main components
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
-    margin-left: -80px;
+    margin-left: -60px;
     padding: 1.6em;
-    width: 55%;
+    width: 52%;
   }
   .cd-timeline-content::before {
     top: 24px;
@@ -293,7 +293,7 @@ Main components
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
-    right:-12%;
+    right:-9%;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
     top: 24px;
