@@ -253,7 +253,7 @@ product tiles
 }
 
 /***********************************************
-480 grid tiles
+480 Grid tiles
 ************************************************/
 
 .grid480 {
@@ -263,7 +263,11 @@ product tiles
 }
 
 .grid480 .img_wrap {
-  margin-bottom:12px;
+  padding-bottom:12px;
+}
+
+.grid480 .tile_info .title {
+  line-height:1.3;
 }
 
 .grid480 .fulfillment .online,
