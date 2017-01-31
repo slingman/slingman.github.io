@@ -255,7 +255,8 @@ body {
 
 @media (min-width: 768px) {
   /* Pull out the header and footer */
-  #home .masthead {
+  #home .masthead,
+  #works .masthead {
     position: fixed;
     top: 0;
   }
