@@ -278,3 +278,13 @@ product tiles
 .grid480 .actions .btn-primary {
   min-width:156px;
 }
+
+.grid480 .actions {
+  position:relative;
+}
+.grid480 .actions.list {
+  position: absolute;
+  top: 50%;
+  height: 250px;
+  margin-top: -50px;
+}
