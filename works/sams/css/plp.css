@@ -4,7 +4,23 @@
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
+  font-family: 'aktiv_grotesk';
+  color:#424242;
+  min-height: 600px;
   padding-top: 50px;
+}
+
+h1, h2, h3, h4, h5 {
+ font-family: 'bree_serifregular';
+}
+
+a {
+  color:rgba(25, 119, 211, 1);
+}
+
+a:hover {
+  color:rgba(25, 119, 211, 0.7);
+  text-decoration:none;
 }
 
 
@@ -58,7 +74,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: #f5f5f5;
-    border-right: 1px solid #eee;
+    border-right: 1px solid #424242;
   }
 }
 
@@ -88,10 +104,19 @@ body {
 .main {
   /*padding: 20px;*/
 }
+
+.grid_tiles {
+  height:450px;
+}
+
 @media (min-width: 768px) {
   .main {
     /*padding-right: 40px;*/
     /*padding-left: 40px;*/
+  }
+
+  .grid_tiles {
+    max-width:256px;
   }
 }
 .main .page-header {
@@ -116,4 +141,15 @@ body {
 .placeholder img {
   display: inline-block;
   border-radius: 50%;
+}
+
+
+/* cards */
+
+.row.cards {
+  margin-left:-10px;
+}
+
+.cards .thumbnail {
+  border-radius:0;
 }
