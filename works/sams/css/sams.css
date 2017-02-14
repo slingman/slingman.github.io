@@ -55,7 +55,6 @@ product tiles
 .grid_tiles {
   font-size:14px;
   padding:16px;
-  border:1px solid rgba(66, 66, 66, 0.2);
   position:relative;
 }
 

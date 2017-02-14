@@ -33,6 +33,19 @@ a:hover {
   border-bottom: 1px solid #eee;
 }
 
+@media (min-width: 1364px) {
+  .container {
+    width: 1300px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1363px) {
+  .container {
+    min-width:984px;
+    max-width: 1299px;
+  }
+}
+
 /**
  * Bootstrap No-Gutter Grid
  */
@@ -54,6 +67,18 @@ a:hover {
   border: 0;
 }
 
+@media (min-width: 1364px) {
+  .navbar > .container {
+    width: 1300px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1363px) {
+  .navbar > .container {
+    min-width:984px;
+    max-width: 1299px;
+  }
+}
 /*
  * Sidebar
  */
@@ -75,7 +100,7 @@ a:hover {
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: #f5f5f5;
-    border-right: 1px solid #424242;
+    border-right:1px solid rgba(66, 66, 66, 0.2);
     width:230px;
   }
 }
@@ -92,7 +117,7 @@ a:hover {
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: #f5f5f5;
-    border-right: 1px solid #424242;
+    border-right: 1px solid rgba(66, 66, 66, 0.2);
     width:224px;
   }
   .main {
@@ -134,12 +159,10 @@ a:hover {
 }
 
 @media (min-width: 1364px) {
-  .container {
-    width: 1300px;
-  }
 
   .main {
-    margin-left:230px;
+    margin:0;
+    margin-left:241px;
   }
 
   .grid_tiles {
@@ -159,7 +182,7 @@ a:hover {
 
   .grid_tiles {
     height:450px;
-    width:260px;
+    max-width:260px;
     padding:16px;
   }
 }
@@ -186,7 +209,7 @@ a:hover {
   }
 
   .grid_tiles {
-    width:240px;
+    max-width:240px;
     height:400px;
     padding:16px 12px;
   }
@@ -219,7 +242,10 @@ a:hover {
 .cards ul > li {
   padding:0;
   margin:0;
+  margin-left:-4px;
   width:auto;
+  border:1px solid rgba(66, 66, 66, 0.2);
+  border-right:0px;
 }
 
 .grid_tiles {
