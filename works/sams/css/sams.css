@@ -171,8 +171,9 @@ product tiles
 .grid_tiles .fulfillment .in-club,
 .list_tiles .fulfillment .online,
 .list_tiles .fulfillment .in-club {
-  display:table-cell;
+  float:left;
   vertical-align: top;
+  width:50%;
 }
 
 .grid_tiles .fulfillment .online .heading,
