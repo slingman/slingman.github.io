@@ -205,6 +205,12 @@ product tiles
 .grid_tiles .actions .btn-primary,
 .list_tiles .actions .btn-primary {
   margin-right:10px;
+  width:77%;
+}
+
+.grid_tiles .actions.list,
+.list_tiles .actions.list {
+  margin-right:0;
 }
 /***********************************************
 320 list tiles

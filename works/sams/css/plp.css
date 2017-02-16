@@ -184,10 +184,11 @@ a:hover {
 
 @media (min-width: 1024px) and (max-width: 1363px) {
   .cards ul > li {
-    width:33.3%;
+    width:33.33%;
   }
 
   .grid_tiles {
+    width:100%;
     min-height:450px;
     padding:16px;
   }
@@ -195,13 +196,13 @@ a:hover {
 
 @media (min-width:768px) and (max-width:1023px) {
   .cards ul > li {
-    width:33.3%;
+    width:33.33%;
   }
 
   .grid_tiles {
-    max-width:260px;
-    min-width:256px;
+    width:100%
     min-height:450px;
+    padding:16px;
   }
 }
 
@@ -213,6 +214,7 @@ a:hover {
   }
 
   .grid_tiles {
+    width:100%;
     min-height:400px;
     padding:16px 12px;
   }
