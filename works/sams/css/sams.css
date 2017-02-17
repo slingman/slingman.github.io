@@ -71,11 +71,14 @@ product tiles
   width:100%;
 }
 
-.grid_tiles .img_wrap img,
-.list_tiles .img_wrap img {
+.grid_tiles .img_wrap img {
   display:block;
   text-align:center;
   margin:0 auto;
+}
+
+.list_tiles .img_wrap img {
+  margin-right:8px;
 }
 
 .grid_tiles .tile_info .title,
@@ -134,8 +137,8 @@ product tiles
 
 .grid_tiles .pricing,
 .list_tiles .pricing {
-  margin-bottom:8px;
   margin-top:8px;
+  margin-bottom:-8px;
 }
 
 .grid_tiles .pricing sup,
@@ -166,6 +169,8 @@ product tiles
 .grid_tiles .fulfillment,
 .list_tiles .fulfillment {
   width:100%;
+  margin:16px 0;
+  font-size:12px;
 }
 
 .grid_tiles .fulfillment .online,
@@ -199,8 +204,9 @@ product tiles
 
 .grid_tiles .actions,
 .list_tiles .actions {
-  margin-top:10px;
+  margin-top:8px;
   white-space: nowrap;
+  width:100%;
 }
 
 .grid_tiles .actions .btn-primary,
