@@ -66,7 +66,7 @@ product tiles
 }
 
 .grid_tiles .img_wrap {
-  margin:0 auto;
+  margin:0 auto 8px auto;
   text-align:center;
   width:100%;
 }
@@ -124,17 +124,18 @@ product tiles
 .list_tiles .promo_msg1 {
   font-size:14px;
   font-weight:500;
-  margin-top:10px;
+  margin-top:8px;
 }
 
 .grid_tiles .promo_msg2,
 .list_tiles .promo_msg2 {
+  font-size:12px;
 }
 
 .grid_tiles .pricing,
 .list_tiles .pricing {
-  margin-bottom:5px;
-  margin-top:0;
+  margin-bottom:8px;
+  margin-top:8px;
 }
 
 .grid_tiles .pricing sup,
