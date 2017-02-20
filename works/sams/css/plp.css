@@ -5,7 +5,8 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   font-family: 'aktiv_grotesk';
-  color:#424242;
+  font-weight:normal;
+  color:rgba(66, 66, 66, 0.8);
   min-height: 600px;
   padding-top: 50px;
 }
@@ -14,7 +15,9 @@ h1, h2, h3, h4, h5 {
  font-family: 'bree_serifregular';
 }
 
-a {
+a,
+a:visited,
+a:focus {
   color:rgba(25, 119, 211, 1);
 }
 
@@ -23,6 +26,33 @@ a:hover {
   text-decoration:none;
 }
 
+input.faChkSqr {
+  visibility: hidden;
+}
+
+input.faChkSqr:checked:after, input.faChkSqr:after {
+  visibility: visible;
+  font-family: FontAwesome;
+  font-size:18px;
+  height: 18px;
+  width: 18px;
+  position: relative;
+  top: -2px;
+  left: 0px;
+  background-color:#fff;
+  display: inline-block;
+
+}
+
+input.faChkSqr:checked:after {
+  content: '\f14a';
+  background-color:#fff;
+  color:#1977D3;
+}
+
+input.faChkSqr:after {
+  content: '\f096';
+}
 
 /*
  * Global add-ons
@@ -98,6 +128,66 @@ a:hover {
   border-right: 1px solid rgba(66, 66, 66, 0.2);
 }
 
+.sidebar .title {
+  background:#f6f6f6;
+  height:48px;
+  line-height: 32px;
+  font-weight:500;
+  border-bottom:0;
+  padding-top:8px;
+}
+
+.sidebar .section-title {
+  font-weight:500;
+  color:rgba(66, 66, 66, 1);
+  border:0;
+  padding-top:16px;
+}
+
+.sidebar .section-title a {
+  display:inline;
+  padding:0;
+}
+
+/* toggle chevron up and down */
+.sidebar .section-title a[aria-expanded=true] .fa-chevron-down {
+   display: none;
+}
+.sidebar .section-title a[aria-expanded=false] .fa-chevron-up {
+   display: none;
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-left: -20px;
+  font-weight:300;
+}
+
+.sidebar .separator {
+  border-bottom:1px solid rgba(66, 66, 66, 0.2);
+  padding-top:16px;
+  margin-left:-20px;
+  margin-right:-21px
+}
+
+.nav-sidebar > li {
+  margin-bottom:8px;
+  margin-top:8px;
+}
+
+.nav-sidebar > li label {
+  font-weight:300;
+}
+
+.nav-sidebar > li a,
+.nav-sidebar > li a:hover,
+.nav-sidebar > li a:focus {
+  padding:0;
+  background:none;
+  font-weight:400;
+}
+
 @media (min-width: 1364px) {
   .sidebar {
     position: fixed;
@@ -106,12 +196,21 @@ a:hover {
     left: auto;
     z-index: 1000;
     display: block;
-    padding: 32px 18px 32px 32px;
+    padding: 0 18px 32px 32px;
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     min-width:241px;
   }
 
+  .sidebar .title,
+  .nav-sidebar > li {
+    padding-left:20px;
+    padding-right:18px;
+  }
+
+  .sidebar .title span {
+    margin-right:3px;
+  }
   .main {
     margin-left:243px;
   }
@@ -125,11 +224,20 @@ a:hover {
     left: auto;
     z-index: 1000;
     display: block;
-    padding: 20px 12px 20px 20px;
+    padding: 0 12px 20px 20px;
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-
     min-width:223px;
+  }
+
+  .sidebar .title,
+  .nav-sidebar > li {
+    padding-left:20px;
+    padding-right:12px;
+  }
+
+  .sidebar .title span {
+    margin-right:12px;
   }
 
   .main {
@@ -142,25 +250,6 @@ a:hover {
     margin-left:0;
   }
 }
-
-/* Sidebar navigation */
-.nav-sidebar {
-  margin-right: -21px; /* 20px padding + 1px border */
-  margin-bottom: 20px;
-  margin-left: -20px;
-
-}
-.nav-sidebar > li > a {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
-  color: #fff;
-  background-color: #428bca;
-}
-
 
 /*
  * Main content
@@ -175,11 +264,13 @@ a:hover {
 }
 
 .main .refinement {
-  height:48px;
-  line-height:48px;
-  font-size:16px;
+  height:49px;
+  line-height:49px;
+  font-size:14px;
+  padding-left:32px;
   border-bottom:1px solid rgba(66, 66, 66, 0.2);
 }
+
 /* cards */
 
 .row.cards,

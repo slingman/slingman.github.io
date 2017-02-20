@@ -1,6 +1,6 @@
 body {
   font-family: 'aktiv_grotesk';
-  color:#424242;
+  color:rgba(66, 66, 66, 0.8);
   min-height: 600px;
   padding-top: 70px;
 }
