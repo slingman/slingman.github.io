@@ -321,6 +321,96 @@ input.faChkSqr:after {
   position:relative;
 }
 
+.grid_tiles_wrap .a2c {
+  position:absolute;
+  width:100%;
+  top:0;
+  bottom:0;
+  z-index:10000;
+}
+
+.grid_tiles_wrap .a2c_wrap {
+  background:#fff;
+  height:100%;
+  width:100%;
+  padding:32px 16px 16px 16px;
+  margin:0 auto;
+  text-align:center;
+}
+
+.grid_tiles_wrap .a2c_wrap .messaging {
+  position:relative;
+  width:100%;
+  padding:10px;
+  margin-bottom:15px;
+  background:rgba(76, 169, 12, 0.1);
+  font-size:14px;
+}
+
+.grid_tiles_wrap .a2c_wrap .messaging:after {
+  content: "";
+  display: block; /* reduce the damage in FF3.0 */
+  position: absolute;
+  bottom: -10px;
+  left: 50px;
+  width: 0;
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: rgba(76, 169, 12, 0.1) transparent;
+}
+
+.grid_tiles_wrap .a2c_wrap .messaging .fa-check-circle {
+  color:rgba(76, 169, 12, 1);
+}
+
+.grid_tiles_wrap .a2c_wrap .actions .btn {
+  width:44%;
+  font-weight:500;
+  font-size:14px;
+}
+
+.grid_tiles_wrap .a2c_wrap .pricing {
+  margin-top:20px;
+  margin-bottom:16px;
+  color:#424242;
+}
+
+.grid_tiles_wrap .a2c_wrap .pricing sup {
+  padding:0;
+  margin:0;
+  top:-.82em;
+}
+
+.grid_tiles_wrap .a2c_wrap .pricing .sign {
+  font-weight:600;
+  font-size:16px;
+}
+
+.grid_tiles_wrap .a2c_wrap .pricing .dollar {
+  font-weight:600;
+  font-size:28px;
+}
+
+.grid_tiles_wrap .a2c_wrap .pricing .cents {
+  font-weight:600;
+  font-size:16px;
+}
+
+.grid_tiles_wrap .a2c_wrap .quantity .form-group {
+  display:inline;
+}
+.grid_tiles_wrap .a2c_wrap .quantity .form-control {
+  width:30%;
+  text-align:center;
+}
+
+.grid_tiles_wrap .a2c_wrap .quantity .qty-btn {
+  color:rgba(76, 169, 12, 1);
+  font-weight:normal;
+  margin-left:5px;
+  margin-right:5px;
+}
+
 .cards .thumbnail,
 .lists .thumbnail {
   border-radius:0;
@@ -528,6 +618,7 @@ input.faChkSqr:after {
     border:none;
     display:none;
   }
+
   .grid_tiles {
     display:none;
   }

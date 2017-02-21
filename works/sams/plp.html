@@ -265,18 +265,9 @@
                     </div>
                     <div class="fulfillment">
                       <div class="online">
-                        <div class="heading">Online</div>
-                        <div class="stock">In stock</div>
+                        <div class="heading">Online and In club</div>
+                        <div class="stock">&nbsp;</div>
                         <div class="status shipping">Free shipping</div>
-                      </div>
-                      <div class="in-club">
-                        <div class="heading">In club</div>
-                        <div class="stock">Out of stock</div>
-                        <div class="status clubs">
-                          <a data-container="body" data-toggle="popover" data-popover-content="#more-clubs-popover" data-placement="auto bottom">
-                            More clubs <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </a>
-                        </div>
                       </div>
                       <div class="clearfix"></div>
                     </div>
@@ -290,9 +281,39 @@
                   </div>
                 </div>
 
-                <div class="collapse a2c" id="add2cart-1" style="position:absolute; width:100%; top:0; bottom:0; z-index:10000;">
-                  <div style="background:#fff; height:100%; width:100%;">
-                    add to cart 1
+                <div class="collapse a2c" id="add2cart-1">
+                  <div class="a2c_wrap">
+                    <div class="messaging">
+                      <i class="fa fa-check-circle" aria-hidden="true"></i> 1 added to cart for shipping
+                    </div>
+                    <div class="actions">
+                      <button type="button" class="btn btn-secondary">Ship it</button>
+                      <button type="button" class="btn btn-default">Pick it up</button>
+                    </div>
+                    <div class="pricing">
+                      <span class="sign"><sup>$</sup></span>
+                      <span class="dollar">198</span>
+                      <span class="cents"><sup>99</sup></span>
+                    </div>
+                    <!--div class="more-messaging">
+                      &nbsp;
+                    </div-->
+                    <div class="quantity">
+                      <form class="form-inline">
+                        <span class="qty-btn fa-stack fa-lg">
+                          <i class="fa fa-circle-thin fa-stack-2x"></i>
+                          <i class="fa fa-minus fa-stack-1x"></i>
+                        </span>
+                        <div class="form-group">
+                          <label class="sr-only" for="qty">Quantity</label>
+                          <input type="text" class="form-control" id="qty" placeholder="1" value="1">
+                        </div>
+                        <span class="qty-btn fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -877,13 +898,12 @@
 
     $(document).on('click', function(e) {
       $('.collapse.a2c').each(function() {
-        //the 'is' for buttons that trigger popups
-        //the 'has' for icons within a button that triggers a popup
         if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.collapse').has(e.target).length === 0) {
           $(this).collapse('hide').data('bs.collapse').inState.click = false // fix for BS 3.3.6
         }
       });
     });
+
     </script>
   </body>
 </html>
