@@ -26,6 +26,12 @@ a:hover {
   text-decoration:none;
 }
 
+.form-control {
+  height:40px;
+  border-radius:2px;
+  border: 1px solid rgba(66, 66, 66, 0.4);
+}
+
 input.faChkSqr {
   visibility: hidden;
 }
@@ -302,9 +308,13 @@ input.faChkSqr:after {
 
 /* cards */
 
-.row.cards,
-.row.lists {
+.row.cards {
   margin:0;
+  padding:0;
+}
+
+.row.lists {
+  padding:0 8px;
 }
 
 .cards .thumbnail,
@@ -329,16 +339,67 @@ input.faChkSqr:after {
   text-align:center;
 }
 
+.lists ul > li {
+  border:none;
+  border-bottom:1px solid rgba(66, 66, 66, 0.2);
+}
+
 .grid_tiles,
 .list_tiles {
   margin:0;
   text-align:left;
 }
 
-.list-popover {
-  min-width:304px;
-  min-height:100px;
+/* popover - add to list */
+
+.popover {
+  max-width:304px;
+  width:304px;
+}
+
+.popover .popover-list-wrap {
+  padding:7px 2px; /* this adds to 16px around all sides of the popover */
+  width:100%;
+}
+
+.popover .popover-list-wrap .title {
+  font-size:16px;
+  color:#424242;
+  font-weight:400;
+}
+
+.popover .popover-list-wrap ul {
+  border-bottom:1px solid rgba(66, 66, 66, 0.2);
+  padding-bottom:6px;
   overflow:auto;
+  max-height:200px;
+}
+
+.popover .popover-list-wrap li {
+  padding-bottom:6px;
+}
+
+.popover .popover-list-wrap .form-group {
+  white-space: nowrap;
+}
+
+/* popover - more clubs */
+
+.popover .popover-clubs-wrap {
+  padding:7px 2px; /* this adds to 16px around all sides of the popover */
+  width:100%;
+  max-height:300px;
+  overflow-y:auto;
+}
+
+.popover .popover-clubs-wrap li {
+  padding-bottom:8px;
+}
+
+.popover .popover-clubs-wrap .club-info .club-name,
+.popover .popover-clubs-wrap .more-club-info .availability {
+  font-weight:500;
+  color:#424242;
 }
 
 @media (min-width: 1364px) {
@@ -434,11 +495,7 @@ input.faChkSqr:after {
 @media (min-width:320px) and (max-width:479px) {
   .cards ul > li {
     width:100%;
-  }
-
-  .grid_tiles .img-responsive {
-    width:140px;
-    height:140px;
+    margin:0;
   }
 
   .grid_tiles .actions .btn-primary,
@@ -473,6 +530,8 @@ input.faChkSqr:after {
 
   .list_tiles {
     display:block;
+    width:100%;
+    margin:0;
   }
 
   .list_tiles .img-responsive {

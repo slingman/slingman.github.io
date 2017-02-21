@@ -29,7 +29,7 @@ a:hover {
 .btn-primary,
 .btn-primary:active:focus,
 .btn-primary:focus{
-  background:rgba(76, 169, 12, 1);
+  background:rgba(76, 169, 12, 1) !important;
   color:#fff;
   border:none;
 }
@@ -197,6 +197,11 @@ product tiles
 .list_tiles .fulfillment .online .stock,
 .list_tiles .fulfillment .in-club .stock {
   margin-bottom:5px;
+}
+
+.grid_tiles .fulfillment .in-club .status.clubs,
+.list_tiles .fulfillment .in-club .status.clubs {
+  cursor:pointer;
 }
 
 .grid_tiles .fulfillment .online .status.shipping,
