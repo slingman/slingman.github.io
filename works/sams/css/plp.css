@@ -326,7 +326,7 @@ input.faChkSqr:after {
   width:100%;
   top:0;
   bottom:0;
-  z-index:10000;
+  z-index:999;
 }
 
 .grid_tiles_wrap .a2c_wrap {
