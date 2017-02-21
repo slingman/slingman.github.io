@@ -281,12 +281,18 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="actions">
-                      <button type="button" class="btn btn-primary pull-left">Add to cart</button>
+                      <button type="button" class="btn btn-primary pull-left" data-toggle="collapse" data-target="#add2cart-1" aria-expanded="false" aria-controls="add2cart-1">Add to cart</button>
                       <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-popover-content="#list-popover" data-placement="auto bottom">
                         <i class="fa fa-list-ul" aria-hidden="true"></i>
                       </button>
                       <div class="clearfix"></div>
                     </div>
+                  </div>
+                </div>
+
+                <div class="collapse a2c" id="add2cart-1" style="position:absolute; width:100%; top:0; bottom:0; z-index:10000;">
+                  <div style="background:#fff; height:100%; width:100%;">
+                    add to cart 1
                   </div>
                 </div>
               </li>
@@ -333,12 +339,18 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="actions">
-                      <button type="button" class="btn btn-primary pull-left">Add to cart</button>
+                      <button type="button" class="btn btn-primary pull-left" data-toggle="collapse" data-target="#add2cart-2" aria-expanded="false" aria-controls="add2cart-2">Add to cart</button>
                       <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-placement="auto bottom" data-popover-content="#list-popover">
                         <i class="fa fa-list-ul" aria-hidden="true"></i>
                       </button>
                       <div class="clearfix"></div>
                     </div>
+                  </div>
+                </div>
+
+                <div class="collapse a2c" id="add2cart-2" style="position:absolute; width:100%; top:0; bottom:0; z-index:10000;">
+                  <div style="background:#fff; height:100%; width:100%;">
+                    add to cart 2
                   </div>
                 </div>
               </li>
@@ -860,7 +872,16 @@
         if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
           $(this).popover('hide').data('bs.popover').inState.click = false // fix for BS 3.3.6
         }
+      });
+    });
 
+   $(document).on('click',function(e){
+     $('.collapse.a2c').each(function() {
+        //the 'is' for buttons that trigger popups
+        //the 'has' for icons within a button that triggers a popup
+        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.collapse').has(e.target).length === 0) {
+          $(this).collapse('hide').data('bs.collapse').inState.click = false // fix for BS 3.3.6
+        }
       });
     });
     </script>

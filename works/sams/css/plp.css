@@ -317,6 +317,10 @@ input.faChkSqr:after {
   padding:0 8px;
 }
 
+.grid_tiles_wrap {
+  position:relative;
+}
+
 .cards .thumbnail,
 .lists .thumbnail {
   border-radius:0;
