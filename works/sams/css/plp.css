@@ -232,7 +232,7 @@ input.faChkSqr:after {
     display: block;
     padding: 0 12px 20px 20px;
     overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    overflow-y: hidden; /* Scrollable contents if viewport is shorter than content. */
     min-width:223px;
   }
 
