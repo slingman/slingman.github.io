@@ -396,6 +396,18 @@ input.faChkSqr:after {
   font-size:16px;
 }
 
+.grid_tiles_wrap .a2c_wrap .promo_msgs {
+  color:#424242;
+  margin-bottom:16px;
+}
+
+.grid_tiles_wrap .a2c_wrap .promo_msgs .promo_msg1 {
+  font-weight:500;
+}
+
+.grid_tiles_wrap .a2c_wrap .promo_msgs .promo_msg2 .red-savings {
+  color:#ec0439;
+}
 .grid_tiles_wrap .a2c_wrap .quantity .form-group {
   display:inline;
 }
