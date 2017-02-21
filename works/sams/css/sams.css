@@ -88,6 +88,7 @@ product tiles
   line-height:18px;
   max-height:36px;
   margin-bottom:8px;
+  color:#424242;
 }
 
 .grid_tiles .rating,
@@ -130,6 +131,7 @@ product tiles
   font-size:14px;
   font-weight:500;
   margin-top:8px;
+  color:#424242;
 }
 
 .grid_tiles .promo_msg2,
@@ -137,10 +139,16 @@ product tiles
   font-size:12px;
 }
 
+.grid_tiles .promo_msg2 .red-savings,
+.list_tiles .promo_msg2 .red-savings {
+  color:#ec0439;
+}
+
 .grid_tiles .pricing,
 .list_tiles .pricing {
   margin-top:8px;
   margin-bottom:-8px;
+  color:#424242;
 }
 
 .grid_tiles .pricing sup,
