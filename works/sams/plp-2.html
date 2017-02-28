@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="fonts/fonts-aktiv.css">
     <link rel="stylesheet" type="text/css" href="fonts/fonts-bree.css">
-    <link rel="stylesheet" type="text/css" href="css/sams.css">
-    <link rel="stylesheet" type="text/css" href="css/plp.css">
+    <link rel="stylesheet" type="text/css" href="css/off-canvas.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -22,20 +21,22 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Sam's Club</a>
+          <a class="navbar-brand" href="#">Project name</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
+        <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
             <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
             <li><a href="#">Help</a></li>
           </ul>
           <form class="navbar-form navbar-right">
@@ -43,1089 +44,211 @@
           </form>
         </div>
       </div>
-    </nav>
+</nav>
 
-    <div class="container">
-      <div class="row">
-        <div class="sidebar">
-          <div class="nav nav-sidebar title">Refine <span class="pull-right"><a href="#">Reset</a></span></div>
-          <!-- Departments -->
-          <div class="section-title">
-            Departments
-            <a data-toggle="collapse" href="#collapseDepartments" aria-expanded="true" aria-controls="collapseDepartments">
-              <i class="fa fa-chevron-up pull-right"></i>
-              <i class="fa fa-chevron-down pull-right"></i>
-            </a>
-          </div>
-          <ul class="nav nav-sidebar collapse in" id="collapseDepartments">
-            <li>Household Essentials</li>
-            <li>Stain Remover &amp; Washer</li>
-            <li>Laundry Detergent</li>
-          </ul>
-          <div class="separator"></div>
-          <!-- Brands -->
-          <div class="section-title">
-            Brands
-            <a data-toggle="collapse" href="#collapseBrand" aria-expanded="true" aria-controls="collapseBrand">
-              <i class="fa fa-chevron-up pull-right"></i>
-              <i class="fa fa-chevron-down pull-right"></i>
-            </a>
-          </div>
-          <ul class="nav nav-sidebar collapse in" id="collapseBrand">
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">Member's Mark (10)
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">All (4)
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">Downy (4)
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">Tide (9)
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">Gain (4)
-                </label>
-              </div>
-            </li>
-            <li>
-                <a href="#">See more</a>
-            </li>
-          </ul>
-          <div class="separator"></div>
-          <!-- Price -->
-          <div class="section-title">
-            Price
-            <a data-toggle="collapse" href="#collapsePrice" aria-expanded="true" aria-controls="collapsePrice">
-              <i class="fa fa-chevron-up pull-right"></i>
-              <i class="fa fa-chevron-down pull-right"></i>
-            </a>
-          </div>
-          <ul class="nav nav-sidebar collapse in" id="collapsePrice">
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">$0 - $10 (38)
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">$10 - $20 (70)
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">$20 - $50 (167)
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">$50 - $100 (50)
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">$100 - $150 (14)
-                </label>
-              </div>
-            </li>
-            <li>
-                <a href="#">See more</a>
-            </li>
-          </ul>
-          <div class="separator"></div>
-          <!-- Instant Savings -->
-          <div class="section-title">
-            Instant Savings
-            <a data-toggle="collapse" href="#collapseInstantSavings" aria-expanded="true" aria-controls="collapseInstantSavings">
-              <i class="fa fa-chevron-up pull-right"></i>
-              <i class="fa fa-chevron-down pull-right"></i>
-            </a>
-          </div>
-          <ul class="nav nav-sidebar collapse in" id="collapseInstantSavings">
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">Laundry Detergent (5)
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">Fabric Softeners (2)
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">Air Fresheners (1)
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">Dish Detergent and Soap (1)
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">Dryer Sheets (1)
-                </label>
-              </div>
-            </li>
-          </ul>
-          <div class="separator"></div>
-          <!-- More ways to shop -->
-          <div class="section-title">
-            More ways to shop
-            <a data-toggle="collapse" href="#collapseMoreShop" aria-expanded="true" aria-controls="collapseMoreShop">
-              <i class="fa fa-chevron-up pull-right"></i>
-              <i class="fa fa-chevron-down pull-right"></i>
-            </a>
-          </div>
-          <ul class="nav nav-sidebar collapse in" id="collapseMoreShop">
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">Shipping included (222)
-                </label>
-              </div>
-            </li>
-            <li>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" class="faChkSqr" value="">Subscription (96)
-                </label>
-              </div>
-            </li>
-          </ul>
-          <div class="separator"></div>
-        </div>
-        <div class="main">
-          <div class="row refinement">
-            1-24 of 300
-          </div>
-          <div class="row cards">
-            <ul class="list-inline">
-              <li class="grid_tiles_wrap">
-                <div class="grid_tiles">
-                  <div class="img_wrap">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="tile_info">
-                    <div class="title dot-ellipsis dot-height-32">
-                      Clorox 2 Liquid MaxStrength Stain Remover &amp; Color Booster (82 Loads, 112.75 oz.)
-                    </div>
-                    <div class="rating text-left">
-                      <span class="number">(8)</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="promo_msg1">
-                      $3.50 off with Instant Savings
-                    </div>
-                    <div class="promo_msg2">
-                      <span class="red-savings">Save $3.50</span> <s>$14.68</s>
-                    </div>
-                    <div class="pricing">
-                      <span class="sign"><sup>$</sup></span>
-                      <span class="dollar">11</span>
-                      <span class="cents"><sup>18</sup></span>
-                    </div>
-                    <div class="fulfillment">
-                      <div class="online">
-                        <div class="heading">Online and In club</div>
-                        <div class="stock">&nbsp;</div>
-                        <div class="status shipping">Free shipping</div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="actions">
-                      <button type="button" class="btn btn-primary pull-left" data-container="body" data-toggle="collapse" data-target="#add2cart-1">Add to cart</button>
-                      <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-popover-content="#list-popover" data-placement="auto bottom">
-                        <i class="fa fa-list-ul" aria-hidden="true"></i>
-                      </button>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
+<div class="container-fluid">
 
-                <div class="collapse a2c" id="add2cart-1">
-                  <div class="a2c_wrap">
-                    <div class="messaging">
-                      <i class="fa fa-check-circle" aria-hidden="true"></i> 1 added to cart for shipping
-                    </div>
-                    <div class="actions">
-                      <button type="button" class="btn btn-secondary">Ship it</button>
-                      <button type="button" class="btn btn-default">Pick it up</button>
-                    </div>
-                    <div class="pricing">
-                      <span class="sign"><sup>$</sup></span>
-                      <span class="dollar">11</span>
-                      <span class="cents"><sup>18</sup></span>
-                    </div>
-                    <div class="promo_msgs">
-                      <div class="promo_msg1">
-                        $3.50 off with Instant Savings
-                      </div>
-                      <div class="promo_msg2">
-                        <span class="red-savings">Save $3.50</span> <s>$14.68</s>
-                      </div>
-                    </div>
-                    <div class="quantity">
-                      <form class="form-inline">
-                        <span class="qty-btn fa-stack fa-lg">
-                          <i class="fa fa-circle-thin fa-stack-2x"></i>
-                          <i class="fa fa-minus fa-stack-1x"></i>
-                        </span>
-                        <div class="form-group">
-                          <label class="sr-only" for="qty">Quantity</label>
-                          <input type="text" class="form-control" id="qty" placeholder="1" value="1">
-                        </div>
-                        <span class="qty-btn fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
-                        </span>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </li>
+      <div class="row row-offcanvas row-offcanvas-left">
 
-              <li class="grid_tiles_wrap">
-                <div class="grid_tiles">
-                  <div class="img_wrap">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="tile_info">
-                    <div class="title dot-ellipsis dot-height-32">
-                     HP Pavilion Touchscreen HD 15.6" Notebook, Intel Core i5-6200U DC Processor, 8GB Memory, 1TB Hard Drive, Windows 10, Available in: Modern Gold 15-au067cl, Sporty Purple 15-au097cl , Dragonfly Blue 15-au087cl, Natural Silver 15-au057cl
-                    </div>
-                    <div class="rating text-left">
-                      <span class="number">(45)</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="promo_msg1">
-                      Save up to $300
-                    </div>
-                    <div class="promo_msg2">
-                      in gift cards and membership credit
-                    </div>
-                    <div class="pricing">
-                      <span class="sign"><sup>$</sup></span>
-                      <span class="dollar">198</span>
-                      <span class="cents"><sup>99</sup></span>
-                    </div>
-                    <div class="fulfillment">
-                      <div class="online">
-                        <div class="heading">Online</div>
-                        <div class="stock">In stock</div>
-                        <div class="status shipping">Free shipping</div>
-                      </div>
-                      <div class="in-club">
-                        <div class="heading">In club</div>
-                        <div class="stock">Out of stock</div>
-                        <div class="status clubs">
-                          <a data-container="body" data-toggle="popover" data-popover-content="#more-clubs-popover" data-placement="auto bottom">
-                            More clubs <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="actions">
-                      <button type="button" class="btn btn-primary pull-left" data-container="body" data-toggle="collapse" data-target="#add2cart-2" >Add to cart</button>
-                      <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-placement="auto bottom" data-popover-content="#list-popover">
-                        <i class="fa fa-list-ul" aria-hidden="true"></i>
-                      </button>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
+         <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
 
-                <div class="collapse a2c" id="add2cart-2" style="position:absolute; width:100%; top:0; bottom:0; z-index:10000;">
-                  <div style="background:#fff; height:100%; width:100%;">
-                    add to cart 2
-                  </div>
-                </div>
-              </li>
-
-              <li class="grid_tiles_wrap">
-                <div class="grid_tiles">
-                  <div class="img_wrap">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="tile_info">
-                    <div class="title dot-ellipsis dot-height-32">
-                     HP Pavilion Touchscreen HD 15.6" Notebook, Intel Core i5-6200U DC Processor, 8GB Memory, 1TB Hard Drive, Windows 10, Available in: Modern Gold 15-au067cl, Sporty Purple 15-au097cl , Dragonfly Blue 15-au087cl, Natural Silver 15-au057cl
-                    </div>
-                    <div class="rating text-left">
-                      <span class="number">(45)</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="promo_msg1">
-                      Save up to $300
-                    </div>
-                    <div class="promo_msg2">
-                      in gift cards and membership credit
-                    </div>
-                    <div class="pricing">
-                      <span class="sign"><sup>$</sup></span>
-                      <span class="dollar">198</span>
-                      <span class="cents"><sup>99</sup></span>
-                    </div>
-                    <div class="fulfillment">
-                      <div class="online">
-                        <div class="heading">Online</div>
-                        <div class="stock">In stock</div>
-                        <div class="status shipping">Free shipping</div>
-                      </div>
-                      <div class="in-club">
-                        <div class="heading">In club</div>
-                        <div class="stock">Out of stock</div>
-                        <div class="status clubs">
-                          <a data-container="body" data-toggle="popover" data-popover-content="#more-clubs-popover" data-placement="auto bottom">
-                            More clubs <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="actions">
-                      <button type="button" class="btn btn-primary pull-left">Add to cart</button>
-                      <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-popover-content="#list-popover" data-placement="auto bottom">
-                        <i class="fa fa-list-ul" aria-hidden="true"></i>
-                      </button>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="grid_tiles_wrap">
-                <div class="grid_tiles">
-                  <div class="img_wrap">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="tile_info">
-                    <div class="title dot-ellipsis dot-height-32">
-                     HP Pavilion Touchscreen HD 15.6" Notebook, Intel Core i5-6200U DC Processor, 8GB Memory, 1TB Hard Drive, Windows 10, Available in: Modern Gold 15-au067cl, Sporty Purple 15-au097cl , Dragonfly Blue 15-au087cl, Natural Silver 15-au057cl
-                    </div>
-                    <div class="rating text-left">
-                      <span class="number">(45)</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="promo_msg1">
-                      Save up to $300
-                    </div>
-                    <div class="promo_msg2">
-                      in gift cards and membership credit
-                    </div>
-                    <div class="pricing">
-                      <span class="sign"><sup>$</sup></span>
-                      <span class="dollar">198</span>
-                      <span class="cents"><sup>99</sup></span>
-                    </div>
-                    <div class="fulfillment">
-                      <div class="online">
-                        <div class="heading">Online</div>
-                        <div class="stock">In stock</div>
-                        <div class="status shipping">Free shipping</div>
-                      </div>
-                      <div class="in-club">
-                        <div class="heading">In club</div>
-                        <div class="stock">Out of stock</div>
-                        <div class="status clubs">
-                          <a data-container="body" data-toggle="popover" data-popover-content="#more-clubs-popover" data-placement="auto bottom">
-                            More clubs <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="actions">
-                      <button type="button" class="btn btn-primary pull-left">Add to cart</button>
-                      <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-popover-content="#list-popover" data-placement="auto bottom">
-                        <i class="fa fa-list-ul" aria-hidden="true"></i>
-                      </button>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="grid_tiles_wrap">
-                <div class="grid_tiles">
-                  <div class="img_wrap">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="tile_info">
-                    <div class="title dot-ellipsis dot-height-32">
-                     HP Pavilion Touchscreen HD 15.6" Notebook, Intel Core i5-6200U DC Processor, 8GB Memory, 1TB Hard Drive, Windows 10, Available in: Modern Gold 15-au067cl, Sporty Purple 15-au097cl , Dragonfly Blue 15-au087cl, Natural Silver 15-au057cl
-                    </div>
-                    <div class="rating text-left">
-                      <span class="number">(45)</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="promo_msg1">
-                      Save up to $300
-                    </div>
-                    <div class="promo_msg2">
-                      in gift cards and membership credit
-                    </div>
-                    <div class="pricing">
-                      <span class="sign"><sup>$</sup></span>
-                      <span class="dollar">198</span>
-                      <span class="cents"><sup>99</sup></span>
-                    </div>
-                    <div class="fulfillment">
-                      <div class="online">
-                        <div class="heading">Online</div>
-                        <div class="stock">In stock</div>
-                        <div class="status shipping">Free shipping</div>
-                      </div>
-                      <div class="in-club">
-                        <div class="heading">In club</div>
-                        <div class="stock">Out of stock</div>
-                        <div class="status clubs">
-                          <a data-container="body" data-toggle="popover" data-popover-content="#more-clubs-popover" data-placement="auto bottom">
-                            More clubs <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="actions">
-                      <button type="button" class="btn btn-primary pull-left">Add to cart</button>
-                      <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-popover-content="#list-popover" data-placement="auto bottom">
-                        <i class="fa fa-list-ul" aria-hidden="true"></i>
-                      </button>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="grid_tiles_wrap">
-                <div class="grid_tiles">
-                  <div class="img_wrap">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="tile_info">
-                    <div class="title dot-ellipsis dot-height-32">
-                     HP Pavilion Touchscreen HD 15.6" Notebook, Intel Core i5-6200U DC Processor, 8GB Memory, 1TB Hard Drive, Windows 10, Available in: Modern Gold 15-au067cl, Sporty Purple 15-au097cl , Dragonfly Blue 15-au087cl, Natural Silver 15-au057cl
-                    </div>
-                    <div class="rating text-left">
-                      <span class="number">(45)</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="promo_msg1">
-                      Save up to $300
-                    </div>
-                    <div class="promo_msg2">
-                      in gift cards and membership credit
-                    </div>
-                    <div class="pricing">
-                      <span class="sign"><sup>$</sup></span>
-                      <span class="dollar">198</span>
-                      <span class="cents"><sup>99</sup></span>
-                    </div>
-                    <div class="fulfillment">
-                      <div class="online">
-                        <div class="heading">Online</div>
-                        <div class="stock">In stock</div>
-                        <div class="status shipping">Free shipping</div>
-                      </div>
-                      <div class="in-club">
-                        <div class="heading">In club</div>
-                        <div class="stock">Out of stock</div>
-                        <div class="status clubs">
-                          <a data-container="body" data-toggle="popover" data-popover-content="#more-clubs-popover" data-placement="auto bottom">
-                            More clubs <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="actions">
-                      <button type="button" class="btn btn-primary pull-left">Add to cart</button>
-                      <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-popover-content="#list-popover" data-placement="auto bottom">
-                        <i class="fa fa-list-ul" aria-hidden="true"></i>
-                      </button>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="grid_tiles_wrap">
-                <div class="grid_tiles">
-                  <div class="img_wrap">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="tile_info">
-                    <div class="title dot-ellipsis dot-height-32">
-                     HP Pavilion Touchscreen HD 15.6" Notebook, Intel Core i5-6200U DC Processor, 8GB Memory, 1TB Hard Drive, Windows 10, Available in: Modern Gold 15-au067cl, Sporty Purple 15-au097cl , Dragonfly Blue 15-au087cl, Natural Silver 15-au057cl
-                    </div>
-                    <div class="rating text-left">
-                      <span class="number">(45)</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="promo_msg1">
-                      Save up to $300
-                    </div>
-                    <div class="promo_msg2">
-                      in gift cards and membership credit
-                    </div>
-                    <div class="pricing">
-                      <span class="sign"><sup>$</sup></span>
-                      <span class="dollar">198</span>
-                      <span class="cents"><sup>99</sup></span>
-                    </div>
-                    <div class="fulfillment">
-                      <div class="online">
-                        <div class="heading">Online</div>
-                        <div class="stock">In stock</div>
-                        <div class="status shipping">Free shipping</div>
-                      </div>
-                      <div class="in-club">
-                        <div class="heading">In club</div>
-                        <div class="stock">Out of stock</div>
-                        <div class="status clubs">
-                          <a data-container="body" data-toggle="popover" data-popover-content="#more-clubs-popover" data-placement="auto bottom">
-                            More clubs <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="actions">
-                      <button type="button" class="btn btn-primary pull-left">Add to cart</button>
-                      <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-popover-content="#list-popover" data-placement="auto bottom">
-                        <i class="fa fa-list-ul" aria-hidden="true"></i>
-                      </button>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="grid_tiles_wrap">
-                <div class="grid_tiles">
-                  <div class="img_wrap">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="tile_info">
-                    <div class="title dot-ellipsis dot-height-32">
-                     HP Pavilion Touchscreen HD 15.6" Notebook, Intel Core i5-6200U DC Processor, 8GB Memory, 1TB Hard Drive, Windows 10, Available in: Modern Gold 15-au067cl, Sporty Purple 15-au097cl , Dragonfly Blue 15-au087cl, Natural Silver 15-au057cl
-                    </div>
-                    <div class="rating text-left">
-                      <span class="number">(45)</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="promo_msg1">
-                      Save up to $300
-                    </div>
-                    <div class="promo_msg2">
-                      in gift cards and membership credit
-                    </div>
-                    <div class="pricing">
-                      <span class="sign"><sup>$</sup></span>
-                      <span class="dollar">198</span>
-                      <span class="cents"><sup>99</sup></span>
-                    </div>
-                    <div class="fulfillment">
-                      <div class="online">
-                        <div class="heading">Online</div>
-                        <div class="stock">In stock</div>
-                        <div class="status shipping">Free shipping</div>
-                      </div>
-                      <div class="in-club">
-                        <div class="heading">In club</div>
-                        <div class="stock">Out of stock</div>
-                        <div class="status clubs">
-                          <a data-container="body" data-toggle="popover" data-popover-content="#more-clubs-popover" data-placement="auto bottom">
-                            More clubs <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="actions">
-                      <button type="button" class="btn btn-primary pull-left">Add to cart</button>
-                      <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-popover-content="#list-popover" data-placement="auto bottom">
-                        <i class="fa fa-list-ul" aria-hidden="true"></i>
-                      </button>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="grid_tiles_wrap">
-                <div class="grid_tiles">
-                  <div class="img_wrap">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="tile_info">
-                    <div class="title dot-ellipsis dot-height-32">
-                     HP Pavilion Touchscreen HD 15.6" Notebook, Intel Core i5-6200U DC Processor, 8GB Memory, 1TB Hard Drive, Windows 10, Available in: Modern Gold 15-au067cl, Sporty Purple 15-au097cl , Dragonfly Blue 15-au087cl, Natural Silver 15-au057cl
-                    </div>
-                    <div class="rating text-left">
-                      <span class="number">(45)</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="promo_msg1">
-                      Save up to $300
-                    </div>
-                    <div class="promo_msg2">
-                      in gift cards and membership credit
-                    </div>
-                    <div class="pricing">
-                      <span class="sign"><sup>$</sup></span>
-                      <span class="dollar">198</span>
-                      <span class="cents"><sup>99</sup></span>
-                    </div>
-                    <div class="fulfillment">
-                      <div class="online">
-                        <div class="heading">Online</div>
-                        <div class="stock">In stock</div>
-                        <div class="status shipping">Free shipping</div>
-                      </div>
-                      <div class="in-club">
-                        <div class="heading">In club</div>
-                        <div class="stock">Out of stock</div>
-                        <div class="status clubs">
-                          <a data-container="body" data-toggle="popover" data-popover-content="#more-clubs-popover" data-placement="auto bottom">
-                            More clubs <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="actions">
-                      <button type="button" class="btn btn-primary pull-left">Add to cart</button>
-                      <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-popover-content="#list-popover" data-placement="auto bottom">
-                        <i class="fa fa-list-ul" aria-hidden="true"></i>
-                      </button>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="grid_tiles_wrap">
-                <div class="grid_tiles">
-                  <div class="img_wrap">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="tile_info">
-                    <div class="title dot-ellipsis dot-height-32">
-                     HP Pavilion Touchscreen HD 15.6" Notebook, Intel Core i5-6200U DC Processor, 8GB Memory, 1TB Hard Drive, Windows 10, Available in: Modern Gold 15-au067cl, Sporty Purple 15-au097cl , Dragonfly Blue 15-au087cl, Natural Silver 15-au057cl
-                    </div>
-                    <div class="rating text-left">
-                      <span class="number">(45)</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="promo_msg1">
-                      Save up to $300
-                    </div>
-                    <div class="promo_msg2">
-                      in gift cards and membership credit
-                    </div>
-                    <div class="pricing">
-                      <span class="sign"><sup>$</sup></span>
-                      <span class="dollar">198</span>
-                      <span class="cents"><sup>99</sup></span>
-                    </div>
-                    <div class="fulfillment">
-                      <div class="online">
-                        <div class="heading">Online</div>
-                        <div class="stock">In stock</div>
-                        <div class="status shipping">Free shipping</div>
-                      </div>
-                      <div class="in-club">
-                        <div class="heading">In club</div>
-                        <div class="stock">Out of stock</div>
-                        <div class="status clubs">
-                          <a data-container="body" data-toggle="popover" data-popover-content="#more-clubs-popover" data-placement="auto bottom">
-                            More clubs <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="actions">
-                      <button type="button" class="btn btn-primary pull-left">Add to cart</button>
-                      <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-popover-content="#list-popover" data-placement="auto bottom">
-                        <i class="fa fa-list-ul" aria-hidden="true"></i>
-                      </button>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="grid_tiles_wrap">
-                <div class="grid_tiles">
-                  <div class="img_wrap">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="tile_info">
-                    <div class="title dot-ellipsis dot-height-32">
-                     HP Pavilion Touchscreen HD 15.6" Notebook, Intel Core i5-6200U DC Processor, 8GB Memory, 1TB Hard Drive, Windows 10, Available in: Modern Gold 15-au067cl, Sporty Purple 15-au097cl , Dragonfly Blue 15-au087cl, Natural Silver 15-au057cl
-                    </div>
-                    <div class="rating text-left">
-                      <span class="number">(45)</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="promo_msg1">
-                      Save up to $300
-                    </div>
-                    <div class="promo_msg2">
-                      in gift cards and membership credit
-                    </div>
-                    <div class="pricing">
-                      <span class="sign"><sup>$</sup></span>
-                      <span class="dollar">198</span>
-                      <span class="cents"><sup>99</sup></span>
-                    </div>
-                    <div class="fulfillment">
-                      <div class="online">
-                        <div class="heading">Online</div>
-                        <div class="stock">In stock</div>
-                        <div class="status shipping">Free shipping</div>
-                      </div>
-                      <div class="in-club">
-                        <div class="heading">In club</div>
-                        <div class="stock">Out of stock</div>
-                        <div class="status clubs">
-                          <a data-container="body" data-toggle="popover" data-popover-content="#more-clubs-popover" data-placement="auto bottom">
-                            More clubs <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="actions">
-                      <button type="button" class="btn btn-primary pull-left">Add to cart</button>
-                      <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-popover-content="#list-popover" data-placement="auto bottom">
-                        <i class="fa fa-list-ul" aria-hidden="true"></i>
-                      </button>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="grid_tiles_wrap">
-                <div class="grid_tiles">
-                  <div class="img_wrap">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="tile_info">
-                    <div class="title dot-ellipsis dot-height-32">
-                     HP Pavilion Touchscreen HD 15.6" Notebook, Intel Core i5-6200U DC Processor, 8GB Memory, 1TB Hard Drive, Windows 10, Available in: Modern Gold 15-au067cl, Sporty Purple 15-au097cl , Dragonfly Blue 15-au087cl, Natural Silver 15-au057cl
-                    </div>
-                    <div class="rating text-left">
-                      <span class="number">(45)</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="promo_msg1">
-                      Save up to $300
-                    </div>
-                    <div class="promo_msg2">
-                      in gift cards and membership credit
-                    </div>
-                    <div class="pricing">
-                      <span class="sign"><sup>$</sup></span>
-                      <span class="dollar">198</span>
-                      <span class="cents"><sup>99</sup></span>
-                    </div>
-                    <div class="fulfillment">
-                      <div class="online">
-                        <div class="heading">Online</div>
-                        <div class="stock">In stock</div>
-                        <div class="status shipping">Free shipping</div>
-                      </div>
-                      <div class="in-club">
-                        <div class="heading">In club</div>
-                        <div class="stock">Out of stock</div>
-                        <div class="status clubs">
-                          <a data-container="body" data-toggle="popover" data-popover-content="#more-clubs-popover" data-placement="auto bottom">
-                            More clubs <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="actions">
-                      <button type="button" class="btn btn-primary pull-left">Add to cart</button>
-                      <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-popover-content="#list-popover" data-placement="auto bottom">
-                        <i class="fa fa-list-ul" aria-hidden="true"></i>
-                      </button>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-              </li>
+            <ul class="nav nav-sidebar">
+              <li class="active"><a href="#">Overview</a></li>
+              <li><a href="http://bootstrapzero.com" target="_ext">Themes</a></li>
+              <li><a href="http://bootstrap.theme.cards" target="_ext">Analytics</a></li>
+              <li><a href="https://wrapbootstrap.com?ref=skelly" target="_ext">Export</a></li>
             </ul>
-          </div>
-          <!-- list view -->
-          <div class="row lists">
-            <ul class="list-inline">
-              <li class="list_tiles_wrap">
-                <div class="list_tiles">
-                  <div class="img_wrap">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="tile_info">
-                    <div class="title dot-ellipsis dot-height-32">
-                     HP Pavilion Touchscreen HD 15.6 Notebook, Intel Core DC 1TB Hard Drive, Windows 10, Available in: Modern Gold 15-au067cl, Sporty Purple 15-au097cl , Dragonfly Blue 15-au087cl, Natural Silver 15-au057cl
-                    </div>
-                    <div class="rating text-left">
-                      <span class="number">(45)</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="promo_msg1">
-                      Save up to $300
-                    </div>
-                    <div class="promo_msg2">
-                      in gift cards and membership credit
-                    </div>
-                    <div class="pricing">
-                      <span class="sign"><sup>$</sup></span>
-                      <span class="dollar">198</span>
-                      <span class="cents"><sup>99</sup></span>
-                    </div>
-                    <div class="fulfillment">
-                      <div class="online">
-                        <div class="heading">Online</div>
-                        <div class="stock">In stock</div>
-                        <div class="status shipping">Free shipping</div>
-                      </div>
-                      <div class="in-club">
-                        <div class="heading">In club</div>
-                        <div class="stock">Out of stock</div>
-                        <div class="status clubs">
-                          <a data-container="body" data-toggle="popover" data-popover-content="#more-clubs-popover" data-placement="auto bottom">
-                            More clubs <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="actions">
-                      <button type="button" class="btn btn-primary">Add to cart</button>
-                      <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-popover-content="#list-popover" data-placement="auto bottom">
-                        <i class="fa fa-list-ul" aria-hidden="true"></i>
-                      </button>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="list_tiles_wrap">
-                <div class="list_tiles">
-                  <div class="img_wrap">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="tile_info">
-                    <div class="title dot-ellipsis dot-height-32">
-                     HP Pavilion Touchscreen HD 15.6 Notebook, Intel Core DC 1TB Hard Drive, Windows 10, Available in: Modern Gold 15-au067cl, Sporty Purple 15-au097cl , Dragonfly Blue 15-au087cl, Natural Silver 15-au057cl
-                    </div>
-                    <div class="rating text-left">
-                      <span class="number">(45)</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="promo_msg1">
-                      Save up to $300
-                    </div>
-                    <div class="promo_msg2">
-                      in gift cards and membership credit
-                    </div>
-                    <div class="pricing">
-                      <span class="sign"><sup>$</sup></span>
-                      <span class="dollar">198</span>
-                      <span class="cents"><sup>99</sup></span>
-                    </div>
-                    <div class="fulfillment">
-                      <div class="online">
-                        <div class="heading">Online</div>
-                        <div class="stock">In stock</div>
-                        <div class="status shipping">Free shipping</div>
-                      </div>
-                      <div class="in-club">
-                        <div class="heading">In club</div>
-                        <div class="stock">Out of stock</div>
-                        <div class="status clubs">
-                          <a data-container="body" data-toggle="popover" data-popover-content="#more-clubs-popover" data-placement="auto bottom">
-                            More clubs <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="actions">
-                      <button type="button" class="btn btn-primary">Add to cart</button>
-                      <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-popover-content="#list-popover" data-placement="auto bottom">
-                        <i class="fa fa-list-ul" aria-hidden="true"></i>
-                      </button>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="list_tiles_wrap">
-                <div class="list_tiles">
-                  <div class="img_wrap">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="tile_info">
-                    <div class="title dot-ellipsis dot-height-32">
-                     HP Pavilion Touchscreen HD 15.6 Notebook, Intel Core DC 1TB Hard Drive, Windows 10, Available in: Modern Gold 15-au067cl, Sporty Purple 15-au097cl , Dragonfly Blue 15-au087cl, Natural Silver 15-au057cl
-                    </div>
-                    <div class="rating text-left">
-                      <span class="number">(45)</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div class="promo_msg1">
-                      Save up to $300
-                    </div>
-                    <div class="promo_msg2">
-                      in gift cards and membership credit
-                    </div>
-                    <div class="pricing">
-                      <span class="sign"><sup>$</sup></span>
-                      <span class="dollar">198</span>
-                      <span class="cents"><sup>99</sup></span>
-                    </div>
-                    <div class="fulfillment">
-                      <div class="online">
-                        <div class="heading">Online</div>
-                        <div class="stock">In stock</div>
-                        <div class="status shipping">Free shipping</div>
-                      </div>
-                      <div class="in-club">
-                        <div class="heading">In club</div>
-                        <div class="stock">Out of stock</div>
-                        <div class="status clubs">
-                          <a data-container="body" data-toggle="popover" data-popover-content="#more-clubs-popover" data-placement="auto bottom">
-                            More clubs <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="actions">
-                      <button type="button" class="btn btn-primary">Add to cart</button>
-                      <button type="button" class="btn btn-secondary pull-right" data-container="body" data-toggle="popover" data-popover-content="#list-popover" data-placement="auto bottom">
-                        <i class="fa fa-list-ul" aria-hidden="true"></i>
-                      </button>
-                      <div class="clearfix"></div>
-                    </div>
-                  </div>
-                </div>
-              </li>
+            <ul class="nav nav-sidebar">
+              <li><a href="">Nav item</a></li>
+              <li><a href="">Nav item again</a></li>
+              <li><a href="">One more nav</a></li>
+              <li><a href="">Another nav item</a></li>
+              <li><a href="">More navigation</a></li>
             </ul>
-          </div>
-          <!-- Content for Add to list popover -->
-          <div class="hidden" id="list-popover">
-            <div class="popover-body">
-              <div class="popover-list-wrap">
-                <p class="title">Choose your list</p>
-                <ul class="list-unstyled">
-                  <li><a href="#">Grocery</a> (6)</li>
-                  <li><a href="#">Another List</a> (1)</li>
-                  <li><a href="#">Weekend</a> (3)</li>
-                </ul>
-                <p class="title">Create a list</p>
-                <br>
-                <form class="form-inline">
-                  <div class="form-group">
-                    <label class="sr-only" for="listName">List Name</label>
-                    <input type="text" class="form-control" id="listName" placeholder="List Name">
-                  </div>
-                  <button type="submit" class="btn btn-secondary">Create</button>
-                </form>
-              </div>
+            <ul class="nav nav-sidebar">
+              <li><a href="">Nav item again</a></li>
+              <li><a href="">One more nav</a></li>
+              <li><a href="">Another nav item</a></li>
+            </ul>
+
+        </div><!--/span-->
+
+        <div class="col-sm-9 col-md-10 main">
+
+          <!--toggle sidebar button-->
+          <p class="visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+          </p>
+
+		  <h1 class="page-header">
+            Dashboard
+            <p class="lead">(<a href="http://www.bootply.com/128936">with off-canvas sidebar</a>)</p>
+          </h1>
+
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder text-center">
+              <img src="http://placehold.it/200/6666ff/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder text-center">
+              <img src="http://placehold.it/200/66ff66/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder text-center">
+              <img src="http://placehold.it/200/6666ff/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder text-center">
+              <img src="http://placehold.it/200/66ff66/fff" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
             </div>
           </div>
-          <!-- Content for Add to list popover -->
-          <div class="hidden" id="more-clubs-popover">
-            <div class="popover-body">
-              <div class="popover-clubs-wrap">
-                <ul class="list-unstyled">
-                  <li>
-                    <p class="club-info pull-left">
-                      <span class="club-name">Sacramento Sam's Club</span><br>
-                      8250 Power Inn Rd
-                    </p>
-                    <p class="more-club-info pull-right text-right">
-                      <span class="availability">In stock</span><br>
-                      25 miles
-                    </p>
-                  </li>
-                  <li>
-                    <p class="club-info pull-left">
-                      <span class="club-name">Sacramento Sam's Club</span><br>
-                      3360 El Camino Ave
-                    </p>
-                    <p class="more-club-info pull-right text-right">
-                      <span class="availability">Low in stock</span><br>
-                      47 miles
-                    </p>
-                  </li>
-                  <li>
-                    <p class="club-info pull-left">
-                      <span class="club-name">Sacramento Sam's Club</span><br>
-                      7147 Greenback Ln
-                    </p>
-                    <p class="more-club-info pull-right text-right">
-                      <span class="availability">Only 5 left</span><br>
-                      62 miles
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
+
+          <hr>
+
+          <h2 class="sub-header">Section title</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,001</td>
+                  <td>Lorem</td>
+                  <td>ipsum</td>
+                  <td>dolor</td>
+                  <td>sit</td>
+                </tr>
+                <tr>
+                  <td>1,002</td>
+                  <td>amet</td>
+                  <td>consectetur</td>
+                  <td>adipiscing</td>
+                  <td>elit</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>Integer</td>
+                  <td>nec</td>
+                  <td>odio</td>
+                  <td>Praesent</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>libero</td>
+                  <td>Sed</td>
+                  <td>cursus</td>
+                  <td>ante</td>
+                </tr>
+                <tr>
+                  <td>1,004</td>
+                  <td>dapibus</td>
+                  <td>diam</td>
+                  <td>Sed</td>
+                  <td>nisi</td>
+                </tr>
+                <tr>
+                  <td>1,005</td>
+                  <td>Nulla</td>
+                  <td>quis</td>
+                  <td>sem</td>
+                  <td>at</td>
+                </tr>
+                <tr>
+                  <td>1,006</td>
+                  <td>nibh</td>
+                  <td>elementum</td>
+                  <td>imperdiet</td>
+                  <td>Duis</td>
+                </tr>
+                <tr>
+                  <td>1,007</td>
+                  <td>sagittis</td>
+                  <td>ipsum</td>
+                  <td>Praesent</td>
+                  <td>mauris</td>
+                </tr>
+                <tr>
+                  <td>1,008</td>
+                  <td>Fusce</td>
+                  <td>nec</td>
+                  <td>tellus</td>
+                  <td>sed</td>
+                </tr>
+                <tr>
+                  <td>1,009</td>
+                  <td>augue</td>
+                  <td>semper</td>
+                  <td>porta</td>
+                  <td>Mauris</td>
+                </tr>
+                <tr>
+                  <td>1,010</td>
+                  <td>massa</td>
+                  <td>Vestibulum</td>
+                  <td>lacinia</td>
+                  <td>arcu</td>
+                </tr>
+                <tr>
+                  <td>1,011</td>
+                  <td>eget</td>
+                  <td>nulla</td>
+                  <td>Class</td>
+                  <td>aptent</td>
+                </tr>
+                <tr>
+                  <td>1,012</td>
+                  <td>taciti</td>
+                  <td>sociosqu</td>
+                  <td>ad</td>
+                  <td>litora</td>
+                </tr>
+                <tr>
+                  <td>1,013</td>
+                  <td>torquent</td>
+                  <td>per</td>
+                  <td>conubia</td>
+                  <td>nostra</td>
+                </tr>
+                <tr>
+                  <td>1,014</td>
+                  <td>per</td>
+                  <td>inceptos</td>
+                  <td>himenaeos</td>
+                  <td>Curabitur</td>
+                </tr>
+                <tr>
+                  <td>1,015</td>
+                  <td>sodales</td>
+                  <td>ligula</td>
+                  <td>in</td>
+                  <td>libero</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </div>
-      </div>
-    </div>
+
+          <a href="http://www.bootply.com/gkTHCwjLO9">Get the Source Code</a> | <a href="http://bootstrap.theme.cards">More free Bootstrap themes</a>
+
+      </div><!--/row-->
+	</div>
+</div><!--/.container-->
+
+<footer>
+  <p class="pull-right">©2016 Company</p>
+</footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="js/jquery.dotdotdot.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
