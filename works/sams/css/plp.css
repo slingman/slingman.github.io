@@ -26,24 +26,6 @@
 }
 
 /*
- * Top navigation
- * Hide default border to remove 1px line.
- */
-
-
-@media (min-width: 1364px) {
-  .navbar > .container {
-    max-width: 1300px;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1363px) {
-  .navbar > .container {
-    min-width:984px;
-    max-width: 1299px;
-  }
-}
-/*
  * Sidebar
  */
 
@@ -138,7 +120,7 @@
     margin-right:3px;
   }
   .main {
-    margin-left:247px;
+    margin-left:246px;
   }
 }
 
@@ -223,7 +205,7 @@
   line-height:49px;
   font-size:14px;
   padding-left:32px;
-  /*border-bottom:1px solid rgba(66, 66, 66, 0.2);*/
+  border-bottom:1px solid rgba(66, 66, 66, 0.2);
 }
 
 /* cards */
@@ -361,6 +343,7 @@
   margin-left:-3px;
   margin-top:-1px;
   border:1px solid rgba(66, 66, 66, 0.2);
+  border-top:0px;
   border-right:0px;
   text-align:center;
 }

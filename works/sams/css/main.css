@@ -112,3 +112,23 @@ input.faChkSqr:after {
    border-bottom:1px solid rgba(66, 66, 66, 0.2);
    height:100px;
  }
+
+
+ /*
+  * Top navigation
+  * Hide default border to remove 1px line.
+  */
+
+
+ @media (min-width: 1364px) {
+   .navbar > .container {
+     max-width: 1300px;
+   }
+ }
+
+ @media (min-width: 1024px) and (max-width: 1363px) {
+   .navbar > .container {
+     min-width:984px;
+     max-width: 1299px;
+   }
+ }
