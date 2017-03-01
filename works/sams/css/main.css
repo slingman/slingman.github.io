@@ -101,3 +101,9 @@ input.faChkSqr:after {
    padding-right: 0;
    padding-left: 0;
  }
+
+
+ .navbar {
+   background:#fff;
+   width:100%;
+ }
