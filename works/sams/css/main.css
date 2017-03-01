@@ -109,6 +109,6 @@ input.faChkSqr:after {
  }
 
  .navbar-fixed-top {
-   border-bottom:1px solid #424242;
+   border-bottom:1px solid rgba(66, 66, 66, 0.2);
    height:100px;
  }

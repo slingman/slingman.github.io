@@ -51,7 +51,7 @@
 .sidebar {
   display: none;
   background:#fff;
-  border-right: 1px solid rgba(66, 66, 66, 0.2);
+  /*border-right: 1px solid rgba(66, 66, 66, 0.2);*/
 }
 
 .sidebar .title {
@@ -223,7 +223,7 @@
   line-height:49px;
   font-size:14px;
   padding-left:32px;
-  border-bottom:1px solid rgba(66, 66, 66, 0.2);
+  /*border-bottom:1px solid rgba(66, 66, 66, 0.2);*/
 }
 
 /* cards */
