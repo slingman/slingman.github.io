@@ -2,7 +2,7 @@ body {
   font-family: 'aktiv_grotesk';
   color:rgba(66, 66, 66, 0.8);
   min-height:600px;
-  padding-top:175px;
+  padding-top:60px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -105,7 +105,6 @@ input.faChkSqr:after {
  .navbar-default {
    background:#fff;
    width:100%;
-
  }
 
  .navbar-fixed-top {
@@ -131,7 +130,10 @@ input.faChkSqr:after {
    }
  }
 
- @media screen and (min-width: 768px) {
+ @media screen and (min-width: 1024px) {
+   body {
+     padding-top:175px;
+   }
 
    .navbar-default {
      padding: 30px 0;

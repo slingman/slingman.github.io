@@ -104,7 +104,7 @@
     left: auto;
     z-index: 1000;
     display: block;
-    padding: 0 18px 32px 32px;
+    padding: 0 20px 32px 32px;
     /*overflow-x: hidden;
     overflow-y: auto;  */
     min-width:241px;
@@ -116,10 +116,10 @@
   }
 
   .sidebar .title span {
-    margin-right:18px;
+    margin-right:20px;
   }
   .main {
-    margin-left:246px;
+    margin-left:244px;
   }
 }
 
@@ -131,7 +131,8 @@
     left: auto;
     z-index: 1000;
     display: block;
-    padding: 0 18px 20px 20px;
+    padding: 20px;
+    padding-top:0;
     /* overflow-x: hidden;
     overflow-y: hidden; */
     min-width:223px;
@@ -147,7 +148,7 @@
   }
 
   .main {
-    margin-left:229px;
+    margin-left:226px;
   }
 }
 
