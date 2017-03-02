@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -1135,6 +1135,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
     </script>
     <script>
+
+    $(document).ready(function () {
+      $(window).scroll(function () {
+
+        //Method 1: Using addClass and removeClass
+        //if ($(document).scrollTop() > 50) {
+        //    $('.navbar-default').addClass('navbar-shrink');
+        //} else {
+        //    $('.navbar-default').removeClass('navbar-shrink');
+        //}
+
+        //Method 2: Using toggleClass
+        $(".navbar-default").toggleClass("navbar-shrink", $(this).scrollTop() > 50)
+      });
+    });
 
     $(function() {
       $('[data-toggle=offcanvas]').click(function() {
