@@ -4,27 +4,6 @@
   border-bottom: 1px solid #eee;
 }
 
-@media (min-width: 1364px) {
-  .container {
-    max-width: 1300px;
-    padding-right:32px;
-    padding-left:32px;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1363px) {
-  .container {
-    min-width:984px;
-    max-width: 1299px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    width:100%;
-  }
-}
-
 /*
  * Sidebar
  */
@@ -451,7 +430,7 @@
 
   .grid_tiles .actions .btn-primary,
   .list_tiles .actions .btn-primary {
-    width:77%;
+    width:76%;
   }
 }
 
