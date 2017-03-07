@@ -134,11 +134,20 @@ input.faChkSqr:after {
   min-width:320px;
 }
 
-@media (min-width: 1364px) {
-  .container {
-    max-width: 1300px;
-    padding-right:32px;
-    padding-left:32px;
+@media (min-width: 320px) and (max-width:1023px) {
+   .container {
+     width:100%;
+   }
+
+   .navbar-brand {
+     width: 143px;
+     height: 32px;
+     background-size: 143px 32px;
+     margin-top:10px;
+   }
+
+  .pencil-ad {
+    display:none;
   }
 }
 
@@ -180,19 +189,11 @@ input.faChkSqr:after {
    }
  }
 
- @media (min-width: 320px) and (max-width:1023px) {
+ @media (min-width: 1364px) {
    .container {
-     width:100%;
+     min-width: 1300px;
+     max-width: 1300px;
+     padding-right:32px;
+     padding-left:32px;
    }
-
-   .navbar-brand {
-     width: 143px;
-     height: 32px;
-     background-size: 143px 32px;
-     margin-top:10px;
-   }
-
-  .pencil-ad {
-    display:none;
-  }
-}
+ }
