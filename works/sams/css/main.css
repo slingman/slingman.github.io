@@ -103,10 +103,57 @@ input.faChkSqr:after {
 
 /**********************/
 
+/*** Header search form ***/
+
+.navbar-form {
+  border:0;
+}
+
+.navbar-form.search-form {
+  padding-left:55px;
+}
+
+.navbar-form.search-form .form-control {
+  border-radius:20px;
+  max-width:630px;
+  width:500px; /* needs to adjust at different breakpoints */
+}
+
+.navbar-form.search-form .form-control:focus,
+.navbar-form.search-form .form-control:hover {
+  border-color:#424242;
+  box-shadow: none;
+  outline: 0 none;
+}
+
+.navbar-form.search-form .has-feedback label.sr-only~.form-control-feedback {
+  top:2px;
+  right:3px;
+}
+
+.navbar-form.search-form .fa-stack.form-control-feedback {
+  position:absolute;
+  line-height:1.85em;
+}
+
+.navbar-form.search-form .fa-stack.form-control-feedback .fa-circle {
+  color:#eee;
+}
+
+.navbar-form.search-form input[type='text']:focus + span.fa-stack .fa-circle {
+  color:#1977D3;
+}
+
+/**********************/
+
 .pencil-ad {
   height:40px;
   line-height:40px;
   background:#eee;
+}
+
+.shrink-menu {
+  display:none;
 }
 
 .navbar-default {
@@ -125,16 +172,7 @@ input.faChkSqr:after {
   margin-left:0 !important;
 }
 
-.navbar-form {
-  border:0;
-}
-
-.navbar-form .form-control {
-  border-radius:20px;
-  min-width:320px;
-}
-
-@media (min-width: 320px) and (max-width:1023px) {
+@media (max-width:1023px) {
    .container {
      width:100%;
    }
@@ -186,6 +224,10 @@ input.faChkSqr:after {
 
    .navbar-default.navbar-shrink .pencil-ad {
      display:none;
+   }
+
+   .navbar-default.navbar-shrink .shrink-menu {
+     display:block;
    }
  }
 
