@@ -115,8 +115,6 @@ input.faChkSqr:after {
 
 .navbar-form.search-form .form-control {
   border-radius:20px;
-  max-width:630px;
-  width:500px; /* needs to adjust at different breakpoints */
 }
 
 .navbar-form.search-form .form-control:focus,
@@ -126,23 +124,25 @@ input.faChkSqr:after {
   outline: 0 none;
 }
 
-.navbar-form.search-form .has-feedback label.sr-only~.form-control-feedback {
-  top:2px;
-  right:3px;
+.navbar-form.search-form .has-feedback {
+  position:relative;
 }
-
-.navbar-form.search-form .fa-stack.form-control-feedback {
-  position:absolute;
-  line-height:1.85em;
-}
-
-.navbar-form.search-form .fa-stack.form-control-feedback .fa-circle {
+.navbar-form.search-form .has-feedback .fa-stack.form-control-feedback .fa-circle {
   color:#eee;
 }
 
-.navbar-form.search-form input[type='text']:focus + span.fa-stack .fa-circle {
+.navbar-form.search-form .has-feedback input[type='text']:focus + span.fa-stack .fa-circle {
   color:#1977D3;
 }
+
+.navbar-form.search-form .has-feedback label.sr-only~.form-control-feedback {
+  position:absolute;
+  top:2px;
+  right:3px;
+  line-height:1.85em;
+}
+
+
 
 /**********************/
 
@@ -154,6 +154,10 @@ input.faChkSqr:after {
 
 .shrink-menu {
   display:none;
+  font-size: 16px;
+  line-height: 32px;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
 .navbar-default {
@@ -169,24 +173,76 @@ input.faChkSqr:after {
   display: block;
   text-indent: -9999px;
   background: url(../images/logo_sams.svg);
-  margin-left:0 !important;
 }
 
-@media (max-width:1023px) {
-   .container {
-     width:100%;
-   }
-
-   .navbar-brand {
-     width: 143px;
-     height: 32px;
-     background-size: 143px 32px;
-     margin-top:10px;
-   }
+@media (max-width:767px) {
+  .container {
+    width:100%;
+  }
 
   .pencil-ad {
     display:none;
   }
+
+  .navbar-brand {
+    float:none;
+    width: 143px;
+    height: 32px;
+    background-size: 143px 32px;
+    margin-top:10px;
+    margin-left:16px !important;
+  }
+
+  .navbar-form.search-form {
+    padding: 0 24px;
+  }
+
+  .navbar-form.search-form .form-control {
+    width:100%;
+  }
+
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+   .container {
+     width:100%;
+   }
+
+   .pencil-ad {
+     display:none;
+   }
+
+   .navbar-form.search-form {
+     padding-left:24px;
+   }
+
+   .navbar-form.search-form .form-control {
+     min-width:420px;
+     max-width:100%;
+     height:36px;
+     border-color:#fff;
+     box-shadow:none;
+     background:#eee;
+   }
+
+   .navbar-form.search-form .has-feedback .fa-stack.form-control-feedback .fa-search {
+     color:rgba(66, 66, 66, 0.4);
+   }
+
+   .navbar-default .navbar-brand {
+     width: 115px;
+     height: 26px;
+     background-size: 115px 26px;
+     padding:0;
+     margin-top:10px;
+     margin-left:16px !important;
+   }
+
+   .navbar-default .shrink-menu {
+     display:block;
+     margin-right:4px;
+   }
+
 }
 
 @media (min-width: 1024px) {
@@ -204,15 +260,20 @@ input.faChkSqr:after {
     transition: padding 0.3s;
   }
 
+  .navbar-form.search-form .form-control {
+    width:520px;
+  }
+
    .navbar-default .navbar-brand {
      width: 176px;
      height: 40px;
      background-size: 176px 40px;
      margin-top:10px;
+     margin-left:0 !important;
    }
 
    .navbar-default.navbar-shrink {
-     height:74px;
+     height:60px;
    }
 
    .navbar-default.navbar-shrink .navbar-brand {
