@@ -29,13 +29,17 @@ a:hover {
 }
 
 .btn {
-  font-size:16px;
-  max-height:40px;
-  min-height:40px;
+  font-size:14px;
+  height:40px;
   text-align:center;
   border-radius:2px;
+  color:#fff;
 }
 
+a.btn {
+  color:#fff;
+  line-height:28px;
+}
 .btn-primary,
 .btn-primary:active:focus,
 .btn-primary:focus{
@@ -65,13 +69,16 @@ a:hover {
   border: 1px solid rgba(66, 66, 66, 0.4);
 }
 
+input.faChkRnd,
 input.faChkSqr {
   visibility: hidden;
 }
 
+input.faChkRnd:checked:after, input.faChkRnd:after,
 input.faChkSqr:checked:after, input.faChkSqr:after {
   visibility: visible;
   font-family: FontAwesome;
+  font-weight:300;
   font-size:18px;
   height: 18px;
   width: 18px;
@@ -81,6 +88,21 @@ input.faChkSqr:checked:after, input.faChkSqr:after {
   background-color:#fff;
   display: inline-block;
 
+}
+
+input.faChkRnd:checked:after {
+  content: '\f111';
+  color:#1977D3;
+  font-size:11px;
+  height: 18px;
+  width: 18px;
+  border-radius:50%;
+  padding:25% 24%;
+  border:1px solid #1977D3;
+}
+
+input.faChkRnd:after {
+  content: '\f1db';
 }
 
 input.faChkSqr:checked:after {

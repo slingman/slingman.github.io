@@ -703,23 +703,23 @@ You can add one or several CSS classes to HTML elements to automatically invoke 
 
 ### Usage examples
 *Adding jQuery.dotdotdot to element*
-    
+
 	<div class="dot-ellipsis">
 	<p>Lorem Ipsum is simply dummy text.</p>
 	</div>
-	
+
 *Adding jQuery.dotdotdot to element with update on window resize*
-    
+
 	<div class="dot-ellipsis dot-resize-update">
 	<p>Lorem Ipsum is simply dummy text.</p>
 	</div>
-	
+
 *Adding jQuery.dotdotdot to element with predefined height of 50px*
-    
+
 	<div class="dot-ellipsis dot-height-50">
 	<p>Lorem Ipsum is simply dummy text.</p>
 	</div>
-	
+
 */
 
 jQuery(document).ready(function($) {
@@ -727,19 +727,19 @@ jQuery(document).ready(function($) {
 	$(".dot-ellipsis").each(function(){
 		//Checking if update on window resize required
 		var watch_window=$(this).hasClass("dot-resize-update");
-		
+
 		//Checking if update on timer required
 		var watch_timer=$(this).hasClass("dot-timer-update");
-		
+
 		//Checking if height set
-		var height=0;		
+		var height=0;
 		var classList = $(this).attr('class').split(/\s+/);
 		$.each(classList, function(index, item) {
 			var matchResult = item.match(/^dot-height-(\d+)$/);
 			if(matchResult !== null)
 				height = Number(matchResult[1]);
 		});
-		
+
 		//Invoking jQuery.dotdotdot
 		var x = new Object();
 		if (watch_timer)
@@ -750,7 +750,7 @@ jQuery(document).ready(function($) {
 			x.height=height;
 		$(this).dotdotdot(x);
 	});
-		
+
 });
 
 //Updating elements (if any) on window.load event
