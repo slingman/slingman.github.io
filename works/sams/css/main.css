@@ -29,21 +29,28 @@ a:hover {
 }
 
 .btn {
-  font-size:14px;
-  height:40px;
   text-align:center;
   border-radius:2px;
   color:#fff;
 }
 
-a.btn {
+.btn-lg {
+  padding:9px 16px;
+  font-size:16px;
+  height:40px;
+}
+
+a.btn-primary {
   color:#fff;
-  line-height:28px;
+}
+
+a.btn-secondary {
+  color:rgba(76, 169, 12, 1);
 }
 
 .btn-primary,
 .btn-primary:active:focus,
-.btn-primary:focus{
+.btn-primary:focus {
   background:rgba(76, 169, 12, 1) !important;
   color:#fff;
   border:none;
@@ -69,15 +76,17 @@ a.btn {
   border-radius:2px;
   border: 1px solid rgba(66, 66, 66, 0.4);
 }
+
 .radio-primary input[type="radio"]:checked+label::after,
 .checkbox-primary input[type="checkbox"]:checked+label::after {
   background-color:#1977d3;
-
 }
+
 .radio-primary input[type="radio"]:checked+label::before,
 .checkbox-primary input[type="checkbox"]:checked+label::before {
   border-color:#1977d3
 }
+
 .selectwrap {
   position:relative;
 }
@@ -102,15 +111,16 @@ a.btn {
 
 /*** No-Gutter Grid ***/
 
- .row.no-gutters {
-   margin-right: 0;
-   margin-left: 0;
- }
- .row.no-gutters > [class^="col-"],
- .row.no-gutters > [class*=" col-"] {
-   padding-right: 0;
-   padding-left: 0;
- }
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
 
 .container {
   width:100%;

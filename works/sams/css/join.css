@@ -56,6 +56,24 @@
   color:rgba(76, 169, 12, 1);
 }
 
+.main-form .step-title.completed .fa {
+  color:rgba(76, 169, 12, 1);
+}
+
+.main-form .step-title.completed .fa-stack-1x {
+  color:#fff;
+}
+
+.main-form .step-title.completed .text {
+  color:rgba(66, 66, 66, .4);
+}
+
+.main-form .step-content.completed {
+  margin-top:10px;
+  margin-bottom:25px;
+  opacity:0.7;
+}
+
 .main-form .main-form-action {
   margin-top:25px;
   margin-bottom:50px;
@@ -63,10 +81,6 @@
 
 .main-form.step-0 .radio-inline {
   margin-right:200px;
-}
-
-.main-form .step-content {
-
 }
 
 .main-form .checkbox.age {
@@ -141,4 +155,8 @@
 
 body.join_step-1 {
   margin-bottom:220px;
+}
+
+body.join_step-2 {
+  margin-bottom:160px;
 }

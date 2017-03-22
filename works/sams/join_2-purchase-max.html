@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Steve Ling - Sams's Club - SOP - Join - Step 0</title>
+    <title>Steve Ling - Sams's Club - SOP - Join - Step 2</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -26,13 +26,13 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body class="join_step-2">
 
     <!-- Fixed navbar -->
     <header class="navbar navbar-fixed-top">
       <div class="container">
         <div class="nav navbar-nav navbar-left">
-          <a class="navbar-brand" href="#">Sams's Club - SOP - Join - Step 0</a>
+          <a class="navbar-brand" href="#">Sams's Club - SOP - Join - Step 2</a>
         </div>
         <div class="nav navbar-nav navbar-right">
           <div class="actions">
@@ -56,19 +56,74 @@
               </ul>
             </div>
             <div class="main-form-title">Become a Business Plus Member</div>
-            <div class="main-form step-0">
-              <div class="row">
-                <div class="col-xs-12">
-                  <div class="radio radio-primary radio-inline">
-                    <input type="radio" name="BusinessOwner" id="yesBusinessOwner" value="yes">
-                    <label for="yesBusinessOwner">
-                      Yes
-                    </label>
+            <div class="main-form">
+              <div class="step-title completed">
+                <span class="fa-stack fa-1x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-check fa-stack-1x"></i>
+                </span>
+                <span class="text">Personal information</span>
+                <p class="pull-right"><a role="button" class="btn btn-secondary btn-sm" href="join_1-purchase-max.html">Change</a></p>
+              </div>
+              <div class="row step-content completed">
+                <div class="col-xs-12 stepper-spacing">
+                  <address>
+                    Sam Walton<br>
+                    388 Beale St<br>
+                    Apt 1401<br>
+                    San Francisco, CA 94105<br>
+                    (787) 789-0987<br>
+                    samwalton@gmail.com
+                  </address>
+                </div>
+              </div>
+              <div class="step-title current">
+                <span class="fa-stack fa-1x">
+                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                  <strong class="fa-stack-1x">2</strong>
+                </span>
+                <span class="text">Business information</span>
+              </div>
+              <div class="row step-content">
+                <div class="col-xs-12 col-md-6 stepper-spacing">
+                  <p class="form-group-title">Business name and type</p>
+                  <div class="form-group">
+                    <input type="text" id="businessname" />
+                    <label for="businessname">Business name</label>
                   </div>
-                  <div class="radio radio-primary radio-inline">
-                    <input type="radio" name="BusinessOwner" id="noBusinessOwner" value="no" checked>
-                    <label for="noBusinessOwner">
-                      No
+                  <div class="form-group selectwrap">
+                    <select class="form-control" id="businesstype">
+                      <option>&nbsp;</option>
+                      <option>business type 1</option>
+                      <option>business type 1</option>
+                    </select>
+                    <label for="businesstype">Business type</label>
+                  </div>
+                  <p class="form-group-title">Name of business contact</p>
+                  <div class="form-group">
+                    <input type="text" id="bizcontact_firstname" />
+                    <label for="bizcontact_firstname">First name of business contact</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" id="bizcontact_lastname" />
+                    <label for="bizcontact_lastname">Last name of business contact</label>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <p class="form-group-title">Business address</p>
+                  <div class="form-group">
+                    <input type="text" id="email" />
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" id="password" />
+                    <label for="password">Password</label>
+                    <span class="help-text">Enter 7-12 characters</span>
+                  </div>
+                  <div class="checkbox checkbox-primary savings">
+                    <input type="checkbox" class="styled" checked="checked" id="savings">
+                    <label for="savings">
+                      Get Sam’s Club savings emails
                     </label>
                   </div>
                 </div>
@@ -122,6 +177,25 @@
       </div>
     </div>
 
+    <div class="unopened-steps step-3">
+      <div class="container">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <strong class="fa-stack-1x">3</strong>
+        </span>
+        <span class="text">Additional cardholders (optional)</span>
+      </div>
+    </div>
+
+    <div class="unopened-steps step-4">
+      <div class="container">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <strong class="fa-stack-1x">4</strong>
+        </span>
+        <span class="text">Payment options</span>
+      </div>
+    </div>
     <footer class="footer">
       <div class="container">
         <div class="row footer-links">
