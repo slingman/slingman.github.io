@@ -9,6 +9,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/0.3.7/awesome-bootstrap-checkbox.min.css">
     <link rel="stylesheet" type="text/css" href="fonts/fonts-sams.css">
     <link rel="stylesheet" type="text/css" href="fonts/fonts-aktiv.css">
     <link rel="stylesheet" type="text/css" href="fonts/fonts-bree.css">
@@ -58,12 +59,18 @@
             <div class="main-form step-0">
               <div class="row">
                 <div class="col-xs-12">
-                  <label class="radio-inline">
-                    <input type="radio" class="faChkRnd" name="BusinessOwner" value="yes"> Yes
-                  </label>
-                  <label class="radio-inline">
-                    <input type="radio" class="faChkRnd" name="BusinessOwner" value="no"> No
-                  </label>
+                  <div class="radio radio-primary radio-inline">
+                    <input type="radio" name="BusinessOwner" id="yesBusinessOwner" value="yes">
+                    <label for="yesBusinessOwner">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="radio radio-primary radio-inline">
+                    <input type="radio" name="BusinessOwner" id="noBusinessOwner" value="no" checked>
+                    <label for="noBusinessOwner">
+                      No
+                    </label>
+                  </div>
                 </div>
               </div>
               <div class="row">

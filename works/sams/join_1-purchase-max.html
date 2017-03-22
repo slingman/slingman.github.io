@@ -9,6 +9,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/0.3.7/awesome-bootstrap-checkbox.min.css">
     <link rel="stylesheet" type="text/css" href="fonts/fonts-sams.css">
     <link rel="stylesheet" type="text/css" href="fonts/fonts-aktiv.css">
     <link rel="stylesheet" type="text/css" href="fonts/fonts-bree.css">
@@ -74,9 +75,10 @@
                     <input type="text" id="lastname" />
                     <label for="lastname">Last name</label>
                   </div>
-                  <div class="checkbox age">
-                    <label>
-                      <input type="checkbox" class="faChkSqr" value=""> I am 18 years or older
+                  <div class="checkbox checkbox-primary age">
+                    <input type="checkbox" class="styled" id="age">
+                    <label for="age">
+                      I am 18 years or older
                     </label>
                   </div>
                   <p class="form-group-title">Mailing address &amp; phone number</p>
@@ -92,7 +94,7 @@
                     <input type="text" id="city" />
                     <label for="city">City</label>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group selectwrap">
                     <select class="form-control" id="state">
                       <option>&nbsp;</option>
                       <option>AK</option>
@@ -120,9 +122,10 @@
                     <label for="password">Password</label>
                     <span class="help-text">Enter 7-12 characters</span>
                   </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" checked="checked" class="faChkSqr" value=""> Get Sam’s Club savings emails
+                  <div class="checkbox checkbox-primary savings">
+                    <input type="checkbox" class="styled" checked="checked" id="savings">
+                    <label for="savings">
+                      Get Sam’s Club savings emails
                     </label>
                   </div>
                 </div>

@@ -40,6 +40,7 @@ a.btn {
   color:#fff;
   line-height:28px;
 }
+
 .btn-primary,
 .btn-primary:active:focus,
 .btn-primary:focus{
@@ -68,51 +69,35 @@ a.btn {
   border-radius:2px;
   border: 1px solid rgba(66, 66, 66, 0.4);
 }
-
-input.faChkRnd,
-input.faChkSqr {
-  visibility: hidden;
-}
-
-input.faChkRnd:checked:after, input.faChkRnd:after,
-input.faChkSqr:checked:after, input.faChkSqr:after {
-  visibility: visible;
-  font-family: FontAwesome;
-  font-weight:300;
-  font-size:18px;
-  height: 18px;
-  width: 18px;
-  position: relative;
-  top: -2px;
-  left: 0px;
-  background-color:#fff;
-  display: inline-block;
+.radio-primary input[type="radio"]:checked+label::after,
+.checkbox-primary input[type="checkbox"]:checked+label::after {
+  background-color:#1977d3;
 
 }
+.radio-primary input[type="radio"]:checked+label::before,
+.checkbox-primary input[type="checkbox"]:checked+label::before {
+  border-color:#1977d3
+}
+.selectwrap {
+  position:relative;
+}
 
-input.faChkRnd:checked:after {
-  content: '\f111';
+.selectwrap select {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  cursor:pointer;
+}
+
+.selectwrap:after {
+  content:"\f078";
+  font-family: "FontAwesome";
+  font-size: 11px;
   color:#1977D3;
-  font-size:11px;
-  height: 18px;
-  width: 18px;
-  border-radius:50%;
-  padding:25% 24%;
-  border:1px solid #1977D3;
-}
-
-input.faChkRnd:after {
-  content: '\f1db';
-}
-
-input.faChkSqr:checked:after {
-  content: '\f14a';
-  background-color:#fff;
-  color:#1977D3;
-}
-
-input.faChkSqr:after {
-  content: '\f096';
+  right:8px; top:12px;
+  padding:0 0 2px;
+  position:absolute;
+  pointer-events:none;
 }
 
 /*** No-Gutter Grid ***/
