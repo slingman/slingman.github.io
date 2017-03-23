@@ -91,6 +91,48 @@
   padding-left:60px;
 }
 
+
+.main-form .well.biz-address-form {
+	position: relative;
+	background: #ffffff;
+	border: 1px solid rgba(66, 66, 66, .2);
+  box-shadow:none;
+  padding-top:32px;
+}
+
+.main-form .collapse,
+.main-form .collapsing,
+.main-form .collapse.in {
+  margin-top:16px;
+}
+
+.main-form .well.biz-address-form:after,
+.main-form .well.biz-address-form:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.main-form .well.biz-address-form:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #ffffff;
+	border-width: 12px;
+	margin-left: -12px;
+}
+.main-form .well.biz-address-form:before {
+	border-color: rgba(66, 66, 66, 0);
+	border-bottom-color: rgba(66, 66, 66, .2);
+	border-width: 13px;
+	margin-left: -13px;
+}
+
+
+
 @media (max-width:991px) {
   .main-form .stepper-spacing {
     padding-left:15px;
