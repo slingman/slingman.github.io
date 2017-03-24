@@ -117,7 +117,13 @@
   }
  }
 
-.main-form .well.biz-address-form {
+.main-form .collapse,
+.main-form .collapsing,
+.main-form .collapse.in {
+  margin-top:16px;
+}
+
+.main-form .well.flyout-form {
 	position: relative;
 	background: #ffffff;
 	border: 1px solid rgba(66, 66, 66, .2);
@@ -125,14 +131,8 @@
   padding-top:32px;
 }
 
-.main-form .collapse,
-.main-form .collapsing,
-.main-form .collapse.in {
-  margin-top:16px;
-}
-
-.main-form .well.biz-address-form:after,
-.main-form .well.biz-address-form:before {
+.main-form .well.flyout-form:after,
+.main-form .well.flyout-form:before {
 	bottom: 100%;
 	left: 50%;
 	border: solid transparent;
@@ -143,17 +143,31 @@
 	pointer-events: none;
 }
 
-.main-form .well.biz-address-form:after {
+.main-form .well.flyout-form:after {
 	border-color: rgba(255, 255, 255, 0);
 	border-bottom-color: #ffffff;
 	border-width: 12px;
 	margin-left: -12px;
 }
-.main-form .well.biz-address-form:before {
+
+.main-form .well.flyout-form:before {
 	border-color: rgba(66, 66, 66, 0);
 	border-bottom-color: rgba(66, 66, 66, .2);
 	border-width: 13px;
 	margin-left: -13px;
+}
+
+.main-form #add-comp .well.flyout-form:after,
+.main-form #add-comp .well.flyout-form:before {
+  left:15%;
+}
+
+.main-form .flyout-form .form-group-title {
+  margin-top:0;
+}
+
+.main-form .flyout-form .actions {
+  
 }
 
 .main-form .form-group-title {

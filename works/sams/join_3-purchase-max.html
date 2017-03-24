@@ -115,32 +115,47 @@
                   <p>Free for a family member or friend 18 years and older</p>
                   <div class="row">
                     <div class="col-xs-12">
-                      <div class="add">
+                      <div class="add" data-toggle="collapse" data-target="#add-comp" aria-expanded="false" aria-controls="add-comp">
                         <i class="fa fa-plus-circle"></i> Add
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <!-- business address entry -->
-              <div class="collapse" id="businessaddress">
-                <div class="well biz-address-form">
-                  <div class="form-group">
-                    <input type="text" id="streetaddress" />
-                    <label for="streetaddress">Street address</label>
+
+                  <!-- add complimentary entry -->
+                  <div class="collapse" id="add-comp">
+                    <div class="well flyout-form">
+                      <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                          <p class="form-group-title">Add a complimentary membership</p>
+                          <div class="form-group">
+                            <input type="text" id="firstname" />
+                            <label for="firstname">First name</label>
+                          </div>
+                          <div class="form-group">
+                            <input type="text" id="lastname" />
+                            <label for="lastname">Last name</label>
+                          </div>
+                          <div class="form-group">
+                            <input type="text" id="email" />
+                            <label for="email">Email (optional)</label>
+                          </div>
+                          <div class="form-group">
+                            <input type="text" id="phonenumber" />
+                            <label for="phonenumber">Phone number (optional)</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <div class="actions text-right">
+                            <a href="#" class="btn btn-secondary btn-lg">Cancel</a>
+                            <a href="#" class="btn btn-primary btn-lg">Save</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <input type="text" id="secondaddress" />
-                    <label for="secondaddress">Apt, suite, bldg, c/o (optional)</label>
-                  </div>
-                  <div class="form-group">
-                    <input type="text" id="city" />
-                    <label for="city">City</label>
-                  </div>
-                  <div class="form-group">
-                    <input type="text" id="zipcode" />
-                    <label for="zipcode">ZIP Code</label>
-                  </div>
+
                 </div>
               </div>
 
