@@ -103,7 +103,8 @@ a.btn-secondary {
   font-family: "FontAwesome";
   font-size: 11px;
   color:#1977D3;
-  right:8px; top:12px;
+  right:8px;
+  top:12px;
   padding:0 0 2px;
   position:absolute;
   pointer-events:none;

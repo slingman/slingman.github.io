@@ -8,7 +8,7 @@ $(".form-group input").change(function() {
   }
 })
 
-$("#state").change(function() {
+$(".form-group select").change(function() {
   if ($(this).val() != "") {
     $(this).addClass('filled');
   } else {

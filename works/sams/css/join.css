@@ -1,3 +1,26 @@
+.navigate {
+  margin:50px auto;
+  text-align:center;
+}
+
+.navigate ul li {
+  margin:16px;
+  margin-left:0;
+  display:inline-block;
+}
+
+.navigate .box {
+  width:250px;
+  padding:50px;
+  text-align:center;
+  border:1px solid #424242;
+}
+
+.navigate .box a {
+  display:block;
+  width:100%;
+}
+
 .join-main-content {
   padding-top:20px;
 }
@@ -94,6 +117,11 @@
   cursor:pointer;
 }
 
+.main-form .add:hover {
+  border:1px solid rgba(25, 119, 211, 1);
+  color:rgba(25, 119, 211, 1);
+}
+
 .main-form .main-form-action {
   margin-top:25px;
   margin-bottom:50px;
@@ -105,6 +133,12 @@
 
 .main-form .checkbox.age {
   margin-top:-10px;
+}
+
+.main-form .credit-card-slash {
+  padding-top:7px;
+  padding-left:10px;
+  font-size:20px;
 }
 
 .main-form .stepper-spacing {
@@ -162,18 +196,25 @@
   left:15%;
 }
 
-.main-form .flyout-form .form-group-title {
-  margin-top:0;
-}
-
-.main-form .flyout-form .actions {
-  
-}
-
 .main-form .form-group-title {
   margin-top:18px;
   margin-bottom:18px;
   font-weight:500;
+}
+
+.main-form .form-group-subtitle {
+  margin-bottom:18px;
+  font-weight:400;
+  font-size:12px;
+}
+
+.main-form .entered-address {
+  font-weight:500;
+  font-size:12px;
+  padding-left: 28px;
+}
+.main-form .flyout-form .form-group-title {
+  margin-top:0;
 }
 
 .panel.total.affix {

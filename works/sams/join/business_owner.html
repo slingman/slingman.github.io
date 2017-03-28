@@ -55,18 +55,20 @@
                 <li class="price">$5 eGift card for add-ons &nbsp; <a href="#"><i class="fa fa-chevron-down"></i></a></li>
               </ul>
             </div>
-            <div class="main-form-title">Become a Business Plus Member</div>
+            <div class="main-form-title">Get a Plus membership</div>
             <div class="main-form step-0">
+              <form id="businessOwner" method="post">
               <div class="row">
                 <div class="col-xs-12">
+                  <p class="form-group-title">Are you a business member?</p>
                   <div class="radio radio-primary radio-inline">
-                    <input type="radio" name="BusinessOwner" id="yesBusinessOwner" value="yes">
+                    <input type="radio" name="BusinessOwner" id="yesBusinessOwner" value="yes" onclick="document.getElementById('businessOwner').action='member_business+/personal_info.html';">
                     <label for="yesBusinessOwner">
                       Yes
                     </label>
                   </div>
                   <div class="radio radio-primary radio-inline">
-                    <input type="radio" name="BusinessOwner" id="noBusinessOwner" value="no" checked>
+                    <input type="radio" name="BusinessOwner" id="noBusinessOwner" value="no" onclick="document.getElementById('businessOwner').action='member_savings+/personal_info.html';">
                     <label for="noBusinessOwner">
                       No
                     </label>
@@ -75,9 +77,10 @@
               </div>
               <div class="row">
                 <div class="col-xs-12 text-right main-form-action">
-                  <a href="personal_info.html" class="btn btn-primary btn-lg" role="button">Continue</a>
+                  <button type="submit" class="btn btn-primary btn-lg" role="button">Continue</a>
                 </div>
               </div>
+              </form>
             </div>
           </div>
         </div>
@@ -136,8 +139,8 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/jquery.dotdotdot.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/jquery.dotdotdot.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
