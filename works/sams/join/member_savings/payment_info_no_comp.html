@@ -57,6 +57,7 @@
             </div>
             <div class="main-form-title">Become a Savings member</div>
             <div class="main-form">
+              <form data-toggle="validator">
               <div class="step-title completed">
                 <span class="fa-stack fa-1x">
                   <i class="fa fa-circle fa-stack-2x"></i>
@@ -104,22 +105,26 @@
                 <div class="col-xs-12 col-md-6 stepper-spacing">
                   <p class="form-group-title">Credit and debit cards</p>
                   <div class="form-group">
-                    <input type="text" id="first_name_on_card" required autocomplete="cc-firstname" name="ccfirstname"/>
+                    <input class="form-control" type="text" id="first_name_on_card" required autocomplete="cc-firstname" name="ccfirstname"/>
                     <label for="first_name_on_card">First name on card</label>
+                    <div class="help-block with-errors"></div>
                   </div>
                   <div class="form-group">
-                    <input type="text" id="last_name_on_card" required autocomplete="cc-lastname" name="cclastname"/>
+                    <input class="form-control" type="text" id="last_name_on_card" required autocomplete="cc-lastname" name="cclastname"/>
                     <label for="last_name_on_card">Last name on card</label>
+                    <div class="help-block with-errors"></div>
                   </div>
                   <div class="form-group">
-                    <input type="text" id="card_number" pattern="[0-9]{14,23}" required autocomplete="cc-number" name="cardnumber"/>
+                    <input class="form-control" type="text" id="card_number" pattern="[0-9]{14,23}" required autocomplete="cc-number" name="cardnumber" data-error="Please check the number"/>
                     <label for="card_number">Card number</label>
+                    <div class="help-block with-errors"></div>
                   </div>
                   <p class="form-group-subtitle">Expiration date</p>
+
                   <div class="row no-gutters">
                     <div class="col-xs-4">
                       <div class="form-group selectwrap">
-                        <select class="form-control" id="cc-month">
+                        <select class="form-control" id="cc-month" required>
                           <option>&nbsp;</option>
                           <option value="01">01</option>
                           <option value="02">02</option>
@@ -136,6 +141,7 @@
                           <option value="12">12</option>
                         </select>
                         <label for="cc-month">MM</label>
+                        <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-xs-1">
@@ -145,7 +151,7 @@
                     </div>
                     <div class="col-xs-4">
                       <div class="form-group selectwrap">
-                        <select class="form-control" id="cc-year">
+                        <select class="form-control" id="cc-year" required>
                           <option>&nbsp;</option>
                           <option value="17">17</option>
                           <option value="18">18</option>
@@ -160,14 +166,17 @@
                           <option value="27">27</option>
                         </select>
                         <label for="cc-year">YY</label>
+                        <div class="help-block with-errors"></div>
                       </div>
                     </div>
                   </div>
+
                   <div class="row no-gutters">
                     <div class="col-xs-9">
                       <div class="form-group">
-                        <input type="text" id="card_ccv" required autocomplete="cc-cvc" name="cardnumber"/>
+                        <input class="form-control" type="text" id="card_ccv" required autocomplete="cc-cvc" name="cardnumber" pattern="[0-9]{3,4}" data-error="Please check the number"/>
                         <label for="card_ccv">Security code</label>
+                        <div class="help-block with-errors"></div>
                       </div>
                     </div>
                   </div>
@@ -279,9 +288,10 @@
 
               <div class="row">
                 <div class="col-xs-12 text-right main-form-action">
-                  <a href="#" class="btn btn-primary btn-lg" role="button">Continue</a>
+                  <button type="submit" class="btn btn-primary btn-lg" role="button">Purchase membership</button>
                 </div>
               </div>
+              </form>
             </div>
           </div>
         </div>
@@ -317,7 +327,7 @@
                   <div class="clearfix"></div>
                 </li>
                 <li>
-                  <button type="button" class="btn btn-primary btn-lg btn-block">Continue</button>
+                  <button type="submit" class="btn btn-primary btn-lg btn-block">Purchase membership</button>
                 </li>
               </ul>
             </div>
@@ -344,6 +354,6 @@
     <script src="../../js/jquery.dotdotdot.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    <script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
   </body>
 </html>

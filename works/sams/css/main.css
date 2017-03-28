@@ -110,6 +110,27 @@ a.btn-secondary {
   pointer-events:none;
 }
 
+.form-group.has-error {
+  margin-bottom:48px;
+}
+
+.has-error .form-control {
+  border-color: #eb0d00;
+}
+
+.help-block {
+  position:absolute;
+  margin-top:45px;
+  font-size:11px;
+}
+
+.help-block:after {
+  margin-bottom:50px;
+}
+
+.help-block.with-errors {
+  color:#eb0d00;
+}
 /*** No-Gutter Grid ***/
 
 .row.no-gutters {
