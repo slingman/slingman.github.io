@@ -406,10 +406,6 @@
     height:180px;
   }
 
-  .grid_tiles .actions .btn-primary,
-  .list_tiles .actions .btn-primary {
-    width:70%;
-  }
 }
 
 @media (min-width: 1024px) and (max-width: 1363px) {
@@ -428,10 +424,6 @@
     height:180px;
   }
 
-  .grid_tiles .actions .btn-primary,
-  .list_tiles .actions .btn-primary {
-    width:75%;
-  }
 }
 
 @media (min-width:768px) and (max-width:1023px) {
@@ -450,10 +442,6 @@
     height:180px;
   }
 
-  .grid_tiles .actions .btn-primary,
-  .list_tiles .actions .btn-primary {
-    width:75%
-  }
 }
 
 @media (min-width:480px) and (max-width:767px) {
@@ -473,10 +461,6 @@
     height:140px;
   }
 
-  .grid_tiles .actions .btn-primary,
-  .list_tiles .actions .btn-primary {
-    width:75%;
-  }
 }
 
 @media (min-width:320px) and (max-width:479px) {
@@ -485,10 +469,6 @@
     margin:0;
   }
 
-  .grid_tiles .actions .btn-primary,
-  .list_tiles .actions .btn-primary {
-    width:75%;
-  }
 }
 
 @media (min-width:480px) {
@@ -527,7 +507,4 @@
     min-height:90px;
   }
 
-  .list_tiles .actions .btn-primary {
-    width:72%;
-  }
 }
