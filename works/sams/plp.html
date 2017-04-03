@@ -39,8 +39,19 @@
         </div>
         <div class="navbar-header">
           <div class="navbar-right club-acct-cart-menu">
-            <a href="#">YOUR ACCOUNT</a>
-            <a href="#" class="btn btn-primary btn-lg cart">Cart <span class="cart-count">24</span><span class="icon"></span></a>
+            <ul class="list-inline list-unstyled">
+              <li class="club" id="club" data-trigger="hover" data-container="body" data-toggle="popover" data-popover-content="#your-club-popover" data-placement="auto bottom">
+                Your club <i class="fa fa-chevron-down fa-fw"></i><br>
+                <a href="#">Find a club</a>
+              </li>
+              <li class="acct" id="acct" data-trigger="hover" data-container="body" data-toggle="popover" data-popover-content="#your-account-popover" data-placement="auto bottom">
+                Your account <i class="fa fa-chevron-down fa-fw"></i><br>
+                <a href="#">Sign in</a>
+              </li>
+              <li class="cart" id="cart" data-trigger="hover" data-container="body" data-toggle="popover" data-popover-content="#your-cart-popover" data-placement="auto bottom">
+                <a href="#" class="btn btn-primary btn-lg cart">Cart <span class="cart-count">24</span><span class="icon"></span></a>
+              </li>
+            </ul>
           </div>
           <div class="navbar-right club-acct-cart-menu-simple">
             <a href="#"><i class="fa fa-map-marker"></i></a>
@@ -50,7 +61,7 @@
             <i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu
           </div>
           <a class="navbar-brand" href="#">Sam's Club</a>
-          <form class="navbar-form navbar-right form-inline search-form" role="form">
+          <form class="navbar-form navbar-left search-form" role="form">
             <div class="form-group has-feedback">
               <label class="control-label sr-only" for="search">Search</label>
               <input type="text" id="search" class="form-control" placeholder="Search..." />
@@ -310,12 +321,12 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="row no-gutters">
-                      <div class="col-xs-8 col-sm-9 col-lg-8">
+                      <div class="col-xs-9">
                         <button type="button" class="btn btn-primary btn-lg btn-block" data-container="body" data-toggle="collapse" data-target="#add2cart-1">Add to cart</button>
                       </div>
-                      <div class="col-xs-4 col-sm-3 col-lg-4">
+                      <div class="col-xs-3">
                         <button type="button" class="btn btn-secondary btn-lg pull-right" data-container="body" data-toggle="popover" data-popover-content="#list-popover" data-placement="auto bottom">
-                          <i class="fa fa-list-ul fa-fw" aria-hidden="true"></i>
+                          <i class="fa fa-list-ul" aria-hidden="true"></i>
                         </button>
                       </div>
                     </div>
@@ -1145,6 +1156,40 @@
               </li>
             </ul>
           </div>
+
+          <!-- Content for your account popover -->
+          <div class="hidden" id="your-club-popover">
+            <div class="popover-body">
+              <div class="popover-list-wrap">
+                <p class="title">Your clubs</p>
+                 <button type="submit" class="btn btn-primary btn-lg">Sign in</button>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content for your account popover -->
+          <div class="hidden" id="your-account-popover">
+            <div class="popover-body">
+              <div class="popover-list-wrap">
+                <p class="title">Your account</p>
+                 <button type="submit" class="btn btn-primary btn-lg">Sign in</button>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content for your cart popover -->
+          <div class="hidden" id="your-cart-popover">
+            <div class="popover-body">
+              <div class="popover-list-wrap">
+                <p class="title">Your Cart</p>
+                 <button type="submit" class="btn btn-primary btn-lg">Cart</button>
+              </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Content for Add to list popover -->
           <div class="hidden" id="list-popover">
             <div class="popover-body">
@@ -1216,27 +1261,6 @@
 
     <script>
 
-    $(document).ready(function () {
-      $(window).scroll(function () {
-
-        //Method 1: Using addClass and removeClass
-        //if ($(document).scrollTop() > 50) {
-        //    $('.navbar-default').addClass('navbar-shrink');
-        //} else {
-        //    $('.navbar-default').removeClass('navbar-shrink');
-        //}
-
-        //Method 2: Using toggleClass
-        $(".navbar-default").toggleClass("navbar-shrink", $(this).scrollTop() > 50)
-      });
-    });
-
-    $(function() {
-      $('[data-toggle=offcanvas]').click(function() {
-        $('.row-offcanvas').toggleClass('active');
-      });
-    });
-
     $(function(){
       $("[data-toggle=popover]").popover({
         html : true,
@@ -1261,14 +1285,7 @@
       });
     });
 
-    $(document).on('click', function(e) {
-      $('.collapse.a2c').each(function() {
-        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.collapse').has(e.target).length === 0) {
-          $(this).collapse('hide').data('bs.collapse').inState.click = false // fix for BS 3.3.6
-        }
-      });
-    });
-
     </script>
+    <script src="js/header.js"></script>
   </body>
 </html>

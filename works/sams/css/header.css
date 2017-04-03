@@ -36,7 +36,13 @@ body {
   right:3px;
   line-height:1.85em;
 }
+.navbar-header {
+  width:100%;
+}
 
+.navbar-right {
+  margin-right:0;
+}
 /**********************/
 
 .pencil-ad {
@@ -84,33 +90,58 @@ body {
   color:rgba(66, 66, 66, 0.65);
 }
 
+.header-links li:last-child {
+  padding-right:0;
+}
+
 .club-acct-cart-menu {
     display:none;
 }
 
 .club-acct-cart-menu,
 .club-acct-cart-menu-simple {
-  height:40px;
-  margin-top:8px;
+  min-height:40px;
+}
+
+.club-acct-cart-menu ul {
+  padding:0;
+  margin-top:5px;
+  vertical-align:middle;
+}
+
+.club-acct-cart-menu ul li:last-child {
+  padding-right:0;
+}
+
+.club-acct-cart-menu ul li {
+  padding-right:15px;
+  cursor:pointer;
+}
+
+.club-acct-cart-menu ul li .fa {
+  color:rgba(25, 119, 211, 1);
+}
+
+/* toggle chevron up and down */
+
+.club-acct-cart-menu ul li:hover .fa-chevron-down:before {
+  content:"\f077";
 }
 
 a.btn.cart {
   position:relative;
-}
-
-a.btn.cart {
-  padding-top:5px;
-  padding-bottom:5px;
+  padding:5px 11px;
   min-height:40px;
   height:40px;
   line-height:30px;
+  margin-top:-20px;
 }
 
 a.btn.cart span.cart-count {
   font-size:13px;
   position:absolute;
   top:0;
-  right:24px;
+  right:20px;
 }
 
 a.btn.cart span.icon {
@@ -118,6 +149,10 @@ a.btn.cart span.icon {
   padding-top:0;
   padding-bottom:0;
   background:url(../images/icon_cart.png) bottom right / 73% no-repeat;
+}
+
+.club-acct-cart-menu .popover {
+  width:260px;
 }
 
 @media (max-width:767px) {
@@ -212,7 +247,7 @@ a.btn.cart span.icon {
   }
 
   .navbar-form.search-form .form-control {
-    width:520px;
+    width:430px;
   }
 
    .navbar-default .navbar-brand {
@@ -249,5 +284,11 @@ a.btn.cart span.icon {
 
    .club-acct-cart-menu-simple {
      display:none;
+   }
+ }
+
+ @media (min-width: 1130px) {
+   .navbar-form.search-form .form-control {
+     width:560px;
    }
  }

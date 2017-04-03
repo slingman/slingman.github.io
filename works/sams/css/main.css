@@ -13,14 +13,11 @@ h1, h2, h3, h4, h5 {
   font-size:16px;
 }
 
-a {
-  color:rgba(25, 119, 211, 1);
-}
-
 a,
 a:visited,
 a:focus {
   color:rgba(25, 119, 211, 1);
+  text-decoration:none;
 }
 
 a:hover {
