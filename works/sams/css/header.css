@@ -140,8 +140,9 @@ a.btn.cart {
 a.btn.cart span.cart-count {
   font-size:13px;
   position:absolute;
+  width:40px;
+  text-align: center;
   top:0;
-  right:20px;
 }
 
 a.btn.cart span.icon {
@@ -153,6 +154,12 @@ a.btn.cart span.icon {
 
 .club-acct-cart-menu .popover {
   width:260px;
+}
+
+.super-menu .all-dept {
+  font-size:16px;
+  font-weight:500;
+  margin-left:20px;
 }
 
 @media (max-width:767px) {
@@ -211,6 +218,14 @@ a.btn.cart span.icon {
      color:rgba(66, 66, 66, 0.4);
    }
 
+   .navbar-form.search-form .has-feedback label.sr-only~.form-control-feedback {
+     top:5px;
+   }
+
+   .navbar-form.search-form .has-feedback label.sr-only~.form-control-feedback.fa-lg {
+     font-size:inherit;
+   }
+
    .navbar-default .navbar-brand {
      width: 115px;
      height: 26px;
@@ -238,12 +253,12 @@ a.btn.cart span.icon {
 
 @media (min-width: 1024px) {
   body {
-    padding-top:175px;
+    padding-top:185px;
   }
 
   .navbar-default {
-    height:174px;
-    transition: all 0.3s;
+    height:185px;
+    transition: all 0.15s;
   }
 
   .navbar-form.search-form .form-control {
