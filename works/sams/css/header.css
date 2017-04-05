@@ -247,7 +247,7 @@ a.btn.cart span.icon {
   }
 
   .navbar-form.search-form .form-control {
-    width:430px;
+    width:415px;
   }
 
    .navbar-default .navbar-brand {
@@ -289,6 +289,6 @@ a.btn.cart span.icon {
 
  @media (min-width: 1130px) {
    .navbar-form.search-form .form-control {
-     width:560px;
+     width:520px;
    }
  }

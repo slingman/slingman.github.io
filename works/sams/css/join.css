@@ -105,21 +105,36 @@
   font-size:17px;
   padding-top:5px;
   padding-bottom:3px;
+  margin-bottom:20px;
   border-bottom:1px solid rgba(66, 66, 66, .6);
 }
 
-.main-form .add {
+.main-form .add,
+.main-form .added {
   border:1px solid rgba(66, 66, 66, .6);
   padding:58px;
   text-align:center;
   white-space:nowrap;
   max-width:240px;
+  height:140px;
   cursor:pointer;
 }
 
 .main-form .add:hover {
   border:1px solid rgba(25, 119, 211, 1);
   color:rgba(25, 119, 211, 1);
+}
+
+.main-form .added {
+  position:relative;
+  text-align:left;
+  padding:20px;
+}
+
+.main-form .added .action {
+  position:absolute;
+  bottom:0;
+  right:20px;
 }
 
 .main-form .main-form-action {
@@ -192,7 +207,9 @@
 }
 
 .main-form #add-comp .well.flyout-form:after,
-.main-form #add-comp .well.flyout-form:before {
+.main-form #add-comp .well.flyout-form:before,
+.main-form #add-add-on .well.flyout-form:after,
+.main-form #add-add-on .well.flyout-form:before {
   left:15%;
 }
 

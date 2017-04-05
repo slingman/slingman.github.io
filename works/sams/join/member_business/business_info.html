@@ -55,7 +55,7 @@
                 <li class="price">$5 eGift card for add-ons &nbsp; <a href="#"><i class="fa fa-chevron-down"></i></a></li>
               </ul>
             </div>
-            <div class="main-form-title">Become a Business Plus Member</div>
+            <div class="main-form-title">Become a Business Member</div>
             <div class="main-form">
               <div class="step-title completed">
                 <span class="fa-stack fa-1x">
@@ -102,20 +102,25 @@
                   <p class="form-group-title">Name of business contact</p>
                   <div class="form-group">
                     <input type="text" id="bizcontact_firstname" />
-                    <label for="bizcontact_firstname">First name of business contact</label>
+                    <label for="bizcontact_firstname">First name</label>
                   </div>
                   <div class="form-group">
                     <input type="text" id="bizcontact_lastname" />
-                    <label for="bizcontact_lastname">Last name of business contact</label>
+                    <label for="bizcontact_lastname">Last name</label>
                   </div>
                 </div>
                 <div class="col-xs-12 col-md-6">
-                  <p class="form-group-title">Business address</p>
-                  <div class="checkbox checkbox-primary savings" data-toggle="collapse" data-target="#businessaddress" aria-expanded="false" aria-controls="businessaddress">
+                  <p class="form-group-title">Business address and phone number</p>
+                  <div class="checkbox checkbox-primary savings" data-toggle="collapse" data-target="#businessaddress,#personaladdress" aria-expanded="false" aria-controls="businessaddress">
                     <input type="checkbox" class="styled" checked="checked" id="use-personal-address">
                     <label for="use-personal-address">
-                      Use personal mailing address
+                      Use mailing address
                     </label>
+                  </div>
+                  <div class="collapse in entered-address" id="personaladdress">
+                    388 Beale St<br>
+                    Apt 1401<br>
+                    San Francisco, CA 94105<br>
                   </div>
 
                   <!-- business address entry -->
@@ -197,7 +202,7 @@
                     </div>
                   </div>
 
-                  <p class="form-group-title">Business phone and fax</p>
+                  <p></p><br>
                   <div class="form-group">
                     <input type="text" id="business-phone-number" />
                     <label for="business-phone-number">Business phone number</label>

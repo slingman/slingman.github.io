@@ -77,6 +77,33 @@
                   </address>
                 </div>
               </div>
+              <div class="step-title completed">
+                <span class="fa-stack fa-1x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-check fa-stack-1x"></i>
+                </span>
+                <span class="text">Business information</span>
+                <p class="pull-right"><a role="button" class="btn btn-secondary btn-sm" href="business_info.html">Change</a></p>
+              </div>
+              <div class="row step-content completed">
+                <div class="col-xs-12 stepper-spacing">
+                  <address>
+                    <p>
+                    Sally's Bakery<br>
+                    Bakery<br>
+                    </p>
+                    <p>
+                    300 Folsom St<br>
+                    San Francisco, CA 94105<br>
+                    </p>
+                    <p>
+                    Phone: (787) 789-0987<br>
+                    Fax: (897) 987-0987<br>
+                    </p>
+                    Contact Sally Jones<br>
+                  </address>
+                </div>
+              </div>
               <div class="step-title current">
                 <span class="fa-stack fa-1x">
                   <i class="fa fa-circle-thin fa-stack-2x"></i>
@@ -91,23 +118,31 @@
                   <p>Free for a family member or friend 18 years and older</p>
                   <div class="row">
                     <div class="col-xs-12 col-sm-4">
-                      <div class="add">
-                        <i class="fa fa-plus-circle"></i> Add
+                      <div class="added">
+                        <strong>Peter Parker</strong><br>
+                        peter.parker@gmail.com
+                        <p class="action"><a href="additional_cardholders.html">Remove</a></p>
                       </div>
                     </div>
-                    <div class="col-xs-12 col-sm-4">
-                      <div class="add" data-toggle="collapse" data-container="body" data-target="#add-comp" aria-expanded="false" aria-controls="add-comp">
+                  </div>
+
+                  <p></p><br>
+                  <p class="step-subtitle">Add-on membership</p>
+                  <p>Include up to 8 extra memberships for $45 each</p>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="add" data-toggle="collapse" data-target="#add-add-on" aria-expanded="false" aria-controls="add-add-on">
                         <i class="fa fa-plus-circle"></i> Add
                       </div>
                     </div>
                   </div>
 
-                  <!-- add complimentary entry -->
-                  <div class="collapse" id="add-comp">
+                  <!-- add add-on member -->
+                  <div class="collapse" id="add-add-on">
                     <div class="well flyout-form">
                       <div class="row">
                         <div class="col-xs-12 col-md-6">
-                          <p class="form-group-title">Add a complimentary membership</p>
+                          <p class="form-group-title">Add an add-on membership</p>
                           <div class="form-group">
                             <input type="text" id="firstname" />
                             <label for="firstname">First name</label>
@@ -126,7 +161,7 @@
                         <div class="col-xs-12">
                           <div class="actions text-right">
                             <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target="#add-comp" aria-expanded="false" aria-controls="add-comp">Cancel</button>
-                            <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#add-comp" aria-expanded="false" aria-controls="add-comp">Save</button>
+                            <a href="additional_cardholders_added_add-on.html" role="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#add-comp" aria-expanded="false" aria-controls="add-comp">Save</a>
                           </div>
                         </div>
                       </div>
