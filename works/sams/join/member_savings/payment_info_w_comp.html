@@ -126,8 +126,8 @@
                   <div class="row no-gutters">
                     <div class="col-xs-4">
                       <div class="form-group selectwrap">
-                        <select class="form-control" id="cc-month" required>
-                          <option>&nbsp;</option>
+                        <select class="form-control" id="cc-month" autocomplete="cc-exp-month" required="required" name="cc-exp-month" data-error="Please fill out this field">
+                          <option value="">&nbsp;</option>
                           <option value="01">01</option>
                           <option value="02">02</option>
                           <option value="03">03</option>
@@ -153,8 +153,8 @@
                     </div>
                     <div class="col-xs-4">
                       <div class="form-group selectwrap">
-                        <select class="form-control" id="cc-year" required>
-                          <option>&nbsp;</option>
+                        <select class="form-control" id="cc-year" autocomplete="cc-exp-year" required="required" name="cc-exp-year" data-error="Please fill out this field">
+                          <option value="">&nbsp;</option>
                           <option value="17">17</option>
                           <option value="18">18</option>
                           <option value="19">19</option>
@@ -183,8 +183,9 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <input type="text" id="card_phonenumber" required autocomplete="cc-phonenumber" name="cardnumber"/>
+                    <input class="filled" type="text" id="card_phonenumber" required autocomplete="cc-phonenumber" name="cardphonenumber" data-error="Please fill out this field" value="(787) 789-0987"/>
                     <label for="card_phonenumber">Phone number</label>
+                    <div class="help-block with-errors"></div>
                   </div>
                   <div class="checkbox checkbox-primary">
                     <input type="checkbox" class="styled" id="preferred_card">
@@ -285,6 +286,24 @@
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+              <!--div class="row step-content">
+                <div class="col-xs-12 text-right">
+                  <button type="button" class="btn btn-secondary btn-lg">Cancel</button>
+                  <button type="button" class="btn btn-primary btn-lg">Save</button>
+                </div>
+              </div-->
+              <div class="row step-content">
+                <div class="col-xs-12 stepper-spacing">
+                  <p class="form-group-title gift-cards">Gift cards</p>
+                  <a href="#"><i class="fa fa-plus-circle"></i> Add</a>
+                </div>
+              </div>
+              <div class="row step-content">
+                <div class="col-xs-12 stepper-spacing">
+                  <p class="form-group-title auto-renew">Auto-renew</p>
+                  Your membership will automatically renew on Feb 11, 2018 &nbsp; <a href="#">Change</a>
                 </div>
               </div>
 

@@ -219,6 +219,13 @@
   font-weight:500;
 }
 
+.main-form .form-group-title.gift-cards,
+.main-form .form-group-title.auto-renew {
+  padding-top:20px;
+  border-top:2px solid rgba(66, 66, 66, .3);
+  margin-top:20px;
+}
+
 .main-form .form-group-subtitle {
   margin-bottom:18px;
   font-weight:400;
