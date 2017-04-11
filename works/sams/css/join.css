@@ -1,3 +1,4 @@
+/* initial homepage */
 .navigate {
   margin:50px auto;
   text-align:center;
@@ -20,6 +21,27 @@
   display:block;
   width:100%;
 }
+
+/* initial homepage */
+
+/* 3 card homepage */
+
+.hero-text {
+  color:#fff;
+  text-align:center;
+  height:auto;
+  height:100%;
+  padding:100px 50px;
+  background:#188BDA;
+  background-size:auto;
+}
+
+.hero-img {
+  background:#eee url('https://bepress-assets.s3.amazonaws.com/bepress-opus-master-0000570-708fecc/lincolns_inn_library_blur.jpg') center 60% no-repeat;
+  background-size:cover;
+}
+
+/* 3 card homepage */
 
 .join-main-content {
   padding-top:20px;
@@ -237,6 +259,7 @@
   font-size:12px;
   padding-left: 28px;
 }
+
 .main-form .flyout-form .form-group-title {
   margin-top:0;
 }
