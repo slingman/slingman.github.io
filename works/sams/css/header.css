@@ -184,11 +184,14 @@ a.btn.cart span.icon {
 
 .super-menu .all-dept.dropdown:hover .dropdown-menu {
   font-size:14px;
+  display:block;
 }
 
 .super-menu .dropdown:hover .dropdown-menu > li {
   margin:-10px 0;
   padding:0 16px;
+  display:block;
+  cursor:pointer;
 }
 
 .super-menu .dropdown:hover .dropdown-menu > li a {
@@ -198,6 +201,15 @@ a.btn.cart span.icon {
   background:none;
   margin:-10px 0;
   padding:0;
+}
+
+.super-menu .dropdown:hover > li a {
+  color:rgba(25, 119, 211, 1);
+}
+
+.super-menu .dropdown:hover .dropdown-menu > li a .fa-chevron-right {
+  float:right;
+  padding-top:15px;
 }
 
 .super-menu .dropdown:hover .dropdown-menu > li:first-child {

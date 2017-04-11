@@ -1,17 +1,20 @@
 /* 3 card homepage */
+body {
+  padding-top:200px;
+}
 
 .hero-text {
   color:#fff;
   text-align:center;
   height:auto;
   height:100%;
-  padding:100px 50px;
+  padding:60px 50px 75px 50px;
   background:#188BDA;
   background-size:auto;
 }
 
 .hero-img {
-  background:#eee url('https://bepress-assets.s3.amazonaws.com/bepress-opus-master-0000570-708fecc/lincolns_inn_library_blur.jpg') center 60% no-repeat;
+  background:#eee url('../join/images/hero.png') center 60% no-repeat;
   background-size:cover;
 }
 
@@ -77,10 +80,11 @@
 .table.comparisons > thead > tr > th {
   font-size:18px;
 }
+
 .table.comparisons > tbody > tr > td {
   vertical-align: middle;
-  padding-top:40px;
-  padding-bottom:40px;
+  padding:40px 20px;
+  width:25%;
 }
 
 .table.comparisons .features {
@@ -96,6 +100,17 @@
   font-weight:500;
   margin-bottom:5px;
   color:rgba(66,66,66,1)
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+  .table.comparisons > tbody > tr > td:first-child {
+    width:52%;
+  }
+
+  .table.comparisons > tbody > tr > td {
+    width:16%;
+  }
 }
 
 
