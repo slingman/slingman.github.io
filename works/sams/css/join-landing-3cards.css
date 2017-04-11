@@ -1,0 +1,102 @@
+/* 3 card homepage */
+
+.hero-text {
+  color:#fff;
+  text-align:center;
+  height:auto;
+  height:100%;
+  padding:100px 50px;
+  background:#188BDA;
+  background-size:auto;
+}
+
+.hero-img {
+  background:#eee url('https://bepress-assets.s3.amazonaws.com/bepress-opus-master-0000570-708fecc/lincolns_inn_library_blur.jpg') center 60% no-repeat;
+  background-size:cover;
+}
+
+.card_img_wrap {
+  border-bottom:1px solid #eee;
+}
+
+.membership_details {
+  margin-top:10px;
+  padding:0 40px;
+}
+
+.membership_details .price {
+  font-size:36px;
+  font-weight:500;
+  color:#424242;
+}
+
+.membership_details .price sup {
+  color:rgba(66, 66, 66, .7);
+  font-size:35%;
+  font-weight:400;
+  vertical-align:super;
+}
+
+.membership_details .details {
+  text-align:left;
+  min-height:125px;
+}
+
+.membership_details .details .title {
+  font-size:16px;
+  font-weight:600;
+}
+
+.membership_details .details ul {
+  padding:0;
+  margin:0;
+  padding-left:15px;
+  font-size:12px;
+  color:rgba(66, 66, 66, .7);
+}
+
+.membership_details .details ul > li {
+  padding-bottom:6px;
+}
+
+.membership_details .per-month {
+  color:rgba(66, 66, 66, .7);
+  font-size:12px;
+  margin-top:10px;
+}
+
+.compare {
+  margin-bottom:50px;
+}
+/* toggle chevron up and down */
+.compare a[aria-expanded=true] .fa-chevron-down,
+.compare a[aria-expanded=false] .fa-chevron-up {
+  display: none;
+}
+
+.table.comparisons > thead > tr > th {
+  font-size:18px;
+}
+.table.comparisons > tbody > tr > td {
+  vertical-align: middle;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+.table.comparisons .features {
+  color:rgba(66,66,66,0.6)
+}
+
+.table.comparisons .fa-check-circle {
+  color:rgba(76, 169, 12, 1);
+}
+
+.table.comparisons .features .headline {
+  font-size:18px;
+  font-weight:500;
+  margin-bottom:5px;
+  color:rgba(66,66,66,1)
+}
+
+
+/* /3 card homepage */
