@@ -14,6 +14,23 @@
   margin-bottom:16px;
 }
 
+.nav-tabs > li {
+  margin-right:6px;
+}
+
+.nav-tabs > li > a {
+  border-radius:12px 12px 0 0;
+  width:240px;
+  text-align:center;
+  background:rgba(66,66,66,0.1);
+  font-size:14px;
+}
+
+.nav-tabs > li.active > a {
+  font-weight:600;
+  color:rgba(66,66,66,0.7)
+}
+
 .tab-pane {
   background:#eee url('../join/images/hero_tabs.png') 30% 10% no-repeat;
   background-size:cover;
@@ -134,15 +151,21 @@
   font-weight:500;
 }
 
+
+@media (min-width:320px) and (max-width:767px) {
+  .table.comparisons > tbody > tr > td:first-child {
+    display:none;
+  }
+}
 @media (min-width:768px) and (max-width:991px) {
 
   .table.comparisons > tbody > tr > td:first-child {
-    width:40%;
+    width:30%;
     padding-right:25px;
   }
 
   .table.comparisons > tbody > tr > td {
-    width:30%;
+    width:35%;
   }
 }
 
