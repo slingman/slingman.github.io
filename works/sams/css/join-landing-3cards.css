@@ -1,6 +1,8 @@
 /* 3 card homepage */
-body {
-  padding-top:200px;
+@media (min-width:1024px) {
+  body {
+    padding-top:200px;
+  }
 }
 
 .hero-text {
@@ -14,7 +16,7 @@ body {
 }
 
 .hero-img {
-  background:#eee url('../join/images/hero.png') center 60% no-repeat;
+  background:#eee url('../join/images/hero.png') 60% 40% no-repeat;
   background-size:cover;
 }
 
@@ -83,7 +85,7 @@ body {
 
 .table.comparisons > tbody > tr > td {
   vertical-align: middle;
-  padding:40px 20px;
+  padding:25px 20px;
   width:25%;
 }
 
@@ -113,5 +115,39 @@ body {
   }
 }
 
+.section {
+  border-top:1px solid #eee;
+  padding-top:15px;
+}
+
+.section .title {
+  color:rgba(66,66,66,0.6);
+  margin-bottom:25px;
+}
+
+.section .title h3 {
+  color:rgba(66,66,66,0.85);
+}
+
+.section .perks {
+  padding-left:30px;
+  padding-right:30px;
+  margin-bottom:30px;
+}
+
+.section .perks img {
+  max-width:25%;
+}
+
+.section .perks .name {
+  font-weight:500;
+  font-size:16px;
+  color:rgba(66,66,66,0.9);
+}
+
+.section .perks .desc {
+  font-size:14px;
+  color:rgba(66,66,66,0.65);
+}
 
 /* /3 card homepage */

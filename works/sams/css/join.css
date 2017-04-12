@@ -60,11 +60,11 @@
 }
 
 .well.bonus-offers ul li.gift {
-  background:url('../images/icon_gift.png') no-repeat no-repeat;
+  background:url('../join/images/icon_gift.png') no-repeat no-repeat;
 }
 
 .well.bonus-offers ul li.price {
-  background:url('../images/icon_price-tag.png') no-repeat no-repeat;
+  background:url('../join/images/icon_price-tag.png') no-repeat no-repeat;
 }
 
 .main-form-title {
