@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="../fonts/fonts-bree.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="../css/header.css">
-    <link rel="stylesheet" type="text/css" href="../css/join-landing-3cards.css">
+    <link rel="stylesheet" type="text/css" href="../css/join-landing-tabs.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -126,98 +126,130 @@
 
     <!-- Begin page content -->
     <div class="container">
-      <div class="row no-gutters">
-        <div class="col-xs-12 hero-img hidden-xs">
-          <div class="row">
-            <div class="col-xs-7">
-              <div class="hero-text">
-                <h2>Love to save? Join the club!</h2>
-                Put more money back in your wallet and time in your day
-                with all the benefits that come with a Sam's Club membership
+
+      <div class="headline text-center">
+        <h1>Love to save? Join the club!</h1>
+        Put more money back in your wallet and time in your day with all the benefits that come with a Sam's Club membership
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#family" aria-controls="family" role="tab" data-toggle="tab">For family or individuals</a></li>
+            <li role="presentation"><a href="#business" aria-controls="business" role="tab" data-toggle="tab">For business</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="family">
+              <div class="membership-types">
+                <div class="row">
+                  <div class="col-sm-10 col-sm-offset-1">
+                    <table class="table comparisons summary">
+                      <tbody>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td class="text-center">
+                            <div class="details" style="border-right:1px solid #ddd">
+                              <p class="title">Plus Membership</p>
+                              <p class="price"><sup>$</sup>100</p>
+                              <ul>
+                                <li>2% cash back on all purchases</li>
+                                <li>Early shopping hours</li>
+                                <li>Optical &amp; pharmacy disounts</li>
+                              </ul>
+                              <a href="#" class="btn btn-lg btn-primary">Select Plus</a>
+                              <p class="per-month">Less than <strong>$9</strong> per month</p>
+                            </div>
+                          </td>
+                          <td class="text-center">
+                            <div class="details">
+                              <p class="title">Savings Membership</p>
+                              <p class="price"><sup>$</sup>45</p>
+                              <ul>
+                                <li>Exclusive prices on quality brands</li>
+                                <li>Savings on photos and tires</li>
+                                <li>Complimentary +1 household membership</li>
+                              </ul>
+                              <a href="#" class="btn btn-lg btn-primary">Select Savings</a>
+                              <p class="per-month">Less than <strong>$4</strong> per month</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="hidden-xs">
+                          <td>&nbsp;</td>
+                          <td colspan="2" class="compare text-center">
+                            <a data-toggle="collapse" href="#collapseComparisonsFamily" aria-expanded="false" aria-controls="collapseComparisonsFamily">
+                              Compare memberships
+                              <i class="fa fa-chevron-up"></i>
+                              <i class="fa fa-chevron-down"></i>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="business">
+              <div class="membership-types">
+                <div class="row">
+                  <div class="col-sm-10 col-sm-offset-1">
+                    <table class="table comparisons summary">
+                      <tbody>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td class="text-center">
+                            <div class="details" style="border-right:1px solid #ddd">
+                              <p class="title">Plus Membership</p>
+                              <p class="price"><sup>$</sup>100</p>
+                              <ul>
+                                <li>2% cash back on all purchases</li>
+                                <li>Early shopping hours</li>
+                                <li>Optical &amp; pharmacy disounts</li>
+                              </ul>
+                              <a href="#" class="btn btn-lg btn-primary">Select Plus</a>
+                              <p class="per-month">Less than <strong>$9</strong> per month</p>
+                            </div>
+                          </td>
+                          <td class="text-center">
+                            <div class="details">
+                              <p class="title">Business Membership</p>
+                              <p class="price"><sup>$</sup>45</p>
+                              <ul>
+                                <li>Exclusive prices on quality brands</li>
+                                <li>Savings on photos and tires</li>
+                                <li>Complimentary +1 household membership</li>
+                              </ul>
+                              <a href="#" class="btn btn-lg btn-primary">Select Savings</a>
+                              <p class="per-month">Less than <strong>$4</strong> per month</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="hidden-xs">
+                          <td>&nbsp;</td>
+                          <td colspan="2" class="compare text-center">
+                            <a data-toggle="collapse" href="#collapseComparisonsFamily" aria-expanded="false" aria-controls="collapseComparisonsBusiness">
+                              Compare memberships
+                              <i class="fa fa-chevron-up"></i>
+                              <i class="fa fa-chevron-down"></i>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <p></p><br><br>
-      <div class="row no-gutters">
-        <div class="col-xs-12 col-sm-4 text-center">
-          <div class="card_img_wrap">
-            <img src="images/img_card_plus.png" class="img-responsive center-block">
-          </div>
-          <div class="membership_details">
-            <p class="price">$100<sup> per year</sup></p>
-            <div class="details">
-              <p class="title">Plus Membership</p>
-              <ul>
-                <li>2% cash back on all purchases</li>
-                <li>Early shopping hours</li>
-                <li>Optical and pharmacy discounts</li>
-              </ul>
-            </div>
-            <a href="#" class="btn btn-primary btn-lg btn-block">Select Plus</a>
-            <p class="per-month">Less than <strong>$9</strong> per month</p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 text-center">
-          <div class="card_img_wrap">
-            <img src="images/img_card_business.png" class="img-responsive center-block">
-          </div>
-          <div class="membership_details">
-            <p class="price">$45<sup> per year</sup></p>
-            <div class="details">
-              <p class="title">Business Membership</p>
-              <ul>
-                <li>Early shopping hours</li>
-                <li>Discounted group health plans and payroll kits</li>
-                <li>Additional business savings</li>
-              </ul>
-            </div>
-            <a href="#" class="btn btn-primary btn-lg btn-block">Select Business</a>
-            <p class="per-month">Less than <strong>$4</strong> per month</p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 text-center">
-          <div class="card_img_wrap">
-            <img src="images/img_card_savings.png" class="img-responsive center-block">
-          </div>
-          <div class="membership_details">
-            <p class="price">$45<sup> per year</sup></p>
-            <div class="details">
-              <p class="title">Savings Membership</p>
-              <ul>
-                <li>Exclusive prices on quality brands</li>
-                <li>Savings on photos and tires</li>
-                <li>Complimentary +1 household membership</li>
-              </ul>
-            </div>
-            <a href="#" class="btn btn-primary btn-lg btn-block">Select Savings</a>
-            <p class="per-month">Less than <strong>$4</strong> per month</p>
-          </div>
-        </div>
-      </div>
-      <p></p><br><br>
-      <div class="row">
-        <div class="col-xs-12 text-center compare hidden-xs">
-          <a data-toggle="collapse" href="#collapseComparisons" aria-expanded="false" aria-controls="collapseComparisons">
-            Compare all memberships
-            <i class="fa fa-chevron-up"></i>
-            <i class="fa fa-chevron-down"></i>
-          </a>
-        </div>
-      </div>
-      <!-- Comparison table -->
-      <div class="row collapse" id="collapseComparisons">
-        <div class="col-xs-12 hidden-xs">
+      <!-- Comparison table for Family -->
+      <div class="row collapse" id="collapseComparisonsFamily">
+        <div class="col-sm-10 col-sm-offset-1 hidden-xs">
           <table class="table comparisons">
-            <thead>
-              <tr>
-                <th>&nbsp;</th>
-                <th class="text-center">Plus Membership</th>
-                <th class="text-center">Business Membership</th>
-                <th class="text-center">Savings Membership</th>
-              </tr>
-            </thead>
             <tbody>
               <tr>
                 <td class="features">
@@ -226,7 +258,6 @@
                 </td>
                 <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
                 <td>&nbsp;</td>
-                <td class="active text-center">&nbsp;</td>
               </tr>
               <tr>
                 <td class="features">
@@ -235,7 +266,6 @@
                 </td>
                 <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
                 <td class="text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
-                <td class="active text-center">&nbsp;</td>
               </tr>
               <tr>
                 <td class="features">
@@ -244,7 +274,6 @@
                 </td>
                 <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
                 <td class="text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
-                <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
               </tr>
               <tr>
                 <td class="features">
@@ -253,7 +282,6 @@
                 </td>
                 <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
                 <td class="text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
-                <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
               </tr>
               <tr>
                 <td class="features">
@@ -262,7 +290,6 @@
                 </td>
                 <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
                 <td class="text-center">&nbsp;</td>
-                <td class="active text-center">&nbsp;</td>
               </tr>
               <tr>
                 <td class="features">
@@ -271,7 +298,6 @@
                 </td>
                 <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
                 <td class="text-center">&nbsp;</td>
-                <td class="active text-center">&nbsp;</td>
               </tr>
               <tr>
                 <td class="features">
@@ -280,7 +306,6 @@
                 </td>
                 <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
                 <td class="text-center">&nbsp;</td>
-                <td class="active text-center">&nbsp;</td>
               </tr>
               <tr>
                 <td class="features">
@@ -289,7 +314,6 @@
                 </td>
                 <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
                 <td class="text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
-                <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
               </tr>
               <tr>
                 <td class="features">
@@ -298,7 +322,96 @@
                 </td>
                 <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
                 <td class="text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <td class="features">
+                  &nbsp;
+                </td>
+                <td class="text-center"><a href="#" class="btn btn-lg btn-primary btn-block">Select Plus</a></td>
+                <td class="text-center"><a href="#" class="btn btn-lg btn-primary btn-block">Select Savings</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- /Comparison table -->
+
+      <!-- Comparison table for Business -->
+      <div class="row collapse" id="collapseComparisonsBusiness">
+        <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+          <table class="table comparisons">
+            <tbody>
+              <tr>
+                <td class="features">
+                  <p class="headline">Earn 2% Cash Rewards</p>
+                  Get $10 back for every $500 spent on qualifying purchases - up to $500/year
+                </td>
                 <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="features">
+                  <p class="headline">Early shopping hours</p>
+                  Get in and out faster without the crowds starting at 7AM Monday - Friday
+                </td>
+                <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
+                <td class="text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <td class="features">
+                  <p class="headline">Instant Savings</p>
+                  Extra offers on to of already low members-only prices
+                </td>
+                <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
+                <td class="text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <td class="features">
+                  <p class="headline">Sam's Club Mastercard</p>
+                  Earn 5% back on gas, 3% on dining and travel and 1% on other purchases - up to $5,000 per year
+                </td>
+                <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
+                <td class="text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <td class="features">
+                  <p class="headline">Extended warranties</p>
+                  Get an extra year of protection on select items with SquareTrade
+                </td>
+                <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
+                <td class="text-center">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="features">
+                  <p class="headline">Free select prescriptions</p>
+                  Plus over 600 more for $10 or less and up to 30% off select name brands
+                </td>
+                <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
+                <td class="text-center">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="features">
+                  <p class="headline">$50 off first pair of glasses</p>
+                  Including frame and lens with purchase of a year supply of contact lenses
+                </td>
+                <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
+                <td class="text-center">&nbsp;</td>
+              </tr>
+              <tr>
+                <td class="features">
+                  <p class="headline">Tire and Battery Center</p>
+                  Free flat tire repair, batter testing and wiper blade installation
+                </td>
+                <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
+                <td class="text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <td class="features">
+                  <p class="headline">Complimentary card</p>
+                  One free household membership to share
+                </td>
+                <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
+                <td class="text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></td>
               </tr>
               <tr>
                 <td class="features">
@@ -307,14 +420,12 @@
                 </td>
                 <td class="active text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i><br><strong>Up to 16</strong></td>
                 <td class="text-center"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i><br><strong>Up to 8</strong></td>
-                <td class="active text-center">&nbsp;</td>
               </tr>
               <tr>
                 <td class="features">
                   &nbsp;
                 </td>
                 <td class="text-center"><a href="#" class="btn btn-lg btn-primary btn-block">Select Plus</a></td>
-                <td class="text-center"><a href="#" class="btn btn-lg btn-primary btn-block">Select Business</a></td>
                 <td class="text-center"><a href="#" class="btn btn-lg btn-primary btn-block">Select Savings</a></td>
               </tr>
             </tbody>
