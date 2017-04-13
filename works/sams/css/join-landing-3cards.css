@@ -118,6 +118,7 @@
 .section {
   border-top:1px solid #eee;
   padding-top:15px;
+  padding-bottom:25px;
 }
 
 .section .title {
@@ -130,8 +131,6 @@
 }
 
 .section .perks {
-  padding-left:30px;
-  padding-right:30px;
   margin-bottom:30px;
 }
 
@@ -148,6 +147,44 @@
 .section .perks .desc {
   font-size:14px;
   color:rgba(66,66,66,0.65);
+  margin-right:75px;
+  margin-left:75px;
+}
+
+.section.testimonials .media {
+  padding-left:80px;
+  padding-right:80px;
+}
+
+.section.more-options .military {
+  background:#eee url('../join/images/membership_military.png') 25% 40% no-repeat;
+  background-size:cover;
+  margin:0;
+  padding:0;
+}
+
+.section.more-options .collegiate {
+  background:#eee url('../join/images/membership_collegiate.png') 25% 40% no-repeat;
+  background-size:cover;
+  margin:0;
+  padding:0;
+}
+
+.section.more-options .military-info,
+.section.more-options .collegiate-info {
+  background:rgba(255,255,255,0.85);
+  text-align:center;
+  height:250px;
+  padding:30px 25px;
+  background-size:auto;
+}
+
+.section.more-options .military-info .heading,
+.section.more-options .collegiate-info .heading {
+  font-size:20px;
+  color:rgba(66,66,66,09);
+  font-weight:600;
+  margin-top:22px;
 }
 
 /* /3 card homepage */
