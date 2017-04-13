@@ -211,6 +211,11 @@
   margin-left:75px;
 }
 
+.section.local-club .heading {
+  font-size:18px;
+  font-weight:500;
+}
+
 .section.testimonials .media {
   padding-left:80px;
   padding-right:80px;

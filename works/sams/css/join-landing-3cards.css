@@ -157,6 +157,11 @@
   margin-bottom:25px;
 }
 
+.section.local-club .heading {
+  font-size:18px;
+  font-weight:500;
+}
+
 .section.more-options .military {
   background:#eee url('../join/images/membership_military.png') 25% 40% no-repeat;
   background-size:cover;
