@@ -31,11 +31,17 @@
   color:rgba(66,66,66,0.7)
 }
 
-.tab-pane .membership-types-wrap {
-  background:#eee url('../join/images/hero_tabs.png') 30% 10% no-repeat;
+.tab-pane#family .membership-types-wrap,
+.tab-pane#business .membership-types-wrap {
+  background:#eee url('../join/images/hero_tabs_family.png') 30% 10% no-repeat;
   background-size:cover;
   padding:240px 0;
   position:relative;
+}
+
+.tab-pane#business .membership-types-wrap {
+  background:#eee url('../join/images/hero_tabs_business.png') 30% 10% no-repeat;
+  background-size:cover;
 }
 
 .tab-pane .membership-types {
