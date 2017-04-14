@@ -154,6 +154,7 @@ a.btn.cart span.icon {
 
 .club-acct-cart-menu .popover {
   width:260px;
+  border-radius:2px;
 }
 
 .super-menu .fa-chevron-down {
