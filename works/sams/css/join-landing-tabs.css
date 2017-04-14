@@ -9,26 +9,37 @@
   margin-bottom:40px;
 }
 
+.headline h1 {
+  color: rgba(66,66,66,0.9);
+}
+
 .nav.nav-tabs {
   padding-left:50px;
   margin-bottom:16px;
+  border-bottom:2px solid rgba(66,66,66,0.3);
 }
 
 .nav-tabs > li {
   margin-right:6px;
+  margin-bottom:-2px;
 }
 
 .nav-tabs > li > a {
-  border-radius:12px 12px 0 0;
+  border-radius:4px 4px 0 0;
   width:240px;
   text-align:center;
   background:rgba(66,66,66,0.1);
-  font-size:14px;
+  font-size:16px;
+  font-weight:500;
+  border:0;
 }
 
-.nav-tabs > li.active > a {
-  font-weight:600;
-  color:rgba(66,66,66,0.7)
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  color:rgba(66,66,66,0.7);
+  border:2px solid rgba(66,66,66,0.3);
+  border-bottom:transparent;
 }
 
 .tab-pane#family .membership-types-wrap,
