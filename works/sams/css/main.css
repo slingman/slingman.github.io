@@ -171,7 +171,6 @@ a.btn-secondary {
 
  @media (min-width: 1364px) {
    .container {
-     width: 1300px;
      padding-right:32px;
      padding-left:32px;
    }

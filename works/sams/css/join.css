@@ -39,6 +39,8 @@
   background:rgba(25, 119, 211, 0.08);
   border:0;
   border-radius:0;
+  margin-bottom:40px;
+  display:none; /* turning off for user testing */
 }
 
 .well.bonus-offers h3 {
@@ -68,7 +70,7 @@
 }
 
 .main-form-title {
-  margin-top:40px;
+  margin-top:10px;
   margin-bottom:30px;
   font-size:24px;
   font-weight:400;
