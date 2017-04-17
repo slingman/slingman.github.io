@@ -372,3 +372,20 @@ body.join_step-3 {
   margin-right:75px;
   margin-left:75px;
 }
+
+@media print {
+  .no-print {
+    display:none;
+    visibilty:hidden;
+  }
+
+  .card-image {
+    position:relative;
+  }
+  .card-image img {
+     width:420px;
+     position:absolute;
+     top:100px;
+     left:0;
+  }
+}
