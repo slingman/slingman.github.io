@@ -104,9 +104,10 @@
 
 .table.comparisons.summary > tbody > tr > td {
   border:none;
-  background:rgba(255,255,255,0.85);
+  background:rgba(255,255,255,0.91);
   padding:0;
   padding-top:20px;
+  color:rgba(66,66,66,0.9)
 }
 
 .table.comparisons.summary > tbody > tr > td:first-child {
