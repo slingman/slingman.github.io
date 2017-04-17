@@ -172,6 +172,10 @@ a.btn.cart span.icon {
   margin-right:20px;
 }
 
+.super-menu .all-dept a {
+  color:rgba(66,66,66,0.9);
+}
+
 .dropdown:hover .dropdown-menu,
 .dropdown:hover .sub-menu {
   display: block;

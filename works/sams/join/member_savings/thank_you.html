@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Steve Ling - Sams's Club - SOP - Join - Savings Member - Thank you!</title>
+    <title>Sams's Club - SOP - Join - Savings Member - Thank you!</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -25,11 +25,11 @@
     <![endif]-->
   </head>
 
-  <body class="">
+  <body>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="pencil-ad">
-          <div class="container text-center text-muted">this is a pencil ad</div>
+          <div class="container text-center text-muted">&nbsp;</div>
         </div>
         <div class="header-links text-right">
           <ul class="list-inline list-unstyled">
@@ -43,14 +43,14 @@
             <ul class="list-inline list-unstyled">
               <li class="club" id="club" data-trigger="hover" data-container="body" data-toggle="popover" data-popover-content="#your-club-popover" data-placement="auto bottom">
                 Your club <i class="fa fa-chevron-down fa-fw"></i><br>
-                <a href="#">Find a club</a>
+                Apopka, FL
               </li>
               <li class="acct" id="acct" data-trigger="hover" data-container="body" data-toggle="popover" data-popover-content="#your-account-popover" data-placement="auto bottom">
                 Your account <i class="fa fa-chevron-down fa-fw"></i><br>
-                <a href="#">Sign in</a>
+                Alex
               </li>
-              <li class="cart" id="cart" data-trigger="hover" data-container="body" data-toggle="popover" data-popover-content="#your-cart-popover" data-placement="auto bottom">
-                <a href="#" class="btn btn-primary btn-lg cart">Cart <span class="cart-count">24</span><span class="icon"></span></a>
+              <li class="cart" id="cart">
+                <a href="#" class="btn btn-primary btn-lg cart">Cart <span class="cart-count">0</span><span class="icon"></span></a>
               </li>
             </ul>
           </div>
@@ -61,7 +61,7 @@
           <div class="navbar-left shrink-menu">
             <i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu
           </div>
-          <a class="navbar-brand" href="#">Sam's Club</a>
+          <a class="navbar-brand" href="#" title="Sam's Club Home">Sam's Club</a>
           <form class="navbar-form navbar-left search-form" role="form">
             <div class="form-group has-feedback">
               <label class="control-label sr-only" for="search">Search</label>
@@ -73,16 +73,120 @@
             </div>
           </form>
         </div>
+        <div class="header-links super-menu">
+          <ul class="list-inline list-unstyled">
+            <li class="all-dept dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">Shop by department <i class="fa fa-chevron-down fa-fw"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">test</a></li>
+              </ul>
+            </li>
+            <li class="business-tools dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">Business tools <i class="fa fa-chevron-down fa-fw"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Easy reorder</a></li>
+                <li><a href="#">Lists</a></li>
+                <li><a href="#">Order by item number</a></li>
+                <li class="category">Shop for business</li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-chevron-right fa-fw pull-right"></i>
+                    Office
+                  </a>
+                  <div class="sub-menu">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <dl>
+                          <dt>Paper &amp; Envelopes</dt>
+                          <dd>Copy paper</dd>
+                          <dd>Laser &amp; inkjet paper</dd>
+                          <dd>Envelopes</dd>
+                          <dd>Writing pads &amp; notebooks</dd>
+                        </dl>
+                        <dl>
+                          <dt>Office Supplies</dt>
+                          <dd>Pen, pencils &amp; markers</dd>
+                          <dd>Self-stick notes &amp; flags</dd>
+                          <dd>Tape &amp; adhesives</dd>
+                          <dd>Staples &amp; stapler supplies</dd>
+                          <dd>Correction tape &amp; fluid</dd>
+                          <dd>Clips &amp; rubber bands<dd>
+                        </dl>
+                      </div>
+                      <div class="col-xs-6">
+                        <dl>
+                          <dt>Advertising &amp; Marketing Materials</dt>
+                        </dl>
+                        <dl>
+                          <dt>A/V Presentation Supplies</dt>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-chevron-right fa-fw pull-right"></i>
+                    Convenience store
+                  </a>
+                  <div class="sub-menu">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        column 1a
+                      </div>
+                      <div class="col-xs-6">
+                        column 2b
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">Member services</a> <i class="fa fa-chevron-down fa-fw"></i></li>
+            <li><a href="#">Shocking Values</a></li>
+            <li><a href="#">Instant Savings</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
     <!-- Begin page content -->
-    <div class="container" style="min-height:650px;">
+    <div class="container">
       <div class="row">
         <div class="col-xs-12">
           THANK YOU!
         </div>
       </div>
+
+      <!-- Content for your account popover -->
+      <div class="hidden" id="your-club-popover">
+        <div class="popover-body">
+          <div class="popover-list-wrap">
+            <p class="title">Your clubs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content for your account popover -->
+      <div class="hidden" id="your-account-popover">
+        <div class="popover-body">
+          <div class="popover-list-wrap">
+            <p class="title">Your account</p>
+             <button type="submit" class="btn btn-primary btn-lg">Sign in</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content for your cart popover -->
+      <div class="hidden" id="your-cart-popover">
+        <div class="popover-body">
+          <div class="popover-list-wrap">
+            <p class="title">Your Cart</p>
+             <button type="submit" class="btn btn-primary btn-lg">Cart</button>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <footer class="footer">
@@ -162,6 +266,6 @@
     <script src="../../js/jquery.dotdotdot.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    <script src="../../js/header.js"></script>
   </body>
 </html>
