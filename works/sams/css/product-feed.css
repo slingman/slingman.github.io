@@ -34,8 +34,7 @@
 }
 
 #product-feed .product-tiles-wrap {
-  overflow-x:auto;
-  overflow-y:hidden;
+  overflow:hidden;
   white-space:nowrap;
 }
 #product-feed .product-tiles-wrap .product-tile {
