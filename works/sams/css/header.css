@@ -180,6 +180,10 @@ a.btn.cart span.icon {
   margin-bottom:5px;
 }
 
+.club-acct-cart-menu .popover .popover-list-wrap .popover-section ul li:last-child {
+  margin-bottom:0;
+}
+
 .super-menu .fa-chevron-down {
   color:rgba(25, 119, 211, 1);
 }

@@ -364,8 +364,12 @@ body.join_step-3 {
   padding-top:16px;
 }
 
+.section .perks {
+  margin-top:25px;
+}
+
 .section .perks img {
-  max-width:25%;
+  max-width:18%;
 }
 
 .section .perks .name {
