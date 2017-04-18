@@ -22,6 +22,19 @@
 
 .card_img_wrap {
   border-bottom:1px solid #eee;
+  position:relative;
+}
+
+.card_img_wrap .flag {
+  position:absolute;
+  background:#ec7202;
+  color:#fff;
+  top:-8px;
+  left:40px;
+  padding:2px 12px;
+  font-family: 'bree_serifregular';
+  font-size:14px;
+  border-radius:4px;
 }
 
 .membership_details {

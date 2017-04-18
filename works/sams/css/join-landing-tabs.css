@@ -117,6 +117,19 @@
 
 .table.comparisons.summary > tbody > tr > td .details {
   padding:0 5px;
+  position:relative;
+}
+
+.table.comparisons.summary > tbody > tr > td .details .flag {
+  position:absolute;
+  background:#ec7202;
+  color:#fff;
+  top:-8px;
+  left:16px;
+  padding:2px 12px;
+  font-family: 'bree_serifregular';
+  font-size:14px;
+  border-radius:4px;
 }
 
 .table.comparisons.summary > tbody > tr > td .title {
@@ -124,6 +137,7 @@
   color:rgba(66,66,66,0.9);
   font-size:16px;
   margin-bottom:0;
+  padding-top:25px;
 }
 
 .table.comparisons.summary > tbody > tr > td .price {

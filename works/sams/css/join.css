@@ -345,9 +345,12 @@ body.join_step-3 {
 }
 
 .whats-next {
-  padding-left:40px;
-  padding-right:40px;
-  margin-top:25px;
+  margin-top:85px;
+}
+
+.whats-next .headline {
+  font-size:22px;
+  font-weight:500;
 }
 
 .whats-next .instructions {
@@ -374,18 +377,23 @@ body.join_step-3 {
 }
 
 @media print {
+  body {
+    margin:0;
+    padding:0;
+  }
+
   .no-print {
     display:none;
     visibilty:hidden;
   }
 
   .card-image {
-    position:relative;
+    position:absolute;
+    top:25%;
+    left:25%;
+    width:600px;
   }
   .card-image img {
-     width:420px;
-     position:absolute;
-     top:100px;
-     left:0;
+     width:600px;
   }
 }
