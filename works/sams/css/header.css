@@ -153,8 +153,31 @@ a.btn.cart span.icon {
 }
 
 .club-acct-cart-menu .popover {
-  width:260px;
+  width:340px;
   border-radius:2px;
+  padding:5px;
+}
+
+.club-acct-cart-menu .popover .title {
+  font-size:16px;
+  font-weight:500;
+  padding-bottom:5px;
+  border-bottom:1px solid rgba(66,66,66,0.2);
+}
+
+.club-acct-cart-menu .popover .popover-list-wrap .section {
+  border-bottom:1px solid rgba(66,66,66,0.2);
+  padding-top:5px;
+  padding-bottom:15px;
+  font-size:12px;
+}
+
+.club-acct-cart-menu .popover .popover-list-wrap .section:last-child {
+  border-bottom:0;
+}
+
+.club-acct-cart-menu .popover .popover-list-wrap .section ul li {
+  margin-bottom:5px;
 }
 
 .super-menu .fa-chevron-down {
@@ -183,8 +206,10 @@ a.btn.cart span.icon {
   border-radius:2px;
   border: 1px solid rgba(66, 66, 66, .2);
   background:#fff;
-  min-width:240px;
+  min-width:260px;
   font-size:12px;
+  padding-top:10px;
+  padding-bottom:10px;
 }
 
 .all-dept.dropdown:hover .dropdown-menu {
@@ -271,6 +296,11 @@ a.btn.cart span.icon {
   left:19%;
 }
 
+.member-services.dropdown:hover .dropdown-menu:after,
+.member-services.dropdown:hover .dropdown-menu:before {
+  left:19%;
+}
+
 .acct.dropdown:hover .dropdown-menu:after,
 .acct.dropdown:hover .dropdown-menu:before {
   left:19%;
@@ -284,10 +314,10 @@ a.btn.cart span.icon {
   height:auto;
   visibility: hidden;
   margin-top: -1px;
-  padding:15px 20px;
+  padding:20px 20px;
   height:470px;
   width:380px;
-  box-shadow:6px 6px 12px rgba(0,0,0,.175);
+  box-shadow:3px 3px 12px rgba(0,0,0,.175);
   border-radius:0 2px 2px 0;
 }
 
@@ -299,9 +329,10 @@ a.btn.cart span.icon {
   color:rgba(66,66,66,0.9)
 }
 .dropdown-menu .sub-menu dl dd {
-  text-indent: 8px;
-  margin-top:3px;
-  margin-bottom:3px;
+  padding-left:8px;
+
+  margin-top:5px;
+  margin-bottom:5px;
 }
 
 .dropdown-menu li:hover .sub-menu {
