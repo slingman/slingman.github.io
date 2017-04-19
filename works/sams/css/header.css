@@ -60,6 +60,10 @@ body {
   font-weight:300;
 }
 
+.shrink-menu a {
+  color:rgba(66,66,66,0.8);
+}
+
 .navbar-default {
   background:#fff;
   width:100%;
@@ -95,7 +99,7 @@ body {
 }
 
 .club-acct-cart-menu {
-    display:none;
+  display:none;
 }
 
 .club-acct-cart-menu,
@@ -220,6 +224,11 @@ a.btn.cart span.icon {
   font-size:14px;
 }
 
+.shrink-menu .all-dept.dropdown:hover .dropdown-menu {
+  margin-top:1px
+}
+
+
 .dropdown-menu ul li {
   padding:0 16px;
   display:block;
@@ -290,6 +299,10 @@ a.btn.cart span.icon {
 	margin-left: -10px;
 }
 
+.shrink-menu .all-dept.dropdown:hover .dropdown-menu:after,
+.shrink-menu .all-dept.dropdown:hover .dropdown-menu:before {
+  left:16%;
+}
 .all-dept.dropdown:hover .dropdown-menu:after,
 .all-dept.dropdown:hover .dropdown-menu:before {
   left:42%;
