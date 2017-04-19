@@ -151,6 +151,13 @@
   font-size:55%;
 }
 
+.table.comparisons.summary > tbody > tr > td .price .per-year {
+  vertical-align:98%;
+  font-size:35%;
+  font-weight:400;
+  color:rgba(66,66,66,.75)
+}
+
 .table.comparisons.summary > tbody > tr > td .details ul {
   padding:0;
   margin:0;
