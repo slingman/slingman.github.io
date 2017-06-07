@@ -59,7 +59,7 @@ a.btn-secondary {
 }
 
 .btn-primary:hover {
-  background:rgba(76, 169, 12, 0.7);
+  background:rgba(76, 169, 12, 0.9) !important;
 }
 
 .btn-secondary {

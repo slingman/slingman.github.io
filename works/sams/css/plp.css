@@ -244,7 +244,6 @@
 }
 
 .grid_tiles_wrap .a2c_wrap .actions .btn {
-  width:44%;
   font-weight:500;
   font-size:14px;
 }
@@ -432,7 +431,7 @@
   }
 
   .grid_tiles {
-    width:100%
+    width:100%;
     min-height:450px;
     padding:16px;
   }
@@ -448,6 +447,7 @@
 
   .cards ul > li {
     width:50%;
+    border-left:none;
   }
 
   .grid_tiles {
