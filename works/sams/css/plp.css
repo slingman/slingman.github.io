@@ -336,6 +336,29 @@
   text-align:left;
 }
 
+.grid_tiles .btn-group-justified > .btn-group:nth-of-type(1) {
+  width: 3.43%;
+}
+
+.list_tiles .btn-group-justified > .btn-group:nth-of-type(1) {
+  width: 4%;
+}
+
+.grid_tiles .btn-group-justified > .btn-group:nth-of-type(2),
+.list_tiles .btn-group-justified > .btn-group:nth-of-type(2) {
+  width: .15%;
+  background-color:#fff;
+  border:0;
+}
+
+.grid_tiles .btn-group-justified > .btn-group:nth-of-type(3) {
+  width:1.1%;
+}
+
+.list_tiles .btn-group-justified > .btn-group:nth-of-type(3) {
+  width:1.6%
+}
+
 /* popover - add to list */
 
 .popover {
@@ -343,47 +366,47 @@
   width:306px;
 }
 
-.popover .popover-list-wrap {
+.popover .popover-add-to-list-wrap {
   padding:7px 2px; /* this adds to 16px around all sides of the popover */
   width:100%;
 }
 
-.popover .popover-list-wrap .title {
+.popover .popover-add-to-list-wrap .title {
   font-size:16px;
   color:#424242;
   font-weight:400;
 }
 
-.popover .popover-list-wrap ul {
+.popover .popover-add-to-list-wrap ul {
   border-bottom:1px solid rgba(66, 66, 66, 0.2);
   padding-bottom:6px;
   overflow:auto;
   max-height:200px;
 }
 
-.popover .popover-list-wrap li {
+.popover .popover-add-to-list-wrap li {
   padding-bottom:6px;
 }
 
-.popover .popover-list-wrap .form-group {
+.popover .popover-add-to-list-wrap .form-group {
   white-space: nowrap;
 }
 
 /* popover - more clubs */
 
-.popover .popover-clubs-wrap {
+.popover .popover-more-clubs-wrap {
   padding:7px 2px; /* this adds to 16px around all sides of the popover */
   width:100%;
   max-height:300px;
   overflow-y:auto;
 }
 
-.popover .popover-clubs-wrap li {
+.popover .popover-more-clubs-wrap li {
   padding-bottom:8px;
 }
 
-.popover .popover-clubs-wrap .club-info .club-name,
-.popover .popover-clubs-wrap .more-club-info .availability {
+.popover .popover-more-clubs-wrap .club-info .club-name,
+.popover .popover-more-clubs-wrap .more-club-info .availability {
   font-weight:500;
   color:#424242;
 }
