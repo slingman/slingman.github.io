@@ -10,6 +10,18 @@ h1, h2, h3, h4, h5 {
  font-family: 'bree_serifregular';
 }
 
+h1 {
+  font-size:32px;
+}
+
+h2 {
+  font-size:24px;
+}
+
+h3 {
+  font-size:20px;
+}
+
 .sams-icons {
   font-family: 'SamsIconsRegular';
   font-size:16px;
