@@ -25,13 +25,13 @@ body {
 @media (min-width: 979px) {
   #sidebar.affix-top {
     position: static;
-  	margin-top:20px;
+  	margin-top:25px;
   	width:228px;
   }
 
   #sidebar.affix {
     position: fixed;
-    top:70px;
+    top:75px;
     width:228px;
   }
 }
