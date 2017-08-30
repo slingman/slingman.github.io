@@ -18,7 +18,8 @@ body {
  color:#fff;
 }
 
-.affix-top,.affix{
+.affix-top,
+.affix {
  position: static;
 }
 
