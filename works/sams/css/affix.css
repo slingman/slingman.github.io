@@ -10,7 +10,7 @@ author: bootply.com
 */
 
 body {
- padding-top:50px;
+ padding-top:100px;
 }
 
 .navbar-bright {
@@ -18,8 +18,7 @@ body {
  color:#fff;
 }
 
-.affix-top,
-.affix {
+.affix-top,.affix{
  position: static;
 }
 
