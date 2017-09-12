@@ -157,7 +157,7 @@ a.btn.cart span.icon {
 }
 
 .club-acct-cart-menu .popover {
-  width:340px;
+  width:240px;
   border-radius:2px;
   padding:5px;
 }
@@ -169,22 +169,22 @@ a.btn.cart span.icon {
   border-bottom:1px solid rgba(66,66,66,0.2);
 }
 
-.club-acct-cart-menu .popover .popover-list-wrap .popover-section {
+.club-acct-cart-menu .popover .popover-menu-items-wrap .popover-section {
   border-bottom:1px solid rgba(66,66,66,0.2);
   padding-top:5px;
   padding-bottom:15px;
   font-size:12px;
 }
 
-.club-acct-cart-menu .popover .popover-list-wrap .popover-section:last-child {
+.club-acct-cart-menu .popover .popover-menu-items-wrap .popover-section:last-child {
   border-bottom:0;
 }
 
-.club-acct-cart-menu .popover .popover-list-wrap .popover-section ul li {
+.club-acct-cart-menu .popover .popover-menu-items-wrap .popover-section ul li {
   margin-bottom:5px;
 }
 
-.club-acct-cart-menu .popover .popover-list-wrap .popover-section ul li:last-child {
+.club-acct-cart-menu .popover .popover-menu-items-wrap .popover-section ul li:last-child {
   margin-bottom:0;
 }
 
