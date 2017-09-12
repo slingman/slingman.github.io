@@ -1,0 +1,56 @@
+body {
+  min-height: 1000px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* nav stuff */
+.navbar-default {
+  background:#001a96;
+  color:#fff;
+}
+
+.navbar-brand {
+  margin-top:-5px;
+}
+
+.navbar-collapse .nav > li > a {
+  color:#fff;
+}
+
+/* affixed sidenav */
+.affix {
+  position:fixed;
+  top:0;
+}
+
+.side-nav-jump {
+  margin-top:70px;
+  font-size:14px;
+}
+
+.side-nav-jump .nav > li > a {
+  padding:4px 0;
+}
+
+.side-nav-jump .nav > li > a:hover {
+  background:none;
+  color:#001a96;
+}
+
+.back-to-top {
+  margin-left:5px;
+  margin-top:20px;
+  padding:4px 10px;
+  font-weight:500;
+  color:#999;
+}
+
+/* main content */
+section {
+  padding-top:50px;
+}
+
+section img {
+  border:1px solid #eee;
+  padding:5px;
+}
