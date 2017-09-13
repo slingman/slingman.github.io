@@ -17,6 +17,14 @@ body {
   color:#fff;
 }
 
+.nav.navbar-right li > a {
+  color:#e00099;
+}
+
+.nav.navbar-right li > a:hover {
+  color:#fff;
+}
+
 /* affixed sidenav */
 .affix {
   position:fixed;
