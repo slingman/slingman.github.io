@@ -64,7 +64,10 @@
             <ul class="nav">
               <li><a href="#understand">Understand</a></li>
               <li><a href="#explorations">Explorations</a></li>
+              <li><a href="#usergoals">User Goals</a></li>
+              <li><a href="#assumptions">Assumptions</a></li>
               <li><a href="#prototype">Prototype</a><li>
+              <li><a href="#ifmoretime">If I had more time</a></li>
             </ul>
             <br><br>
             <a href="#top" class="back-to-top">Back to top</a>
@@ -78,7 +81,8 @@
             <hr><br>
             <p>When I first started on the take-home exercise from Course Hero from Jenny, I immediately drew up something.  The exercise document I got almost acts as a requirement document.</p>
             <img src="images/grocery_flow.jpg" class="img-responsive"><br>
-            <p>I wanted to see how this new feature can be integrated into the existing feature set that is already offered by the grocery store chain, and look at this new offering hollistically.  I have made some assumptions when drawing this up which I will later get to.</p>
+            <p>I wanted to see how this new feature can be integrated into the existing feature set that is already offered by the grocery store chain, and look at this new offering hollistically.
+              I have made some assumptions when drawing this up which I will later get to.</p>
           </section>
           <section id="explorations">
             <h3>Explorations</h3>
@@ -93,6 +97,7 @@
                     <li>Users must log in to create lists or add to "Recipe box"</li>
                     <li>Recipes can be searched or browsed by categories
                     <li>The site offers online ordering and pick up in store without the need to sign in, however, the recipe functionality is not integrated here</li>
+                    <li>There is a mobile version of the site and experience, but inconsistent</li>
                   </ul>
                 </li>
                 <li><a href="https://www.safeway.com" target="_blank">Safeway</a>
@@ -101,6 +106,7 @@
                     <li>Users can see ingredients of any recipe and add all or individually to a list</li>
                     <li>Users are not required to be logged in to create or add to list</li>
                     <li>The site does not offer online ordering, but does offer heavy selling of coupons and deals</li>
+                    <li>website is not responsive</li>
                   </ul>
                 </li>
                 <li><a href="https://www.instacart.com" target="_blank">Instacart</a>
@@ -110,14 +116,122 @@
                     <li>Once in this section, users can browse for recipes using categories, no way to search for recipes, but can add recipes as favorites</li>
                     <li>Login is required for instacart
                   </ul>
+                <li><a href="https://www.target.com" target="_blank">Target</a>
+                  <ul>
+                    <li>Recipes are offered, but does not integrate with any coupons or lists, or adding to cart</li>
+                  </ul>
+                </li>
+                <li><a href="https://www.traderjoes.com" target="_blank">Trader Joe's</a>
+                  <ul>
+                    <li>Recipes are offered, but does not integrate with any coupons or lists, or adding to cart</li>
+                  </ul>
+                </li>
+                <li><a href="https://www.homedepot.com" target="_blank">Home Depot</a>
+                  <ul>
+                    <li>There is obviously no recipes here, but I want to see if there are parallels between DIY tutorials with recipes</li>
+                    <li>Also wanted to see how they differentiate between online ordering and ship to home vs picking it up in store</li>
+                  </ul>
+                </li>
+                <li><a href="https://www.boxed.com" target="_blank">Boxed</a>
+                  <ul>
+                    <li>There are no recipes here, but there are "favorites" and also coupons elements here</li>
+                  </ul>
+                </li>
               </ul>
             </p>
+            <p>
+              <strong>General findings</strong>
+              <ul>
+                <li>A lot of adding ingredients to a static list, either requiring login or not</li>
+                <li>Not a lot of great integration with savings or coupons at the individual ingredients level</li>
+              </ul>
+            </p>
+          </section>
+          <section id="usergoals">
+            <h3>User Goals</h3>
+            <hr><br>
+            <ul>
+              <li>The ability to find different categories of recipes easily and quickly, categories like:
+                <ul>
+                  <li>Cheap and quick</li>
+                  <li>Bulk cooking (enough for roommates)</li>
+                  <li>Quick and kid-friendly</li>
+                  <li>Dinner parties</li>
+                </ul>
+              </li>
+              <li>Save recipes for later</li>
+              <li>The ability to add recipe ingredients to a shopping list</li>
+              <li>Providing time-saving features
+                <ul>
+                  <li>Coupons and discounts integrated at the ingredients level</li>
+                  <li>Adding all ingredients to shopping cart in order to complete the checkout process and picking it up at the store</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section id="assumptions">
+            <h3>Assumptions</h3>
+            <hr><br>
+            In order to move forward on a prototype, some assumptions had to be made:
+            <ul>
+              <li>Users
+                <ul>
+                  <li>May or may not live near a location of this supermarket chain ('near' being an operative word; users will travel for deals)</li>
+                  <li>Have a mobile device</li>
+                  <li>May or may not have an existing account</li>
+                </ul>
+              </li>
+              <li>Technical
+                <ul>
+                  <li>Website is responsive</li>
+                  <li>The ability to geo-locate user's mobile device</li>
+                  <li>Inventory and stock information as accurate as it can be</li>
+                  <li>Promotions and savings are integrated at all levels of the website
+                    <ul>
+                      <li>If the ingredient has some sort of savings associated, its shown</li>
+                    </ul>
+                  </li>
+                  <li>There is an existing shopping cart and checkout flow involving credit card and payment information</li>
+                </ul>
+              </li>
+            </ul>
           </section>
           <section id="prototype">
             <h3>Prototype</h3>
             <hr><br>
-            <iframe width="438" height="930" src="https://invis.io/P2DGFWOY4" frameborder="0" allowfullscreen></iframe>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="text-center">
+                  <iframe width="438" height="930" src="https://invis.io/P2DGFWOY4" frameborder="0" allowfullscreen ></iframe>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <br>
+                <p>
+                  Using inVision's prototyping tool is pretty solid for responsive web to get some of the flow points across,
+                  so that is what I did for the low fidelity screens that I created.
+                </p>
+              </div>
           </section>
+          <section id="ifmoretime">
+            <h3>If I had more time</h3>
+            <hr><br>
+            <p>
+            Given the time frame for this exercise, I have delivered what I have deemed as the MVP in order for the users to complete the task of adding
+            ingredients from a recipe to an online purchasing flow and finally picking it up at the local store.
+            </p>
+            <p>
+            If I had more time, I would love to be able to continue to tackle the following issues:<br>
+            <ol>
+              <li>Address the crowded area of where each ingredient can be added to list or added to cart; also maybe figure out a different wording for those actions</li>
+              <li>Take the prototype onto the field and test it with real shoppers</li>
+              <li>Explore the flow of checking out as guest, vs checking as a signed in user</li>
+              <li>Think about how we can help when an ingredient of the recipe is out of stock</li>
+            </ol>
+            </p>
+          </section>
+          <br><br>
+          <br><br>
         </div>
 
       </div>
