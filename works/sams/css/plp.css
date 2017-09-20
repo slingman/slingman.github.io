@@ -84,9 +84,7 @@
     z-index: 1000;
     display: block;
     padding: 0 20px 32px 32px;
-    /*overflow-x: hidden;
-    overflow-y: auto;  */
-    min-width:241px;
+    min-width:271px;  /* change this for width of sidebar */
   }
 
   .sidebar .title,
@@ -98,7 +96,7 @@
     margin-right:20px;
   }
   .main {
-    margin-left:244px;
+    margin-left:274px;  /* change this to match the width of sidebar */
   }
 }
 
@@ -364,10 +362,11 @@
 .popover {
   max-width:306px;
   width:306px;
+  cursor:pointer;
 }
 
 .popover .popover-add-to-list-wrap {
-  padding:7px 2px; /* this adds to 16px around all sides of the popover */
+  padding:5px 2px; /* this adds to 16px around all sides of the popover */
   width:100%;
 }
 
@@ -413,7 +412,7 @@
 
 @media (min-width: 1364px) {
   .cards ul > li {
-    width:25%;
+    width:33.33%;
   }
 
   .grid_tiles {

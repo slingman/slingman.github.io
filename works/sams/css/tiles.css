@@ -1,12 +1,15 @@
-/***********************************************
+/***********************************************************
 product tiles
-************************************************/
+- this is only for the styles within the tiles
+- widths of tiles should be handled inside plp.css
+***********************************************************/
 
 .list_tiles,
 .grid_tiles {
   font-size:14px;
   padding:16px;
   position:relative;
+  color:rgba(42,42,42,0.8)
 }
 
 .list_tiles .img_wrap,
@@ -34,45 +37,9 @@ product tiles
 
 .grid_tiles .tile_info .title,
 .list_tiles .tile_info .title {
-  line-height:18px;
+  line-height:19px;
   max-height:36px;
-  margin-bottom:8px;
-  color:#424242;
-}
-
-.grid_tiles .rating,
-.list_tiles .rating {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-  margin-bottom:5px;
-  cursor:pointer;
-}
-
-.grid_tiles .rating > span,
-.list_tiles .rating > span {
-  display: inline-block;
-  position: relative;
-  width: 1.1em;
-}
-.grid_tiles .rating > span:hover:before,
-.grid_tiles .rating > span:hover ~ span:before,
-.list_tiles .rating > span:hover:before,
-.list_tiles .rating > span:hover ~ span:before {
-   content: "\2605";
-   position: absolute;
-   color:#eea139;
-}
-
-.grid_tiles .rating > span.number,
-.list_tiles .rating > span.number {
-  margin-left:10px;
-}
-
-.grid_tiles .rating > span.number:hover:before,
-.grid_tiles .rating > span.number:hover ~ span.number:before,
-.list_tiles .rating > span.number:hover:before,
-.list_tiles .rating > span.number:hover ~ span.number:before {
-  content:"";
+  margin-bottom:10px;
 }
 
 .grid_tiles .promo_msg1,
@@ -95,9 +62,9 @@ product tiles
 
 .grid_tiles .pricing,
 .list_tiles .pricing {
-  margin-top:8px;
-  margin-bottom:-8px;
-  color:#424242;
+  margin-top:4px;
+  color:rgba(66,66,66,0.8);
+  letter-spacing:-1px;
 }
 
 .grid_tiles .pricing sup,
@@ -116,7 +83,9 @@ product tiles
 .grid_tiles .pricing .dollar,
 .list_tiles .pricing .dollar {
   font-weight:600;
-  font-size:24px;
+  font-size:25px;
+  color:#000;
+  letter-spacing:0.011em;
 }
 
 .grid_tiles .pricing .cents,
@@ -128,7 +97,7 @@ product tiles
 .grid_tiles .fulfillment,
 .list_tiles .fulfillment {
   width:100%;
-  margin:16px 0;
+  margin:10px 0;
   font-size:12px;
 }
 
@@ -139,6 +108,7 @@ product tiles
   float:left;
   vertical-align: top;
   width:50%;
+  margin-top:-10px;
 }
 
 .grid_tiles .fulfillment .online .heading,
@@ -146,7 +116,6 @@ product tiles
 .list_tiles .fulfillment .online .heading,
 .list_tiles .fulfillment .in-club .heading {
   font-weight:500;
-  margin-bottom:5px;
 }
 
 .grid_tiles .fulfillment .online .stock,
@@ -166,6 +135,14 @@ product tiles
   color:#4ca90c;
 }
 
+.grid_tiles .fulfillment .online .status.shipping .plus,
+.list_tiles .fulfillment .online .status.shipping .plus {
+  color:#1977D3;
+  font-weight:900;
+  font-family:"helvetica";
+  font-style:italic;
+}
+
 .grid_tiles .actions,
 .list_tiles .actions {
   margin-top:8px;
@@ -181,6 +158,14 @@ product tiles
 .grid_tiles .actions.list,
 .list_tiles .actions.list {
   margin-right:0;
+}
+
+.grid_tiles .add-to-list-wrap {
+  max-width:46px;
+  white-space: nowrap;
+}
+.grid_tiles .img-add-to-list {
+  cursor:pointer;
 }
 /***********************************************
 320 list tiles

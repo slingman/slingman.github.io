@@ -33,7 +33,7 @@
     src: url('dalton_maag_-_aktiv_grotesk_light_italic-webfont.woff2') format('woff2'),
          url('dalton_maag_-_aktiv_grotesk_light_italic-webfont.woff') format('woff'),
          url('dalton_maag_-_aktiv_grotesk_light_italic-webfont.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: 600;
     font-style: italic;
 
 }
