@@ -78,7 +78,7 @@
 @media (min-width: 1364px) {
   .sidebar {
     position: absolute;
-    top: 186px;
+    top: 326px;
     bottom: 0;
     left: auto;
     z-index: 1000;
