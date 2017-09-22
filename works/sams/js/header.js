@@ -4,12 +4,6 @@ $(document).ready(function () {
   });
 });
 
-$(function() {
-  $('[data-toggle=offcanvas]').click(function() {
-    $('.row-offcanvas').toggleClass('active');
-  });
-});
-
 $('#acct').popover({
   html: true,
   trigger: 'hover',
@@ -42,6 +36,20 @@ $('#club').popover({
   html: true,
   trigger: 'hover',
   container: '#club',
+  content: function() {
+    var content = $(this).attr("data-popover-content");
+    return $(content).children(".popover-body").html();
+  },
+  title: function() {
+    var title = $(this).attr("data-popover-content");
+    return $(title).children(".popover-heading").html();
+  }
+});
+
+$('#get-plus').popover({
+  html: true,
+  trigger: 'hover',
+  container: '#get-plus',
   content: function() {
     var content = $(this).attr("data-popover-content");
     return $(content).children(".popover-body").html();

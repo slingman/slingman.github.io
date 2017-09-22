@@ -359,12 +359,6 @@
 
 /* popover - add to list */
 
-.popover {
-  max-width:306px;
-  width:306px;
-  cursor:pointer;
-}
-
 .popover .popover-add-to-list-wrap {
   padding:5px 2px; /* this adds to 16px around all sides of the popover */
   width:100%;
@@ -408,6 +402,11 @@
 .popover .popover-more-clubs-wrap .more-club-info .availability {
   font-weight:500;
   color:#424242;
+}
+
+.upgrade-to-plus.dropdown:hover .dropdown-menu:after,
+.upgrade-to-plus.dropdown:hover .dropdown-menu:before {
+  left:35%;
 }
 
 @media (min-width: 1364px) {

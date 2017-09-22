@@ -133,14 +133,7 @@ product tiles
 .grid_tiles .fulfillment .online .status.shipping,
 .list_tiles .fulfillment .online .status.shipping {
   color:#4ca90c;
-}
-
-.grid_tiles .fulfillment .online .status.shipping .plus,
-.list_tiles .fulfillment .online .status.shipping .plus {
-  color:#1977D3;
-  font-weight:900;
-  font-family:"helvetica";
-  font-style:italic;
+  padding-bottom:5px; /* more hover-able area for upgrade to plus popover */
 }
 
 .grid_tiles .actions,

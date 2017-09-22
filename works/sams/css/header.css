@@ -207,19 +207,6 @@ a.btn.cart span.icon {
   color:rgba(66,66,66,0.9);
 }
 
-.dropdown:hover .dropdown-menu,
-.dropdown:hover .sub-menu {
-  display: block;
-  margin:0;
-  border-radius:2px;
-  border: 1px solid rgba(66, 66, 66, .2);
-  background:#fff;
-  min-width:260px;
-  font-size:12px;
-  padding-top:10px;
-  padding-bottom:10px;
-}
-
 .all-dept.dropdown:hover .dropdown-menu {
   font-size:14px;
 }
@@ -227,7 +214,6 @@ a.btn.cart span.icon {
 .shrink-menu .all-dept.dropdown:hover .dropdown-menu {
   margin-top:1px
 }
-
 
 .dropdown-menu ul li {
   padding:0 16px;

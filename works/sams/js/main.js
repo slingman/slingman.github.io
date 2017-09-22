@@ -24,15 +24,15 @@ $(document).on('click', function(e) {
 
 // add to cart //
 
-$(document).on('click', function(e) {
-  $('[data-toggle="collapse"]').each(function() {
-    //the 'is' for buttons that trigger popups
-    //the 'has' for icons within a button that triggers a popup
-    if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
-      $(this).popover('hide').data('bs.popover').inState.click = false // fix for BS 3.3.6
-    }
-  });
-});
+// $(document).on('click', function(e) {
+//   $('[data-toggle="collapse"]').each(function() {
+//     //the 'is' for buttons that trigger popups
+//     //the 'has' for icons within a button that triggers a popup
+//     if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+//       $(this).popover('hide').data('bs.popover').inState.click = false // fix for BS 3.3.6
+//     }
+//   });
+// });
 
 // animate floating label //
 
@@ -51,3 +51,17 @@ $(".form-group select").change(function() {
     $(this).removeClass('filled');
   }
 })
+
+$('#free-shipping-plus').popover({
+  html: true,
+  trigger: 'manual',
+  container: '#free-shipping-plus',
+  content: function() {
+    var content = $(this).attr("data-popover-content");
+    return $(content).children(".popover-body").html();
+  },
+  title: function() {
+    var title = $(this).attr("data-popover-content");
+    return $(title).children(".popover-heading").html();
+  }
+});

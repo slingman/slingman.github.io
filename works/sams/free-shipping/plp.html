@@ -76,7 +76,7 @@
         <div class="header-links super-menu">
           <ul class="list-inline list-unstyled">
             <li class="all-dept dropdown">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#">Shop by department <i class="fa fa-chevron-down fa-fw"></i></a>
+              <a data-toggle="dropdown" class="dropdown-toggle disabled" href="#">Shop by department <i class="fa fa-chevron-down fa-fw"></i></a>
               <ul class="dropdown-menu">
                 <li>
                   <a href="#"><i class="fa fa-chevron-right fa-fw pull-right"></i>Electronics</a>
@@ -123,7 +123,7 @@
               </ul>
             </li>
             <li class="business-tools dropdown">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#">Business tools <i class="fa fa-chevron-down fa-fw"></i></a>
+              <a data-toggle="dropdown" class="dropdown-toggle disabled" href="#">Business tools <i class="fa fa-chevron-down fa-fw"></i></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Easy reorder</a></li>
                 <li><a href="#">Lists</a></li>
@@ -209,7 +209,7 @@
               </ul>
             </li>
             <li class="member-services dropdown">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#">Member Services <i class="fa fa-chevron-down fa-fw"></i></a>
+              <a data-toggle="dropdown" class="dropdown-toggle disabled" href="#">Member Services <i class="fa fa-chevron-down fa-fw"></i></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Club Pickup</a></li>
                 <li><a href="#">Travel</a></li>
@@ -224,6 +224,9 @@
             </li>
             <li><a href="#">Shocking Values</a></li>
             <li><a href="#">Instant Savings</a></li>
+            <li class="pull-right" style="background:rgba(74,144,226,0.2); color:#42424; padding:0 25px; cursor:pointer; font-size:14px;" id="get-plus" data-trigger="hover" data-container="body" data-toggle="popover" data-popover-content="#free-shipping-plus-popover" data-placement="auto bottom">
+              Get free shipping on all items. Upgrade to <span class="logo_plus">Plus<sup>+</sup></span>
+            </li>
           </ul>
         </div>
       </div>
@@ -491,7 +494,12 @@
                       <div class="online">
                         <div class="heading">Online and In club</div>
                         <div class="stock">&nbsp;</div>
-                        <div class="status shipping">Free shipping <span class="plus">Plus<sup>+</sup></span></div>
+                        <div class="status shipping upgrade-to-plus dropdown">
+                          Free shipping <a data-toggle="dropdown" class="dropdown-toggle disabled" href="#"><span class="logo_plus">Plus<sup>+</sup></span></a>
+                          <div class="dropdown-menu">
+                            <p>This item will ship for free for Plus members only. <a href="#" title="Upgrade to plus">Upgrade to Plus</a></p>
+                          </div>
+                        </div>
                       </div>
                       <div class="clearfix"></div>
                     </div>
@@ -589,7 +597,12 @@
                       <div class="online">
                         <div class="heading">Online and In club</div>
                         <div class="stock">&nbsp;</div>
-                        <div class="status shipping">Free shipping <span class="plus">Plus<sup>+</sup></span></div>
+                        <div class="status shipping">Free shipping
+                          <span class="logo_plus" id="free-shipping-plus"
+                            data-trigger="hover" data-container="body" data-toggle="popover" data-popover-content="#free-shipping-plus-popover" data-placement="auto bottom">
+                            Plus<sup>+</sup>
+                          </span>
+                        </div>
                       </div>
                       <div class="clearfix"></div>
                     </div>
@@ -687,7 +700,12 @@
                       <div class="online">
                         <div class="heading">Online</div>
                         <div class="stock">In stock</div>
-                        <div class="status shipping">Free shipping <span class="plus">Plus<sup>+</sup></span></div>
+                        <div class="status shipping">Free shipping
+                          <span class="logo_plus" id="free-shipping-plus"
+                            data-trigger="hover" data-container="body" data-toggle="popover" data-popover-content="#free-shipping-plus-popover" data-placement="auto bottom">
+                            Plus<sup>+</sup>
+                          </span>
+                        </div>
                       </div>
                       <div class="in-club">
                         <div class="heading">In club</div>
@@ -1537,13 +1555,22 @@
       </div>
     </footer>
 
-    <!-- Content for your account popover -->
+    <!-- Content for your club popover -->
     <div class="hidden" id="your-club-popover">
       <div class="popover-body">
         <div class="popover-list-wrap">
           <p class="title">Your clubs</p>
            <button type="submit" class="btn btn-primary btn-lg">Sign in</button>
         </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content for Free shipping Plus popover -->
+    <div class="hidden" id="free-shipping-plus-popover">
+      <div class="popover-body">
+        <div class="popover-upgrade-to-plus-wrap">
+          This item will ship for free for Plus members only. <a href="#">Upgrade to <span class="logo_plus">Plus<sup>+</sup></span></a>
         </div>
       </div>
     </div>

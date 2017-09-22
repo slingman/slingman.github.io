@@ -162,6 +162,54 @@ a.btn-secondary {
   width:100%;
 }
 
+/* upgrade to plus membership */
+
+.logo_plus {
+  color:#1977D3;
+  font-weight:900;
+  font-family:"helvetica";
+  font-style:italic;
+  cursor:pointer;
+}
+
+/* Popover - general style for all popovers that maybe on multiple pages across the site */
+
+.popover {
+  max-width:326px;
+  cursor:pointer;
+  color:rgba(66,66,66,0.8);
+  border-radius:2px;
+  font-size:12px;
+  margin:0 auto;
+}
+
+/* dropdown menu */
+
+.dropdown:hover .dropdown-menu,
+.dropdown:hover .sub-menu {
+  display: block;
+  margin:0;
+  border-radius:2px;
+  border: 1px solid rgba(66, 66, 66, .2);
+  background:#fff;
+  min-width:240px;
+  font-size:12px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.upgrade-to-plus.dropdown:hover .dropdown-menu {
+  font-size:12px;
+  color:#424242;
+  padding:12px 20px 1px 20px;
+  width:240px;
+}
+
+.upgrade-to-plus.dropdown:hover .dropdown-menu:after,
+.upgrade-to-plus.dropdown:hover .dropdown-menu:before {
+  
+}
+
 @media (min-width: 320px) {
   .container {
     padding-right:16px;
