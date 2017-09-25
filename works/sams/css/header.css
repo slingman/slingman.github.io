@@ -333,13 +333,25 @@ a.btn.cart span.icon {
 }
 .dropdown-menu .sub-menu dl dd {
   padding-left:8px;
-
   margin-top:5px;
   margin-bottom:5px;
 }
 
 .dropdown-menu li:hover .sub-menu {
   visibility: visible;
+}
+
+.header-get-plus {
+  background:rgba(74,144,226,0.2);
+  color:#424242;
+  padding:0 25px !important;
+  cursor:pointer;
+  font-size:14px;
+}
+
+.header-get-plus .popover a {
+  color:rgba(25, 119, 211, 1);
+  text-decoration:none;
 }
 
 @media (max-width:767px) {
