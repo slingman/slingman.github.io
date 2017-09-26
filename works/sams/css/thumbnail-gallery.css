@@ -21,7 +21,7 @@
 /* arrows */
 #product-thumbnail-carousel .carousel-control {
   width:5%;
-  top:25%;
+  top:18%;
   bottom:0;
   text-shadow:none;
 }
@@ -42,11 +42,11 @@
 #product-thumbnail-carousel .thumbnails-wrap {
   overflow:hidden;
   white-space:nowrap;
-  margin-left:0;
+  margin-left:55px;
 }
 
 #product-thumbnail-carousel .thumbnails-wrap li.product-thumb {
   background:#fff;
   width:90px;
-  padding:12px;
+  float:left;
 }
