@@ -1,3 +1,17 @@
-h1 {
+.item-title-wrap {
+  padding-bottom:18px;
+  border-bottom:1px solid rgba(66,66,66,0.2);
+}
+
+h1.item-title {
   font-family:'aktiv_grotesk',sans-serif;
+}
+
+.item-subtitle {
+  color: rgba(66,66,66,0.6);
+  position:relative;
+}
+
+.rating {
+  margin: 0 0 -11px 1px;
 }
