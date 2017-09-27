@@ -15,3 +15,18 @@ h1.item-title {
 .rating {
   margin: 0 0 -11px 1px;
 }
+
+.image-gallery-wrap {
+  border-bottom:1px solid rgba(66,66,66,0.2);
+  padding-bottom:50px;
+}
+
+.moneybox-wrap {
+  border-left:1px solid rgba(66,66,66,0.2);
+  min-height:550px;
+}
+
+.moneybox-wrap .savings {
+  background:rgba(25,119,211,0.2);
+  padding:25px;
+}
