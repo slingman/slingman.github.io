@@ -21,6 +21,12 @@ h1.item-title {
   padding-bottom:50px;
 }
 
+.image-gallery-wrap .image-gallery {
+  width:640px;
+  margin:0 auto;
+  text-align:center;
+}
+
 .moneybox-wrap {
   border-left:1px solid rgba(66,66,66,0.2);
   min-height:550px;
@@ -37,5 +43,9 @@ h1.item-title {
 
 .moneybox-wrap .savings .title {
   font-weight:500;
-  margin-top:5px;
+  margin-top:8px;
+}
+
+.moneybox-wrap .savings .subtitle {
+  color:rgba(66,66,66,0.8)
 }

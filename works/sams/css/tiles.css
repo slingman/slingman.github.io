@@ -42,6 +42,12 @@ product tiles
   margin-bottom:10px;
 }
 
+.grid_tiles .tile_info .title a,
+.list_tiles .tile_info .title a {
+  text-decoration:none;
+  color:rgba(66,66,66,0.8);
+}
+
 .grid_tiles .promo_msg1,
 .list_tiles .promo_msg1 {
   font-size:14px;
