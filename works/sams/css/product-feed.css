@@ -53,18 +53,7 @@
 
 #product-feed .product-tiles-wrap li.product-tile .flag {
   position:absolute;
-  background:#ec7202;
-  color:#fff;
-  padding:2px 8px;
-  font-family: 'bree_serifregular';
   font-size:12px;
-  font-weight:400;
-  border-radius:4px;
-}
-
-#product-feed .product-tiles-wrap li.product-tile .flag.best-seller,
-#product-feed .product-tiles-wrap li.product-tile .flag.top-rated {
-  background:#009de4;
 }
 
 #product-feed .product-tiles-wrap li.product-tile .img-wrap,

@@ -346,10 +346,10 @@ a.btn.cart span.icon {
   color:#424242;
   padding:0 25px !important;
   cursor:pointer;
-  font-size:14px;
+  font-size:16px;
 }
 
-.header-get-plus .popover a {
+.header-get-plus a {
   color:rgba(25, 119, 211, 1);
   text-decoration:none;
 }

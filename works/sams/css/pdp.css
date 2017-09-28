@@ -30,3 +30,7 @@ h1.item-title {
   background:rgba(25,119,211,0.2);
   padding:25px;
 }
+
+.moneybox-wrap .flag {
+  font-size:14px;
+}

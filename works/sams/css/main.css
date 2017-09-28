@@ -205,9 +205,23 @@ a.btn-secondary {
   width:240px;
 }
 
-.upgrade-to-plus.dropdown:hover .dropdown-menu:after,
-.upgrade-to-plus.dropdown:hover .dropdown-menu:before {
-  
+.flag {
+  background:#ec7202;
+  color:#fff;
+  padding:2px 8px;
+  /*font-family: 'bree_serifregular';*/
+  font-size:14px;
+  font-weight:400;
+  border-radius:2px;
+}
+
+.flag.best-seller,
+.flag.top-rated {
+  background:#009de4;
+}
+
+.flag.tech-savings {
+  background:#2467B2;
 }
 
 @media (min-width: 320px) {
