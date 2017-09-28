@@ -34,3 +34,8 @@ h1.item-title {
 .moneybox-wrap .flag {
   font-size:14px;
 }
+
+.moneybox-wrap .savings .title {
+  font-weight:500;
+  margin-top:5px;
+}

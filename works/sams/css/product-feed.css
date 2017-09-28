@@ -54,6 +54,7 @@
 #product-feed .product-tiles-wrap li.product-tile .flag {
   position:absolute;
   font-size:12px;
+  padding:2px 8px;
 }
 
 #product-feed .product-tiles-wrap li.product-tile .img-wrap,
