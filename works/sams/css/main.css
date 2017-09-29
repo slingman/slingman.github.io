@@ -224,6 +224,49 @@ a.btn-secondary {
   background:#2467B2;
 }
 
+/* animate success */
+
+.svg-success {
+  stroke-width: 2px;
+  stroke: #fff;
+  fill: #8EC343;
+}
+.svg-success path {
+  stroke-dasharray: 17px, 17px;
+  stroke-dashoffset: 0px;
+  -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+  animation: checkmark 0.25s ease-in-out 0.7s backwards;
+}
+.svg-success circle {
+  stroke-dasharray: 76px, 76px;
+  stroke-dashoffset: 0px;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  -webkit-animation: checkmark-circle 0.6s ease-in-out forwards;
+  animation: checkmark-circle 0.6s ease-in-out forwards;
+  stroke: #8EC343;
+}
+
+@keyframes checkmark {
+  0% {
+    stroke-dashoffset: 17px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes checkmark-circle {
+  0% {
+    stroke-dashoffset: 76px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+
+/* /animate success */
+
 @media (min-width: 320px) {
   .container {
     padding-right:16px;

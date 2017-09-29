@@ -1,3 +1,10 @@
+var el = document.querySelector(".svg");
+var elWrapperClone = el.innerHTML;
+document.getElementById("add").addEventListener("click", function() {
+  el.innerHTML = elWrapperClone;
+});
+
+
 $(function(){
   $("[data-toggle=popover]").popover({
     html : true,
