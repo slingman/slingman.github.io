@@ -117,6 +117,16 @@ product tiles
   margin-top:-10px;
 }
 
+.grid_tiles .fulfillment .online,
+.list_tiles .fulfillment .online {
+  width:60%;
+}
+
+.grid_tiles .fulfillment .in-club,
+.list_tiles .fulfillment .in-club {
+  width:40%;
+}
+
 .grid_tiles .fulfillment .online .heading,
 .grid_tiles .fulfillment .in-club .heading,
 .list_tiles .fulfillment .online .heading,

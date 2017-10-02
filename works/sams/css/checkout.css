@@ -15,12 +15,19 @@ header.navbar > .container .navbar-brand  {
   padding:15px 30px;
 }
 
-p {
-  transition:all 1s ease;
-  font-size:12px;
+.selectwrap.existing-address {
+  width:35%;
+  display:inline-block;
 }
 
-p:target {
-    color:red;
-    font-size:40px
+.table.items-list th {
+  border-top:0px solid #eee;
+}
+
+.table .media-left {
+  padding-right:20px;
+}
+
+.table .media-body {
+  width:100%;
 }

@@ -14,6 +14,15 @@ h1 {
   font-size:32px;
 }
 
+h1.aktiv,
+h2.aktiv,
+h3.aktiv,
+h4.aktiv,
+h5.aktiv,
+h6.aktiv {
+  font-family:'aktiv_grotesk';
+}
+
 h2 {
   font-size:24px;
 }
