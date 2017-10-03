@@ -20,6 +20,10 @@ header.navbar > .container .navbar-brand  {
   display:inline-block;
 }
 
+.table.items-list {
+  color:rgba(66,66,66,0.8);
+}
+
 .table.items-list th {
   border-top:0px solid #eee;
 }
