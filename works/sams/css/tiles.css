@@ -3,7 +3,6 @@ product tiles
 - this is only for the styles within the tiles
 - widths of tiles should be handled inside plp.css
 ***********************************************************/
-
 .list_tiles,
 .grid_tiles {
   font-size:14px;

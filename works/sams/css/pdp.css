@@ -32,13 +32,13 @@ h1.item-title {
   min-height:550px;
 }
 
+.moneybox-wrap .flag {
+  font-size:14px;
+}
+
 .moneybox-wrap .savings {
   background:rgba(25,119,211,0.2);
   padding:25px;
-}
-
-.moneybox-wrap .flag {
-  font-size:14px;
 }
 
 .moneybox-wrap .savings .title {
@@ -50,31 +50,39 @@ h1.item-title {
   color:rgba(66,66,66,0.8)
 }
 
-.moneybox-wrap .pricing {
-  margin-top:4px;
+.moneybox-wrap .moneybox {
+  padding:25px;
+}
+
+.moneybox-wrap .moneybox .pricing {
+  margin-top:12px;
   color:rgba(66,66,66,0.8);
   letter-spacing:-1px;
 }
 
-.moneybox-wrap .pricing sup {
+.moneybox-wrap .moneybox .pricing sup {
   padding:0;
   margin:0;
   top:-.82em;
 }
 
-.moneybox-wrap .pricing .sign {
+.moneybox-wrap .moneybox .pricing .sign {
   font-weight:600;
-  font-size:14px;
+  font-size:20px;
 }
 
-.moneybox-wrap .pricing .dollar {
+.moneybox-wrap .moneybox .pricing .dollar {
   font-weight:600;
-  font-size:25px;
+  font-size:32px;
   color:#000;
   letter-spacing:0.011em;
 }
 
-.moneybox-wrap .pricing .cents {
+.moneybox-wrap .moneybox .pricing .cents {
   font-weight:600;
-  font-size:14px;
+  font-size:20px;
+}
+
+.moneybox-wrap .moneybox .fulfillment {
+  margin-bottom:32px;
 }

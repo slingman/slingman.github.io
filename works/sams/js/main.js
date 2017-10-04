@@ -72,3 +72,25 @@ $(".form-group select").change(function() {
 //     return $(title).children(".popover-heading").html();
 //   }
 // });
+
+
+$(document).ready(function(){
+
+  $('.grid_tiles_wrap').each(function() {
+    var $addtocart = $(this);
+
+    $(".a2c-click", $addtocart).click(function(e) {
+      e.preventDefault();
+      $div = $(".a2c-overlay", $addtocart);
+      $div.toggle();
+      $(".a2c-overlay").not($div).hide();
+      return false;
+    });
+
+});
+
+  $('html').click(function(){
+    $(".a2c-overlay").hide();
+  });
+
+});

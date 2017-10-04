@@ -53,13 +53,14 @@ a:hover {
   text-align:center;
   border-radius:2px;
   color:#fff;
+  height:40px;
 }
 
 .btn-lg {
   padding:9px 16px;
   font-size:16px;
   letter-spacing:normal;
-  height:40px;
+
 }
 
 a.btn-primary {
@@ -273,8 +274,54 @@ a.btn-secondary {
   }
 }
 
-
 /* /animate success */
+
+/* popover - add to list */
+
+.popover .popover-add-to-list-wrap {
+  padding:5px 2px; /* this adds to 16px around all sides of the popover */
+  width:100%;
+}
+
+.popover .popover-add-to-list-wrap .title {
+  font-size:16px;
+  color:#424242;
+  font-weight:400;
+}
+
+.popover .popover-add-to-list-wrap ul {
+  border-bottom:1px solid rgba(66, 66, 66, 0.2);
+  padding-bottom:6px;
+  overflow:auto;
+  max-height:200px;
+}
+
+.popover .popover-add-to-list-wrap li {
+  padding-bottom:6px;
+}
+
+.popover .popover-add-to-list-wrap .form-group {
+  white-space: nowrap;
+}
+
+/* popover - more clubs */
+
+.popover .popover-more-clubs-wrap {
+  padding:7px 2px; /* this adds to 16px around all sides of the popover */
+  width:100%;
+  max-height:300px;
+  overflow-y:auto;
+}
+
+.popover .popover-more-clubs-wrap li {
+  padding-bottom:8px;
+}
+
+.popover .popover-more-clubs-wrap .club-info .club-name,
+.popover .popover-more-clubs-wrap .more-club-info .availability {
+  font-weight:500;
+  color:#424242;
+}
 
 @media (min-width: 320px) {
   .container {
