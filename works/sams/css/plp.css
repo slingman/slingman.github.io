@@ -75,7 +75,7 @@
   font-weight:400;
 }
 
-@media (min-width: 1364px) {
+@media (min-width: 1200px) {
   .sidebar {
     position: absolute;
     top: 358px;
@@ -100,7 +100,7 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1363px) {
+@media (min-width: 1024px) and (max-width: 1200px) {
   .sidebar {
     position: absolute;
     top: 358px;

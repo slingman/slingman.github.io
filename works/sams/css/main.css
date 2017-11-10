@@ -90,6 +90,10 @@ a.btn-secondary {
   color:#4ca90c;
 }
 
+.btn-secondary.btn-sm {
+  height:30px;
+}
+
 .btn-secondary:hover {
   background:rgba(76, 169, 12, .1);
   color:#4ca90c;
