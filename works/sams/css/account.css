@@ -1,0 +1,152 @@
+
+body > .container {
+  min-height:960px;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+  background:#fff;
+  position:absolute;
+  top: 202px;
+  bottom: 0;
+  left: auto;
+  z-index: 1000;
+  display: block;
+  /*border-right: 1px solid rgba(66, 66, 66, 0.2);*/
+}
+
+.sidebar .title {
+  background:#f6f6f6;
+  height:48px;
+  line-height: 32px;
+  font-weight:500;
+  border-bottom:0;
+  padding-top:8px;
+}
+
+.sidebar .section-title {
+  font-weight:500;
+  color:rgba(66, 66, 66, 1);
+  border:0;
+  padding-top:16px;
+}
+
+.sidebar .section-title a {
+  display:inline;
+  padding:0;
+}
+
+.sidebar .sams-credit-card,
+.sidebar .help-contact {
+  padding-top:16px;
+  max-width:190px;
+}
+
+.sidebar .help-contact {
+  text-align:center;
+  color:rgba(66,66,66,.6);
+}
+
+/* toggle chevron up and down */
+.sidebar .section-title a[aria-expanded=true] .fa-chevron-down {
+   display: none;
+}
+.sidebar .section-title a[aria-expanded=false] .fa-chevron-up {
+   display: none;
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-left: -20px;
+  font-weight:300;
+}
+
+.sidebar .separator {
+  border-bottom:1px solid rgba(66, 66, 66, 0.2);
+  padding-top:16px;
+  margin-left:-20px;
+  margin-right:-21px
+}
+
+.nav-sidebar > li {
+  margin:16px;
+  margin-right:0;
+}
+
+.nav-sidebar > li a,
+.nav-sidebar > li a:hover,
+.nav-sidebar > li a:focus {
+  padding:0;
+  background:none;
+  font-weight:400;
+}
+
+.nav-sidebar > li a {
+  color:rgba(66,66,66,.8);
+}
+
+.nav-sidebar > li a:hover,
+.nav-sidebar > li a:focus {
+  color:rgba(25, 119, 211, 1);
+}
+
+/* Main */
+
+.main {
+  margin-top:32px;
+}
+
+
+/* Media query */
+@media (min-width: 1200px) {
+  .sidebar {
+    padding: 0 20px 32px 32px;
+    min-width:241px;  /* change this for width of sidebar -- 241 = 4 tiles per row; 271 = 3 tiles per row*/
+  }
+
+  .sidebar .title,
+  .nav-sidebar > li {
+    padding-left:20px;
+  }
+
+  .sidebar .title span {
+    margin-right:20px;
+  }
+  .main {
+    margin-left:244px;  /* change this to match the width of sidebar  -- 244 = 4 tiles per row; 274 = 3 tiles per row */
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .sidebar {
+    padding: 20px;
+    padding-top:0;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+    min-width:223px;
+  }
+
+  .sidebar .title,
+  .nav-sidebar > li {
+    padding-left:20px;
+  }
+
+  .sidebar .title span {
+    margin-right:18px;
+  }
+
+  .main {
+    margin-left:226px;
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+  .main {
+    margin-left:0;
+  }
