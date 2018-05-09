@@ -3,9 +3,7 @@ body > .container {
   min-height:960px;
 }
 
-/*
- * Sidebar
- */
+/** Sidebar **/
 
 /* Hide for mobile, show later */
 .sidebar {
@@ -164,7 +162,7 @@ body > .container {
 .main #add-comp .well.flyout-form:before,
 .main #add-add-on .well.flyout-form:after,
 .main #add-add-on .well.flyout-form:before {
-  left:15%;
+  left:12.5%;
 }
 
 .main .form-group-title {
