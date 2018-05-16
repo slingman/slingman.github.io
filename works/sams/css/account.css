@@ -3,24 +3,13 @@ body > .container {
   min-height:960px;
 }
 
-.navbar-form.search-form .has-feedback label.sr-only~.form-control-feedback {
-  position:absolute;
-  right:0;
-  left:440px;
-}
-
 /** Sidebar **/
 
 /* Hide for mobile, show later */
 .sidebar {
   display: none;
   background:#fff;
-  position:absolute;
-  top: 202px;
-  bottom: 0;
-  left: auto;
-  z-index: 1000;
-  display: block;
+
   /*border-right: 1px solid rgba(66, 66, 66, 0.2);*/
 }
 
@@ -115,6 +104,21 @@ body > .container {
   margin-top:32px;
   padding-left:32px;
   position:relative;
+  color:#424242;
+  font-weight:300;
+  font-size:14px;
+}
+
+.main .page-subtitle {
+  padding-top:16px;
+  font-size:16px;
+  font-weight:400;
+  color:rgba(66,66,66,.8);
+}
+
+.main .page-block {
+  padding:16px;
+  border:1px solid rgba(66,66,66,0.4);
 }
 
 .main .add,
@@ -189,13 +193,31 @@ body > .container {
 }
 
 /* Media query */
-@media (min-width: 1364px) {
+
+
+@media (max-width: 1364px) {
   .container {
     max-width:1140px;
   }
 
+  .navbar-form.search-form .form-control {
+    min-width:440px;
+  }
+
+  .navbar-form.search-form .has-feedback label.sr-only~.form-control-feedback {
+    position:absolute;
+    right:0;
+    left:91%;
+  }
+
   .sidebar {
     max-width:200px;  /* change this for width of sidebar -- 241 = 4 tiles per row; 271 = 3 tiles per row*/
+    position:absolute;
+    top: 195px;
+    bottom: 0;
+    left: auto;
+    z-index: 1000;
+    display: block;
   }
 
   .sidebar .title,
@@ -208,5 +230,31 @@ body > .container {
   }
   .main {
     margin-left:190px;  /* change this to match the width of sidebar  -- 244 = 4 tiles per row; 274 = 3 tiles per row */
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .navbar-form.search-form .form-control {
+    width:400px;
+  }
+
+  .navbar-form.search-form .has-feedback label.sr-only~.form-control-feedback {
+    position:absolute;
+    right:0;
+    left:380px;
+  }
+
+  .sidebar {
+    top:72px;
+  }
+}
+
+@media (max-width:768px) {
+  .sidebar {
+    display:none;
+  }
+  .main {
+    margin-left:-32px;
   }
 }
