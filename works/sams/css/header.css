@@ -496,6 +496,6 @@ a.btn.cart span.icon {
 
  @media (min-width: 1130px) {
    .navbar-form.search-form .form-control {
-     width:520px;
+     width:480px;
    }
  }

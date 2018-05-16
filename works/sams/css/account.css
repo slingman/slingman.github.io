@@ -3,6 +3,12 @@ body > .container {
   min-height:960px;
 }
 
+.navbar-form.search-form .has-feedback label.sr-only~.form-control-feedback {
+  position:absolute;
+  right:0;
+  left:440px;
+}
+
 /** Sidebar **/
 
 /* Hide for mobile, show later */
@@ -25,6 +31,15 @@ body > .container {
   font-weight:500;
   border-bottom:0;
   padding-top:8px;
+}
+
+.sidebar .title,
+.nav-sidebar > li {
+  padding-left:20px;
+}
+
+.sidebar .title span {
+  margin-right:18px;
 }
 
 .sidebar .section-title {
@@ -99,6 +114,7 @@ body > .container {
 .main {
   margin-top:32px;
   padding-left:32px;
+  position:relative;
 }
 
 .main .add,
@@ -173,10 +189,13 @@ body > .container {
 }
 
 /* Media query */
-@media (min-width: 1200px) {
+@media (min-width: 1364px) {
+  .container {
+    max-width:1140px;
+  }
+
   .sidebar {
-    padding: 0 20px 32px 32px;
-    min-width:241px;  /* change this for width of sidebar -- 241 = 4 tiles per row; 271 = 3 tiles per row*/
+    max-width:200px;  /* change this for width of sidebar -- 241 = 4 tiles per row; 271 = 3 tiles per row*/
   }
 
   .sidebar .title,
@@ -188,34 +207,6 @@ body > .container {
     margin-right:20px;
   }
   .main {
-    margin-left:244px;  /* change this to match the width of sidebar  -- 244 = 4 tiles per row; 274 = 3 tiles per row */
+    margin-left:190px;  /* change this to match the width of sidebar  -- 244 = 4 tiles per row; 274 = 3 tiles per row */
   }
 }
-
-@media (min-width: 1024px) and (max-width: 1200px) {
-  .sidebar {
-    padding: 20px;
-    padding-top:0;
-    /* overflow-x: hidden;
-    overflow-y: hidden; */
-    min-width:223px;
-  }
-
-  .sidebar .title,
-  .nav-sidebar > li {
-    padding-left:20px;
-  }
-
-  .sidebar .title span {
-    margin-right:18px;
-  }
-
-  .main {
-    margin-left:226px;
-  }
-}
-
-@media (min-width:768px) and (max-width:1023px) {
-  .main {
-    margin-left:0;
-  }

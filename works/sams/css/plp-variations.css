@@ -1,0 +1,51 @@
+
+
+
+
+
+/** Changes specific to making the width 1140px **/
+.navbar-form.search-form .form-control {
+  width:540px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    min-width:984px;
+    padding-right:20px;
+    padding-left:20px;
+  }
+
+  body > .container {
+    min-height:640px;
+  }
+
+  .navbar-form.search-form .form-control {
+    width:500px;
+  }
+
+ }
+
+@media (min-width: 1364px) {
+
+  .container {
+    max-width:1140px;
+  }
+
+  .cards ul > li {
+    /*width:25%; ---  4 tiles per row */
+    width:33.33% /* --- 3 tiles per row */
+  }
+
+  .grid_tiles {
+    min-height:450px;
+    width:100%;
+    margin:0 auto;
+    padding:16px;
+  }
+
+  .grid_tiles .img-responsive {
+    width:180px;
+    height:180px;
+  }
+
+}
