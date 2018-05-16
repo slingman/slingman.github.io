@@ -5,10 +5,12 @@ body > .container {
 
 /** Sidebar **/
 
-/* Hide for mobile, show later */
 .sidebar {
-  display: none;
-  background:#fff;
+ display:none;
+}
+
+/* Hide for mobile, show later */
+
 
   /*border-right: 1px solid rgba(66, 66, 66, 0.2);*/
 }
@@ -195,7 +197,7 @@ body > .container {
 /* Media query */
 
 
-@media (max-width: 1364px) {
+@media (min-width: 769px) {
   .container {
     max-width:1140px;
   }

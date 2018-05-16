@@ -4,9 +4,7 @@
 
 
 /** Changes specific to making the width 1140px **/
-.navbar-form.search-form .form-control {
-  width:540px;
-}
+
 
 @media (min-width: 1024px) {
   .container {
@@ -19,9 +17,6 @@
     min-height:640px;
   }
 
-  .navbar-form.search-form .form-control {
-    width:500px;
-  }
 
  }
 
