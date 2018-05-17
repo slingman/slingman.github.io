@@ -202,15 +202,8 @@ body > .container {
     max-width:1140px;
   }
 
-  .navbar-form.search-form .form-control {
-    min-width:440px;
-  }
 
-  .navbar-form.search-form .has-feedback label.sr-only~.form-control-feedback {
-    position:absolute;
-    right:0;
-    left:91%;
-  }
+
 
   .sidebar {
     max-width:200px;  /* change this for width of sidebar -- 241 = 4 tiles per row; 271 = 3 tiles per row*/
@@ -236,16 +229,6 @@ body > .container {
 }
 
 @media (max-width: 1024px) {
-
-  .navbar-form.search-form .form-control {
-    width:400px;
-  }
-
-  .navbar-form.search-form .has-feedback label.sr-only~.form-control-feedback {
-    position:absolute;
-    right:0;
-    left:380px;
-  }
 
   .sidebar {
     top:72px;
