@@ -42,6 +42,7 @@ a:focus,
 a:active {
   color:rgba(25, 119, 211, 1);
   text-decoration:none;
+  font-weight:500;
 }
 
 a:hover {

@@ -59,7 +59,7 @@
     src: url('dalton_maag_-_aktiv_grotesk_medium-webfont.woff2') format('woff2'),
          url('dalton_maag_-_aktiv_grotesk_medium-webfont.woff') format('woff'),
          url('dalton_maag_-_aktiv_grotesk_medium-webfont.ttf') format('truetype');
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
 
 }

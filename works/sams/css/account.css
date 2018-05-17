@@ -202,9 +202,6 @@ body > .container {
     max-width:1140px;
   }
 
-
-
-
   .sidebar {
     max-width:200px;  /* change this for width of sidebar -- 241 = 4 tiles per row; 271 = 3 tiles per row*/
     position:absolute;
