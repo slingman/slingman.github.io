@@ -115,7 +115,7 @@ body > .container {
   padding-top:16px;
   font-size:16px;
   font-weight:400;
-  color:rgba(66,66,66,.8);
+  color:rgba(66,66,66,1);
 }
 
 .main .page-block {
@@ -123,6 +123,17 @@ body > .container {
   border:1px solid rgba(66,66,66,0.4);
 }
 
+.main .page-block .line-title {
+  font-weight:400;
+}
+
+.main .progress {
+  height:10px;
+}
+
+.main .progress-bar-success {
+  background:#4CA90C;
+}
 .main .add,
 .main .added {
   border:1px solid rgba(66, 66, 66, .6);
