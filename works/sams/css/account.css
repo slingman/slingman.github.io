@@ -134,6 +134,12 @@ body > .container {
 .main .progress-bar-success {
   background:#4CA90C;
 }
+
+.main .progress-bar-data {
+  font-size:12px;
+  margin-top:-10px;
+}
+
 .main .add,
 .main .added {
   border:1px solid rgba(66, 66, 66, .6);
