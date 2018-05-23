@@ -122,6 +122,17 @@ body > .container {
   border-bottom:1px solid rgba(66,66,66,.2);
 }
 
+.main .dropdown-menu {
+  padding:16px;
+  max-width:200px;
+}
+
+.main .tax.dropdown:hover .dropdown-menu:after,
+.main .tax.dropdown:hover .dropdown-menu:before {
+  left:33%;
+}
+
+.main
 .main .page-block {
   padding:16px;
   border:1px solid rgba(66,66,66,0.4);
@@ -205,7 +216,7 @@ body > .container {
 .main #add-comp .well.flyout-form:before,
 .main #add-add-on .well.flyout-form:after,
 .main #add-add-on .well.flyout-form:before {
-  left:12.5%;
+  left:3%;
 }
 
 .main .form-group-title {

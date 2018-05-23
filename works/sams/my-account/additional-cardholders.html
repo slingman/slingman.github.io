@@ -340,16 +340,62 @@
           <h2>Additional cardholders</h2>
           <br>
           <h4 class="aktiv">Complimentary membership</h4>
-          <p>Include up to 8 extra memberships for $45 each</p>
+          <p>Free for a family member or friend 18 years and older</p>
           <div class="row">
             <div class="col-xs-12">
-              <div class="add" data-toggle="collapse" data-target="#add-add-on" aria-expanded="false" aria-controls="add-add-on">
+              <a data-toggle="collapse" data-target="#add-comp" aria-expanded="false" aria-controls="add-comp">
                 <i class="fa fa-plus-circle"></i> Add
+              </a>
+            </div>
+          </div>
+
+          <!-- add complimentary member -->
+          <div class="collapse" id="add-comp">
+            <div class="well flyout-form">
+              <div class="row">
+                <div class="col-xs-12 col-md-6">
+                  <p class="form-group-title">Add a complimentary membership</p>
+                  <div class="form-group">
+                    <input type="text" id="firstname" />
+                    <label for="firstname">First name</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" id="lastname" />
+                    <label for="lastname">Last name</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" id="email" />
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" id="phone" />
+                    <label for="phone">Phone number</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-md-6">
+                  <div class="actions text-right">
+                    <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target="#add-comp" aria-expanded="false" aria-controls="add-comp">Cancel</button>
+                    <a href="#" role="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#add-comp" aria-expanded="false" aria-controls="add-comp">Save</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- add add-on member -->
+          <br>
+          <h4 class="aktiv">Add-on membership</h4>
+          <p>Include up to 16 extra memberships for $45 each</p>
+          <div class="row">
+            <div class="col-xs-12">
+              <a data-toggle="collapse" data-target="#add-add-on" aria-expanded="false" aria-controls="add-add-on">
+                <i class="fa fa-plus-circle"></i> Add
+              </a>
+            </div>
+          </div>
+
+          <!-- add complimentary member -->
           <div class="collapse" id="add-add-on">
             <div class="well flyout-form">
               <div class="row">
@@ -367,18 +413,23 @@
                     <input type="text" id="email" />
                     <label for="email">Email</label>
                   </div>
+                  <div class="form-group">
+                    <input type="text" id="phone" />
+                    <label for="phone">Phone number</label>
+                  </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-xs-12 col-md-6">
                   <div class="actions text-right">
-                    <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target="#add-add-on" aria-expanded="false" aria-controls="add-comp">Cancel</button>
-                    <a href="additional_cardholders_no_comp_added_add-on.html" role="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#add-comp" aria-expanded="false" aria-controls="add-comp">Save</a>
+                    <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target="#add-add-on" aria-expanded="false" aria-controls="add-add-on">Cancel</button>
+                    <a href="#" role="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#add-add-on" aria-expanded="false" aria-controls="add-add-on">Save</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
