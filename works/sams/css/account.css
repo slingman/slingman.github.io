@@ -118,6 +118,10 @@ body > .container {
   color:rgba(66,66,66,1);
 }
 
+.main .page-subtitle.lined {
+  border-bottom:1px solid rgba(66,66,66,.2);
+}
+
 .main .page-block {
   padding:16px;
   border:1px solid rgba(66,66,66,0.4);
