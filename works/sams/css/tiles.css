@@ -118,12 +118,12 @@ product tiles
 
 .grid_tiles .fulfillment .online,
 .list_tiles .fulfillment .online {
-  width:60%;
+  width:55%;
 }
 
 .grid_tiles .fulfillment .in-club,
 .list_tiles .fulfillment .in-club {
-  width:40%;
+  width:45%;
 }
 
 .grid_tiles .fulfillment .online .heading,
