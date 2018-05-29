@@ -18,6 +18,17 @@ product tiles
   max-width:100%;
 }
 
+.grid_tiles .flag {
+  position:absolute;
+  font-size:12px;
+  padding:2px 8px;
+  background:rgab(66,66,66,1);
+  color:#fff;
+}
+
+.grid_tiles .flag.best-seller {
+  background:#009de4;
+}
 .grid_tiles .img_wrap {
   margin:0 auto 8px auto;
   text-align:center;
