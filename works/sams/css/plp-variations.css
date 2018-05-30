@@ -1,10 +1,27 @@
 
+.nav-tabs {
+  border-bottom:none;
+}
 
+.nav-tabs li > a,
+.nav-tabs li > a:hover,
+.nav-tabs li > a:focus {
+  background:transparent;
+  border:none;
+  padding:13px 10px 6px 10px;
+  margin-right:12px;
+}
 
+.nav-tabs li.active > a,
+.nav-tabs li.active > a:hover,
+.nav-tabs li.active > a:focus {
+  border:none;
+  border-bottom:3px solid #1977d3;
+  background-color:transparent;
+}
 
 
 /** Changes specific to making the width 1140px **/
-
 
 @media (min-width: 1140px) {
   .container {
@@ -16,8 +33,6 @@
   body > .container {
     min-height:640px;
   }
-
-
  }
 
 @media (min-width: 1364px) {

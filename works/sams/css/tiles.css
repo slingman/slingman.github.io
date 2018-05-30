@@ -20,7 +20,8 @@ product tiles
 
 .grid_tiles .flag {
   position:absolute;
-  font-size:12px;
+  font-size:14px;
+  font-weight:bold;
   padding:2px 8px;
   background:rgab(66,66,66,1);
   color:#fff;
@@ -29,6 +30,11 @@ product tiles
 .grid_tiles .flag.best-seller {
   background:#009de4;
 }
+
+.grid_tiles .flag.shocking-values {
+  background:#ec7202;
+}
+
 .grid_tiles .img_wrap {
   margin:0 auto 8px auto;
   text-align:center;
