@@ -35,6 +35,10 @@ product tiles
   background:#ec7202;
 }
 
+.grid_tiles .flag.new-lower-price {
+  background:#009de4;
+}
+
 .grid_tiles .img_wrap {
   margin:0 auto 8px auto;
   text-align:center;
