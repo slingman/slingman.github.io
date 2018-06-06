@@ -39,6 +39,10 @@ product tiles
   background:#009de4;
 }
 
+.grid_tiles .flag.instant-savings {
+  background:#ec0439;
+}
+
 .grid_tiles .img_wrap {
   margin:0 auto 8px auto;
   text-align:center;
