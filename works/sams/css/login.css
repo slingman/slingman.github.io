@@ -1,9 +1,11 @@
 .navbar-nav .back-wrap {
   position:relative;
+  width:120px;
 }
 
 .navbar-nav .back-wrap .back-link {
-  position:absolute; top:15px; left:0;
+  position:absolute;
+  top:15px; left:0;
 }
 
 .navbar-brand {
@@ -228,5 +230,9 @@
 .title-help-text {
   font-weight:normal;
   font-size:14px;
-  color:rgba(66,66,66,0.6)
+  color:rgba(66,66,66,0.8)
+}
+
+.help-text {
+  padding-top:5px;
 }
