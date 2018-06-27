@@ -1,0 +1,216 @@
+
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  margin-left: -71px !important;  /* 50% of your logo width */
+  display: block;
+}
+
+.main-form-title {
+  margin-top:20px;
+  margin-bottom:30px;
+  font-size:20px;
+  font-weight:400;
+}
+
+.main-form .step-title.current .fa,
+.main-form .step-title.current .fa-stack-1x {
+  color:rgba(76, 169, 12, 1);
+}
+
+.main-form .step-title.completed .fa {
+  color:rgba(76, 169, 12, 1);
+}
+
+.main-form .step-title.completed .fa-stack-1x {
+  color:#fff;
+}
+
+.main-form .step-title.completed .text {
+  color:rgba(66, 66, 66, .4);
+}
+
+.main-form .step-content.completed {
+  margin-top:10px;
+  margin-bottom:25px;
+  opacity:0.7;
+}
+
+.main-form .step-content.completed address {
+  font-size:12px;
+}
+
+.main-form .step-subtitle {
+  font-size:17px;
+  padding-top:5px;
+  padding-bottom:3px;
+  margin-bottom:20px;
+  border-bottom:1px solid rgba(66, 66, 66, .6);
+}
+
+.main-form .add,
+.main-form .added {
+  border:1px solid rgba(66, 66, 66, .6);
+  padding:58px;
+  text-align:center;
+  white-space:nowrap;
+  max-width:240px;
+  height:140px;
+  cursor:pointer;
+}
+
+.main-form .add:hover {
+  border:1px solid rgba(25, 119, 211, 1);
+  color:rgba(25, 119, 211, 1);
+}
+
+.main-form .added {
+  position:relative;
+  text-align:left;
+  padding:20px;
+}
+
+.main-form .added .action {
+  position:absolute;
+  bottom:0;
+  right:20px;
+}
+
+.main-form .main-form-action {
+  margin-top:25px;
+  margin-bottom:50px;
+}
+
+.main-form.step-0 .radio-inline {
+  padding-right:120px;
+}
+
+.main-form .checkbox.age {
+  margin-top:-10px;
+}
+
+.main-form .credit-card-slash {
+  padding-top:7px;
+  padding-left:10px;
+  font-size:20px;
+}
+
+.main-form .stepper-spacing {
+  padding-left:60px;
+}
+
+@media (max-width:991px) {
+  .main-form .stepper-spacing {
+    padding-left:15px;
+  }
+ }
+
+.main-form .collapse,
+.main-form .collapsing,
+.main-form .collapse.in {
+  margin-top:16px;
+}
+
+.main-form .well.flyout-form {
+	position: relative;
+	background: #ffffff;
+	border: 1px solid rgba(66, 66, 66, .2);
+  box-shadow:none;
+  padding-top:32px;
+}
+
+.main-form .well.flyout-form:after,
+.main-form .well.flyout-form:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.main-form .well.flyout-form:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #ffffff;
+	border-width: 12px;
+	margin-left: -12px;
+}
+
+.main-form .well.flyout-form:before {
+	border-color: rgba(66, 66, 66, 0);
+	border-bottom-color: rgba(66, 66, 66, .2);
+	border-width: 13px;
+	margin-left: -13px;
+}
+
+.main-form #add-comp .well.flyout-form:after,
+.main-form #add-comp .well.flyout-form:before,
+.main-form #add-add-on .well.flyout-form:after,
+.main-form #add-add-on .well.flyout-form:before {
+  left:15%;
+}
+
+.main-form .form-group-title {
+  margin-top:18px;
+  margin-bottom:18px;
+  font-weight:500;
+}
+
+.main-form .form-group-title.gift-cards,
+.main-form .form-group-title.auto-renew {
+  padding-top:20px;
+  border-top:2px solid rgba(66, 66, 66, .3);
+  margin-top:20px;
+}
+
+.main-form .form-group-subtitle {
+  margin-bottom:18px;
+  font-weight:400;
+  font-size:12px;
+}
+
+.main-form .entered-address {
+  font-weight:500;
+  font-size:12px;
+  padding-left: 28px;
+}
+
+.main-form .flyout-form .form-group-title {
+  margin-top:0;
+}
+
+.keep-signed-in {
+  margin-top:16px;
+}
+
+.keep-signed-in .col-xs-2 {
+  margin-top:10px;
+}
+
+.forgot-help {
+  margin:0;
+  padding:20px 0;
+}
+
+.section-separator > .container {
+  width:100%;
+  padding:0;
+}
+
+.section-separator > .container .section-separator-line {
+  background:#eee;
+  height:10px;
+}
+
+.login-section {
+  padding:16px 0;
+  border-bottom:1px solid rgba(66,66,66,0.2);
+}
+
+.login-section .title {
+  font-weight:500;
+  font-size:16px;
+}
