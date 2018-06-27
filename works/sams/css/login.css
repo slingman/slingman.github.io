@@ -1,4 +1,10 @@
+.navbar-nav .back-wrap {
+  position:relative;
+}
 
+.navbar-nav .back-wrap .back-link {
+  position:absolute; top:15px; left:0;
+}
 
 .navbar-brand {
   position: absolute;
@@ -192,7 +198,11 @@
 
 .forgot-help {
   margin:0;
-  padding:20px 0;
+  padding:10px 0;
+}
+
+.keep-signed-in {
+  margin:20px 0 0 0;
 }
 
 .section-separator > .container {
@@ -203,6 +213,7 @@
 .section-separator > .container .section-separator-line {
   background:#eee;
   height:10px;
+  margin:30px 0 10px 0;
 }
 
 .login-section {
@@ -212,5 +223,10 @@
 
 .login-section .title {
   font-weight:500;
-  font-size:16px;
+}
+
+.title-help-text {
+  font-weight:normal;
+  font-size:14px;
+  color:rgba(66,66,66,0.6)
 }
