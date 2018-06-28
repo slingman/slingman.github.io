@@ -22,69 +22,6 @@
   font-weight:400;
 }
 
-.main-form .step-title.current .fa,
-.main-form .step-title.current .fa-stack-1x {
-  color:rgba(76, 169, 12, 1);
-}
-
-.main-form .step-title.completed .fa {
-  color:rgba(76, 169, 12, 1);
-}
-
-.main-form .step-title.completed .fa-stack-1x {
-  color:#fff;
-}
-
-.main-form .step-title.completed .text {
-  color:rgba(66, 66, 66, .4);
-}
-
-.main-form .step-content.completed {
-  margin-top:10px;
-  margin-bottom:25px;
-  opacity:0.7;
-}
-
-.main-form .step-content.completed address {
-  font-size:12px;
-}
-
-.main-form .step-subtitle {
-  font-size:17px;
-  padding-top:5px;
-  padding-bottom:3px;
-  margin-bottom:20px;
-  border-bottom:1px solid rgba(66, 66, 66, .6);
-}
-
-.main-form .add,
-.main-form .added {
-  border:1px solid rgba(66, 66, 66, .6);
-  padding:58px;
-  text-align:center;
-  white-space:nowrap;
-  max-width:240px;
-  height:140px;
-  cursor:pointer;
-}
-
-.main-form .add:hover {
-  border:1px solid rgba(25, 119, 211, 1);
-  color:rgba(25, 119, 211, 1);
-}
-
-.main-form .added {
-  position:relative;
-  text-align:left;
-  padding:20px;
-}
-
-.main-form .added .action {
-  position:absolute;
-  bottom:0;
-  right:20px;
-}
-
 .main-form .main-form-action {
   margin-top:25px;
   margin-bottom:50px;
@@ -102,12 +39,6 @@
   padding-top:7px;
   padding-left:10px;
   font-size:20px;
-}
-
-.main-form .collapse,
-.main-form .collapsing,
-.main-form .collapse.in {
-  margin-top:16px;
 }
 
 .main-form .well.flyout-form {
@@ -225,6 +156,32 @@
 
 .help-text {
   padding-top:5px;
+}
+
+.field-icon {
+  float: right;
+  right:5px;
+  margin-top: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.hide-show {
+	float:right;
+	position: relative;
+	z-index: 5;
+	display: none;
+}
+
+.hide-show span {
+  font-size:12px;
+  font-weight:normal;
+  color:#fff;
+  background:#ccc;
+  padding:1px 5px;
+  margin: .8em;
+  float: right;
+  cursor: pointer;
 }
 
 /* body margins left and right are 8px until 480px */
