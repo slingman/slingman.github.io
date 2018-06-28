@@ -104,16 +104,6 @@
   font-size:20px;
 }
 
-.main-form .stepper-spacing {
-  padding-left:60px;
-}
-
-@media (max-width:991px) {
-  .main-form .stepper-spacing {
-    padding-left:15px;
-  }
- }
-
 .main-form .collapse,
 .main-form .collapsing,
 .main-form .collapse.in {
