@@ -161,6 +161,23 @@ a.btn-secondary {
 .help-block.with-errors {
   color:#eb0d00;
 }
+
+.well {
+  border-radius:2px;
+  border:0;
+  border:none;
+  color:rgba(66,66,66,1);
+  padding:12px 12px 4px 4px;
+}
+
+.well.page-error {
+  background:rgba(235,13,0,0.2);
+}
+
+.well.page-error .fa {
+  color:#EB0D00;
+}
+
 /*** No-Gutter Grid ***/
 
 .row.no-gutters {

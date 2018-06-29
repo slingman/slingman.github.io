@@ -27,84 +27,16 @@
   margin-bottom:50px;
 }
 
-.main-form.step-0 .radio-inline {
-  padding-right:120px;
-}
-
-.main-form .checkbox.age {
-  margin-top:-10px;
-}
-
-.main-form .credit-card-slash {
-  padding-top:7px;
-  padding-left:10px;
-  font-size:20px;
-}
-
-.main-form .well.flyout-form {
-	position: relative;
-	background: #ffffff;
-	border: 1px solid rgba(66, 66, 66, .2);
-  box-shadow:none;
-  padding-top:32px;
-}
-
-.main-form .well.flyout-form:after,
-.main-form .well.flyout-form:before {
-	bottom: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
-
-.main-form .well.flyout-form:after {
-	border-color: rgba(255, 255, 255, 0);
-	border-bottom-color: #ffffff;
-	border-width: 12px;
-	margin-left: -12px;
-}
-
-.main-form .well.flyout-form:before {
-	border-color: rgba(66, 66, 66, 0);
-	border-bottom-color: rgba(66, 66, 66, .2);
-	border-width: 13px;
-	margin-left: -13px;
-}
-
-.main-form #add-comp .well.flyout-form:after,
-.main-form #add-comp .well.flyout-form:before,
-.main-form #add-add-on .well.flyout-form:after,
-.main-form #add-add-on .well.flyout-form:before {
-  left:15%;
-}
-
 .main-form .form-group-title {
   margin-top:18px;
   margin-bottom:18px;
   font-weight:500;
 }
 
-.main-form .form-group-title.gift-cards,
-.main-form .form-group-title.auto-renew {
-  padding-top:20px;
-  border-top:2px solid rgba(66, 66, 66, .3);
-  margin-top:20px;
-}
-
 .main-form .form-group-subtitle {
   margin-bottom:18px;
   font-weight:400;
   font-size:12px;
-}
-
-.main-form .entered-address {
-  font-weight:500;
-  font-size:12px;
-  padding-left: 28px;
 }
 
 .main-form .flyout-form .form-group-title {
