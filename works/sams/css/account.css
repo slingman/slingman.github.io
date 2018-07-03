@@ -141,6 +141,18 @@ body > .container {
   font-weight:400;
 }
 
+.main .page-block.summary .mem_id {
+  font-size:18px;
+}
+
+.main .page-block.summary .date-etc {
+
+}
+
+.main .page-block.summary .renew-actions .help-text {
+  font-size:12px;
+}
+
 .main .progress {
   height:10px;
 }
@@ -273,6 +285,7 @@ body > .container {
   .sidebar {
     top:72px;
   }
+
 }
 
 @media (max-width:768px) {
@@ -281,5 +294,15 @@ body > .container {
   }
   .main {
     margin-left:-32px;
+  }
+  .main .page-block.summary .dates-etc {
+    margin-top:16px;
+  }
+
+}
+
+@media (max-width:480px) {
+  .renew-actions .btn {
+    width:100%;
   }
 }
