@@ -149,7 +149,7 @@ body > .container {
 
 }
 
-.main .page-block.summary .renew-actions .help-text {
+.main .page-block .help-text {
   font-size:12px;
 }
 
@@ -304,5 +304,11 @@ body > .container {
 @media (max-width:480px) {
   .renew-actions .btn {
     width:100%;
+  }
+  .renew-actions .btn.auto-renew {
+    width:50%;
+  }
+  .renew-actions .btn.upgrade {
+    width:50%;
   }
 }
