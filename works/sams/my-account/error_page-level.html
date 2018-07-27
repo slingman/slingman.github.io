@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sam's Club - Account - Summary</title>
+    <title>Sam's Club - Account - page level error</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="../css/header.css">
     <link rel="stylesheet" type="text/css" href="../css/tiles.css">
     <link rel="stylesheet" type="text/css" href="../css/star-ratings.css">
+    <link rel="stylesheet" type="text/css" href="../css/floating-labels.css">
     <link rel="stylesheet" type="text/css" href="../css/account.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <link rel="shortcut icon" href="../images/favicon.png">
@@ -268,7 +269,7 @@
           </div>
           <ul class="nav nav-sidebar collapse in" id="collapseMembership">
             <li>
-              <strong>Summary</strong>
+              <a href="index.html">Summary</a>
             </li>
             <li>
               <a href="personal-info.html">Personal information</a>
@@ -277,7 +278,7 @@
               <a href="business-info.html">Business information</a>
             </li>
             <li>
-              <a href="additional-cardholders.html">Additional cardholders</a>
+              <strong>Additional cardholders</strong>
             </li>
             <li>
                 <a href="#">Auto-renew settings</a>
@@ -332,78 +333,12 @@
           <div class="clearfix"></div>
         </div>
         <div class="main">
-          <h2>Hi, Alex</h2>
-          <p class="page-subtitle">Membership summary</p>
-          <div class="row">
-            <div class="col-xs-12">
-                <div class="page-block summary">
-                  <div class="row">
-                      <div class="col-xs-12 col-sm-7">
-                        <div class="media">
-                          <div class="media-left">
-                            <a href="#">
-                              <img class="media-object" src="../images/card_club.png" width="100" alt="Sam's Plus Membership">
-                            </a>
-                          </div>
-                          <div class="media-body">
-                            Membership<br/>
-                            <span class="line-title mem_id">1234567890123</span><br/>
-                            Club member since 2006
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-5 dates-etc">
-                        <p>Good until <span class="line-title">Dec 20, 2018</span></p>
-                        <div class="renew-actions">
-                          <p class="line-title">Auto-renew is off</p>
-                          <span class="help-text">Turn on for worry free renewal</span><br>
-                          <button type="button" class="btn btn-primary btn-lg">Set up auto renew</button>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-            </div>
+          <div class="well page-error">
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fa fa-exclamation-circle fa-lg"></i></span> Something went wrong</li>
+            </ul >
           </div>
-          <p></p>
-          <div class="row">
-            <div class="col-xs-12 col-md-6">
-                <p class="page-subtitle">Instant Savings</p>
-                <div class="page-block">
-                  <div class="row">
-                    <div class="col-xs-4">
-                      Earned
-                      <p class="line-title">25 offers</p>
-                    </div>
-                    <div class="col-xs-4">
-                      Redeemed<br/>
-                      <p class="line-title">$59.87</p>
-                    </div>
-                    <div class="col-xs-4">
-                      96 Offers<br/>
-                      <p class="line-title">Ends in 12 days</p><br>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-xs-12 text-right">
-                      <button type="button" class="btn btn-primary btn-lg">View Instant Savings</button>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <p class="page-subtitle">Cash Rewards</p>
-              <div class="page-block">
-                <div class="row">
-                  <div class="col-xs-12">
-                      <p>Upgrade to a Plus Membership for [$XX.XX] and earn $10 for every $500 you spend.</p><br>
-                  </div>
-                  <div class="col-xs-12 text-right">
-                    <button type="button" class="btn btn-primary btn-lg">Upgrade</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h2>Additional cardholders</h2>
         </div>
       </div>
     </div>
@@ -418,9 +353,9 @@
           </div>
           <div class="col-xs-12 col-sm-6">
             <form class="form-inline text-nowrap">
-              <div class="form-group">
+              <div class="form-group" style="height:auto;">
                 <label class="sr-only" for="email-sign-up">Email</label>
-                <input type="email" class="form-control" id="email-sign-up" placeholder="Email address" aria-describedby="helpBlock">
+                <input type="email" class="form-control" id="email-sign-up" placeholder="Email address" aria-describedby="helpBlock" style="position:relative;">
                 <p id="helpBlock" class="help-block">Email signup isn’t currently available in Puerto Rico</p>
               </div>
               <button type="submit" class="btn btn-secondary btn-lg">Sign up</button>
