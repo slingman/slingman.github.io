@@ -169,12 +169,24 @@ a.btn-secondary {
   padding:12px 12px 4px 4px;
 }
 
+.well .fa-li {
+  top:0;
+}
+
 .well.page-error {
   background:rgba(235,13,0,0.15);
 }
 
 .well.page-error .fa {
   color:#EB0D00;
+}
+
+.well.success {
+  background:rgba(76,169,12,0.1);
+}
+
+.well.success .fa {
+  color:#4CA90C;
 }
 
 /*** No-Gutter Grid ***/
