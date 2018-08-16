@@ -51,6 +51,10 @@ a:hover {
   text-decoration:none;
 }
 
+.medium-weight-font {
+  font-weight:500;
+}
+
 .btn {
   text-align:center;
   border-radius:2px;
@@ -77,12 +81,13 @@ a.btn-secondary {
 .btn-primary:focus {
   background:rgba(0, 138, 0, 1) !important;
   color:#fff;
-  border:none;
+  border:1px solid rgba(0, 138, 0, 1);
   font-weight:500;
 }
 
 .btn-primary:hover {
   background:rgba(0, 138, 0, 0.9) !important;
+  border:1px solid rgba(0, 138, 0, 1);
 }
 
 .btn-secondary {

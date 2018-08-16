@@ -1,0 +1,48 @@
+.cart-heading {
+  margin-top:50px;
+  margin-bottom:32px;
+}
+
+.btn.continue,
+.btn.checkout {
+  margin-top:17px;
+}
+
+table.cart-content tbody tr > td {
+  padding-top: 32px;
+}
+
+table.cart-content .media {
+  max-width:400px;
+}
+
+table.cart-content .media .media-body {
+  padding-left:20px;
+}
+
+table.cart-content .radio {
+  margin-bottom:32px;
+}
+
+table.cart-content .radio .free-shipping {
+  color:#4CA90C;
+  font-size:12px;
+}
+
+table.cart-content .og-price,
+table.cart-content .subtotal {
+  font-size:16px;
+}
+
+table.cart-content .form-group.qty {
+  text-align: center;
+  margin:0 auto;
+  width:auto;
+}
+
+table.cart-content .form-group.qty input {
+  text-align: right;
+  width:50px;
+  font-weight:500;
+  color:#424242;
+}
