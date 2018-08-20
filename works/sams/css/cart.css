@@ -2,6 +2,10 @@
   max-width:1140px;
 }
 
+.club-acct-cart-menu .cart .popover {
+  width:320px;
+}
+
 .page-heading {
   margin-top:25px;
   margin-bottom:32px;
