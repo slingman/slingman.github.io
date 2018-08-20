@@ -115,8 +115,8 @@ a.btn-secondary {
 }
 
 .btn-secondary:disabled {
-  border:1px solid rgba(0, 138, 0, 0.4);
-  color:rgba(0, 138, 0, 0.4);
+  border:1px solid rgba(0, 138, 0, 0.2);
+  color:rgba(0, 138, 0, 0.2);
 }
 
 .form-control {
