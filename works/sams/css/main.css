@@ -8,6 +8,7 @@ body {
 
 h1, h2, h3, h4, h5 {
  font-family: 'bree_serifregular';
+ font-weight:500;
 }
 
 h1 {
@@ -102,7 +103,7 @@ a.btn-secondary {
 
 .btn-secondary:hover {
   background:rgba(0, 138, 0, .1);
-  color:rbga(0, 138, 0, 1);
+  color:rgba(0, 138, 0, 1);
 }
 
 .form-control {
@@ -230,6 +231,13 @@ a.btn-secondary {
   border-radius:2px;
   font-size:12px;
   margin:0 auto;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* dropdown menu */

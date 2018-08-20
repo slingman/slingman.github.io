@@ -1,4 +1,8 @@
-.cart-heading {
+.container {
+  max-width:1140px;
+}
+
+.page-heading {
   margin-top:50px;
   margin-bottom:32px;
 }
@@ -8,42 +12,110 @@
   margin-top:17px;
 }
 
-.cart-content {
-  padding-top: 16px;
+.cart-heading {
+  padding-bottom:8px;
+  border-bottom:2px solid rgba(66,66,66,0.2);
+  font-size:12px;
+  font-weight:bold;
 }
 
-.cart-content .media {
+.cart-content {
+  border-bottom:3px solid rgba(66,66,66,0.2);
+  margin-bottom:16px;
+}
+
+.cart-item {
+  padding-top: 16px;
+  padding-bottom:16px;
+  border-bottom:1px solid rgba(66,66,66,0.2);
+}
+
+.cart-item:last-child {
+  border:none;
+}
+
+.cart-item .media {
   max-width:400px;
 }
 
-.cart-content .media .media-body {
+.cart-item .media .media-body {
   padding-left:20px;
 }
 
-.cart-content .radio {
-  margin-bottom:32px;
+.cart-item .radio {
+  margin-bottom:20px;
+  margin-top:0;
 }
 
-.cart-content .radio .free-shipping {
-  color:#4CA90C;
+.cart-item .radio .subtext,
+.cart-item .subtext {
   font-size:12px;
 }
 
-.cart-content .og-price,
-.cart-content .subtotal {
+.cart-item .radio .subtext.free-shipping {
+  color:#4CA90C;
+}
+
+.cart-item .og-price,
+.cart-item .subtotal {
   font-size:16px;
 }
 
-.cart-content .form-group.qty {
+.cart-item .form-group.qty {
   text-align: center;
   margin:0 auto;
   width:100%;
 }
 
-.cart-content .form-group.qty input {
-  text-align: right;
-  width:50px;
+.cart-item .form-group.qty input {
+  text-align: center;
+  width:60px;
   font-weight:500;
   color:#424242;
   position:inherit;
+}
+
+.dealoffer {
+  width:100%;
+  border:1px dashed rgba(66,66,66,0.2);
+  border-radius:2px;
+  padding:12px;
+  font-family:aktiv_grotesk;
+  font-size:14px;
+  line-height:1.4em;
+  margin-bottom:8px;
+}
+
+.dealoffer .subtext {
+  font-size:12px;
+}
+
+.dealoffer .subtext .date {
+  color:rgba(66,66,66,0.6);
+}
+
+.modal.offer-details {
+  top:180px;
+}
+
+.modal.offer-details .modal-header h4 {
+  font-weight:600;
+}
+
+.modal.offer-details .modal-header,
+.modal.offer-details .modal-footer {
+  border:none;
+}
+
+.total {
+
+}
+
+.total .subtotal {
+  margin-bottom:-3px;
+}
+
+.total .include-savings {
+  font-size:12px;
+  color:rgba(66,66,66,0.6)
 }
