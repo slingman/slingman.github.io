@@ -102,13 +102,21 @@
   top:180px;
 }
 
-.modal.offer-details .modal-header h4 {
-  font-weight:600;
+.modal.offer-details .modal-title {
+  font-weight:500;
 }
 
 .modal.offer-details .modal-header,
 .modal.offer-details .modal-footer {
   border:none;
+}
+
+.modal.offer-details .modal-header {
+  padding-bottom:0;
+}
+
+.modal.offer-details .modal-footer {
+  padding-top:0;
 }
 
 .total {
