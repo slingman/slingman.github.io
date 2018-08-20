@@ -91,6 +91,10 @@ a.btn-secondary {
   border:1px solid rgba(0, 138, 0, 1);
 }
 
+.btn-primary:disabled {
+
+}
+
 .btn-secondary {
   background:#fff;
   border:1px solid rgba(0, 138, 0, 1);
@@ -104,6 +108,15 @@ a.btn-secondary {
 .btn-secondary:hover {
   background:rgba(0, 138, 0, .1);
   color:rgba(0, 138, 0, 1);
+}
+
+.btn-secondary:hover:disabled {
+  background:#fff;
+}
+
+.btn-secondary:disabled {
+  border:1px solid rgba(0, 138, 0, 0.4);
+  color:rgba(0, 138, 0, 0.4);
 }
 
 .form-control {
