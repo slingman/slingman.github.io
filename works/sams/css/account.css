@@ -137,6 +137,11 @@ body > .container {
   border:1px solid rgba(66,66,66,0.4);
 }
 
+.main .page-block.summary {
+  height:250px;
+  position:relative;
+}
+
 .main .line-title {
   font-weight:400;
 }
