@@ -61,6 +61,7 @@ a:hover {
   border-radius:2px;
   color:#fff;
   height:40px;
+  font-weight:bold;
 }
 
 .btn-lg {
@@ -83,7 +84,7 @@ a.btn-secondary {
   background:rgba(0, 138, 0, 1) !important;
   color:#fff;
   border:1px solid rgba(0, 138, 0, 1);
-  font-weight:500;
+
 }
 
 .btn-primary:hover {
