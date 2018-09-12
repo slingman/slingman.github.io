@@ -65,6 +65,19 @@
   font-size:16px;
 }
 
+.cart-item .subtotal .action-wrap {
+  position:relative;
+  height:150px;
+}
+
+.cart-item .subtotal .action-wrap .actions {
+  position:absolute;
+  white-space: nowrap;
+  bottom:0;
+  right:0;
+  font-size:12px;
+}
+
 .cart-item .form-group.qty {
   text-align: center;
   margin:0 auto;
@@ -136,6 +149,11 @@
   margin-top:10px;
   margin-bottom:0;
   border-top:1px solid rgba(66,66,66,0.2)
+}
+
+.total .estimated-savings {
+  color:#EC0439;
+  font-size:16px;
 }
 
 .total .cta {
