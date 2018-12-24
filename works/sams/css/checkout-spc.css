@@ -184,8 +184,8 @@
 }
 
 .panel.total.affix {
-  width:28.9%;
-  max-width:389px;
+  width:300px;
+  max-width:300px;
 }
 
 .panel.total {
