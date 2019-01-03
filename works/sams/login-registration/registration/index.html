@@ -82,6 +82,11 @@
             <div class="form-group">
               <input class="form-control" type="number" id="membership_number" required autocomplete="membership_number" name="membership_number" data-required-error="Please enter your membership number" data-error="Please check your membership number. Then try again."/>
               <label for="membership_number">Membership number</label>
+              <div class="icon-info">
+                <a data-container="body" data-toggle="popover" data-popover-content="#membership-card" data-placement="auto bottom">
+                  <i class="fa fa-question-circle fa-lg"></i>
+                </a>
+              </div>
               <div class="help-block with-errors"></div>
             </div>
             <div class="form-group">
@@ -107,6 +112,24 @@
             <span class="title">Questions?</span>
             <a href="https://help.samsclub.com/app/chat/chat_launch">Chat with us</a>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content for other clubs popover -->
+    <div class="hidden" id="membership-card">
+      <div class="popover-body">
+        <div class="popover-membership-card-wrap text-center">
+          <ul class="list-unstyled list-inline">
+            <li class="text-center">
+              <img src="../images/mem_card_back1.png"><br><br>
+              <div style="width:130px;">Sam's Club® credit cards</div>
+            </li>
+            <li class="text-center">
+              <img src="../images/mem_card_back2.png"><br><br>
+              <div style="width:130px;">Membership cards as of Aug 15, 2003</div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

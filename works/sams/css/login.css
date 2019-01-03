@@ -116,6 +116,20 @@
   cursor: pointer;
 }
 
+.icon-info {
+	float:right;
+	position: relative;
+	z-index: 5;
+  margin-top:10px;
+  right:10px;
+  color:#166BC0;
+}
+
+.popover {
+  width:450px;
+  font-size:12px;
+}
+
 .perks .media {
   margin-bottom:-32px;
 }
@@ -154,5 +168,8 @@
   .go-full-width {
     width:100%;
     display:block
+  }
+  .popover {
+    width:98%;
   }
 }
