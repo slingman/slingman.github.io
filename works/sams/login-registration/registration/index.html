@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../../fonts/fonts-sams.css">
     <link rel="stylesheet" type="text/css" href="../../fonts/fonts-aktiv.css">
     <link rel="stylesheet" type="text/css" href="../../fonts/fonts-bree.css">
+    <link rel="stylesheet" type="text/css" href="../../fonts/fonts-services.css">
     <link rel="stylesheet" type="text/css" href="../../css/main.css">
     <link rel="stylesheet" type="text/css" href="../../css/simple-header.css">
     <link rel="stylesheet" type="text/css" href="../../css/login.css">
@@ -51,23 +52,32 @@
       <div class="row">
         <div class="col-xs-12 col-sm-6">
           <div class="">
-            <h2 class="border">More perks await</h2>
-            Create your online account and get more out of your membership
+            <div class="main-form-title">More perks await<p class="title-help-text">Create your online account and get more out of your membership</p></div>
             <div class="perks">
-              <ul class="list-unstyled">
-                <li class="gas">
-                  <h5>Pay less at the pump</h5>
+              <div class="media">
+                <div class="media-left">
+                  <span class="perks-icon"><i class="icon-fuelcenter"></i></span>
+                </div>
+                <div class="media-body">
+                  <h4 class="aktiv">Pay less at the pump</h4>
                   Save on fuel at select club locations
-                </li>
-                <li class="price">$100 Instant Savings offers</li>
-                <li class="price">$5 eGift card for add-ons &nbsp;></li>
-              </ul>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <span class="perks-icon"><i class="icon-wireless"></i></span>
+                </div>
+                <div class="media-body">
+                  <h4 class="aktiv">Never stand in line again</h4>
+                  Pay straight from your phone with our Scan &amp; Go app
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <div class="main-form-title">Forgot email<p class="title-help-text">Please enter your membership number and ZIP Code or phone number</p></div>
-          <form action="../login/email_found.html" method="get" data-toggle="validator" data-disable="false"> <!-- data-disable sets the CTA to disabled state -->
+          <div class="main-form-title">Confirm your information<p class="title-help-text">Please enter your membership number and ZIP Code or phone number</p></div>
+          <form action="register_success.html" method="get" data-toggle="validator" data-disable="false"> <!-- data-disable sets the CTA to disabled state -->
           <div class="main-form">
             <div class="form-group">
               <input class="form-control" type="number" id="membership_number" required autocomplete="membership_number" name="membership_number" data-required-error="Please enter your membership number" data-error="Please check your membership number. Then try again."/>
@@ -92,7 +102,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-5 col-sm-offset-3 col-md-offset-4">
+        <div class="col-xs-12">
           <div class="login-section">
             <span class="title">Questions?</span>
             <a href="https://help.samsclub.com/app/chat/chat_launch">Chat with us</a>

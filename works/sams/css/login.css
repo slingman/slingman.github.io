@@ -116,12 +116,33 @@
   cursor: pointer;
 }
 
-.perks ul li {
-  margin-bottom:16px;
+.perks .media {
+  margin-bottom:-32px;
 }
-.perks ul li.gas {
-  background:url('../login-registration/images/icon_gas.png') no-repeat no-repeat;
-  padding-left:40px;
+
+.perks .media .perks-icon {
+  font-size:64px;
+  font-weight:600;
+  max-height:64px;
+  text-align: center;
+  vertical-align:middle;
+  width:100px;
+  color:#166BC0;
+}
+
+.perks .media:first-child {
+  margin-top:-8px;
+}
+.perks .media:last-child {
+  margin-bottom:8px;
+}
+
+.registration-success .fa-check-circle {
+  color:#008A00;
+}
+
+.btn.go-full-width {
+  min-width:50%;
 }
 
 /* body margins left and right are 8px until 480px */
@@ -129,5 +150,9 @@
   .container {
     padding-left:8px;
     padding-right:8px;
+  }
+  .go-full-width {
+    width:100%;
+    display:block
   }
 }
