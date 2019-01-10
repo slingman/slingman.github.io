@@ -128,12 +128,12 @@ a.btn-secondary {
 
 .radio-primary input[type="radio"]:checked+label::after,
 .checkbox-primary input[type="checkbox"]:checked+label::after {
-  background-color:#1977d3;
+  /*background-color:#1977d3;*/
 }
 
 .radio-primary input[type="radio"]:checked+label::before,
 .checkbox-primary input[type="checkbox"]:checked+label::before {
-  border-color:#1977d3
+  /*border-color:#1977d3*/
 }
 
 .selectwrap {
