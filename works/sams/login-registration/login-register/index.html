@@ -45,45 +45,49 @@
     <!-- Begin page content -->
     <div class="container">
       <div class="row">
-        <div class="col-xs-12">
-          <h1 class="aktiv">Register your membership</h1>
-        </div>
-      </div>
-      <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <div class="main-form-title">More perks await<p class="title-help-text">Create your online account and get more out of your membership</p></div>
-          <div class="perks">
-            <div class="media">
-              <div class="media-left">
-                <span class="perks-icon"><i class="icon-clubpickup"></i></span>
-              </div>
-              <div class="media-body">
-                <h4 class="aktiv">Get in and out faster</h4>
-                Order online with Club Pickup, we'll have your items packed and ready at the club
-              </div>
+          <div class="main-form-title">Sign in<p class="title-help-text">Unlock all your benefits</p></div>
+          <form action="#" method="get" data-toggle="validator" data-disable="false"> <!-- data-disable sets the CTA to disabled state -->
+          <div class="main-form">
+            <div class="form-group">
+              <input class="form-control" type="email" id="email" required autocomplete="email" name="email" data-required-error="Please enter an email" data-error="Please use the proper format (email@domain.com)"/>
+              <label for="email">Email</label>
+              <div class="help-block with-errors"></div>
             </div>
-            <div class="media">
-              <div class="media-left">
-                <span class="perks-icon"><i class="icon-fuelcenter"></i></span>
+            <div class="form-group">
+              <input class="form-control" type="password" id="password" required name="login[password]" autocomplete="password" name="password" data-error="Please enter your password"/>
+              <label for="password">Password</label>
+              <div class="hide-show">
+                <span>Show</span>
               </div>
-              <div class="media-body">
-                <h4 class="aktiv">Pay less at the pump</h4>
-                Save on fuel at select club locations
-              </div>
+              <div class="help-block with-errors"></div>
             </div>
-            <div class="media">
-              <div class="media-left">
-                <span class="perks-icon"><i class="icon-wireless"></i></span>
-              </div>
-              <div class="media-body">
-                <h4 class="aktiv">Never stand in line again</h4>
-                Pay straight from your phone with Scan &amp; Go in the Sam's Club mobile app<br><a href="#">Download the app</a>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%" role="button">Sign in</button>
+          </div>
+          </form>
+          <div class="row no-gutters forgot-help">
+            <div class="col-xs-6">
+              <a href="../forgot-email">Forgot email</a>
+            </div>
+            <div class="col-xs-6 text-right">
+              <a href="../forgot-password/">Forgot password</a>
+            </div>
+          </div>
+
+          <div class="row no-gutters keep-signed-in">
+            <div class="col-xs-12">
+              <div class="checkbox checkbox-primary savings">
+                <input type="checkbox" class="styled" checked="checked" id="savings">
+                <label for="savings">
+                  We'll keep you signed in on this device
+                </label>
+                <i class="fa fa-question-circle fa-lg" style="color:#1977D3;"></i>
               </div>
             </div>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <div class="main-form-title">Confirm your information<p class="title-help-text">Please enter your membership number and ZIP Code or phone number</p></div>
+          <div class="main-form-title">Register your membership<p class="title-help-text">Please enter your membership number and ZIP Code or phone number</p></div>
           <form action="email_password.html" method="get" data-toggle="validator" data-disable="false"> <!-- data-disable sets the CTA to disabled state -->
           <div class="main-form">
             <div class="form-group">
@@ -94,15 +98,15 @@
                   <i class="fa fa-question-circle fa-lg"></i>
                 </a>
               </div>
-              <div class="help-block with-errors" style="top:18px;"></div>
+              <div class="help-block with-errors" style=""></div>
               <div class="help-text">13 or 17 digit number on the back of your membership card</div>
             </div>
             <div style="padding-top:16px;"></div>
             <div class="form-group">
               <input class="form-control" type="number" id="zipcode_phonenumber" required autocomplete="zipcode_phonenumber" name="zipcode_phonenumber" data-required-error="Please enter a ZIP Code or phone number" data-error="Please check your ZIP Code or phone number. Then try again."/>
               <label for="zipcode_phonenumber">ZIP Code or phone number</label>
-              <div class="help-block with-errors" style="top:18px;"></div>
-              <div class="help-text with-errors">Must match what we have on file</div>
+              <div class="help-block with-errors" style=""><p></p></div>
+              <div class="help-text" style="position:relative;">Must match what we have on file</div>
             </div>
             <p></p><br>
             <button type="submit" class="btn btn-primary btn-lg" style="width:100%" role="button">Continue</button>
