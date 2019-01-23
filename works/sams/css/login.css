@@ -155,6 +155,14 @@
   min-width:50%;
 }
 
+div.vertical-line {
+  width: 1px; /* Line width */
+  background-color: rgba(66,66,66,0.4); /* Line color */
+  height: 100%; /* Override in-line if you want specific height. */
+  position:absolute;
+  left:100px;
+}
+
 /* body margins left and right are 8px until 480px */
 @media (max-width: 480px) {
   .container {
