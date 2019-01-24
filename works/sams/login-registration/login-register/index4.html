@@ -39,7 +39,8 @@
 
     .nav-tabs {
       border-bottom:none;
-      font-size:16px;
+      font-size:18px;
+      margin-bottom:32px;
     }
 
     .nav-tabs li > a,
@@ -89,7 +90,7 @@
       <div class="row no-gutters">
         <p></p><br><p></p>
         <div class="col-xs-12 col-sm-4 main-content">
-          <div style="background:#fff; padding:16px; min-height:580px;">
+          <div style="background:#fff; padding:16px; min-height:480px;">
             <div>
             <!-- tabs -->
               <ul class="nav nav-tabs" role="tablist">
@@ -100,7 +101,7 @@
 
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane active" id="sign-in">
-                <div class="main-form-title">Sign in<p class="title-help-text">Unlock all your benefits</p></div>
+                <!--div class="main-form-title">Sign in<p class="title-help-text">Unlock all your benefits</p></div-->
                 <form action="#" method="get" data-toggle="validator" data-disable="false"> <!-- data-disable sets the CTA to disabled state -->
                 <div class="main-form">
                   <div class="form-group">
@@ -140,33 +141,36 @@
                 </div>
               </div>
               <div role="tabpanel" class="tab-pane" id="register">
-                <div class="main-form-title">Register your membership<p class="title-help-text">Please enter your membership number and ZIP Code or phone number</p></div>
-                  <form action="email_password.html" method="get" data-toggle="validator" data-disable="false"> <!-- data-disable sets the CTA to disabled state -->
-                  <div class="main-form">
-                    <div class="form-group">
-                      <input class="form-control" type="number" id="membership_number" required autocomplete="membership_number" name="membership_number" data-required-error="Please enter your membership number" data-error="Please check your membership number. Then try again."/>
-                      <label for="membership_number">Membership number</label>
-                      <div class="icon-info">
-                        <a data-container="body" data-toggle="popover" data-popover-content="#membership-card" data-placement="auto bottom">
-                          <i class="fa fa-question-circle fa-lg"></i>
-                        </a>
-                      </div>
-                      <div class="help-block with-errors" style="top:16px;"></div>
-                      <div class="help-text">13 or 17 digit number on the back of your membership card</div>
+                <!--div class="main-form-title">Register your membership<p class="title-help-text">Please enter your membership number and ZIP Code or phone number</p></div-->
+                <form action="email_password.html" method="get" data-toggle="validator" data-disable="false"> <!-- data-disable sets the CTA to disabled state -->
+                <div class="main-form">
+                  <div class="form-group">
+                    <input class="form-control" type="number" id="membership_number" required autocomplete="membership_number" name="membership_number" data-required-error="Please enter your membership number" data-error="Please check your membership number. Then try again."/>
+                    <label for="membership_number">Membership number</label>
+                    <div class="icon-info">
+                      <a data-container="body" data-toggle="popover" data-popover-content="#membership-card" data-placement="auto bottom">
+                        <i class="fa fa-question-circle fa-lg"></i>
+                      </a>
                     </div>
-                    <div style="padding-top:16px;"></div>
-                    <div class="form-group">
-                      <input class="form-control" type="number" id="zipcode_phonenumber" required autocomplete="zipcode_phonenumber" name="zipcode_phonenumber" data-required-error="Please enter a ZIP Code or phone number" data-error="Please check your ZIP Code or phone number. Then try again."/>
-                      <label for="zipcode_phonenumber">ZIP Code or phone number</label>
-                      <div class="help-block with-errors" style="top:16px;"><p></p></div>
-                      <div class="help-text">Must match what we have on file</div>
-                    </div>
-                    <p></p><br>
-                    <button type="submit" class="btn btn-primary btn-lg" style="width:100%" role="button">Continue</button>
+                    <div class="help-block with-errors" style="top:16px;"></div>
+                    <div class="help-text">13 or 17 digit number on the back of your membership card</div>
                   </div>
-                  </form>
+                  <div style="padding-top:16px;"></div>
+                  <div class="form-group">
+                    <input class="form-control" type="number" id="zipcode_phonenumber" required autocomplete="zipcode_phonenumber" name="zipcode_phonenumber" data-required-error="Please enter a ZIP Code or phone number" data-error="Please check your ZIP Code or phone number. Then try again."/>
+                    <label for="zipcode_phonenumber">ZIP Code or phone number</label>
+                    <div class="help-block with-errors" style="top:16px;"><p></p></div>
+                    <div class="help-text">Must match what we have on file</div>
+                  </div>
+                  <p></p><br>
+                  <button type="submit" class="btn btn-primary btn-lg" style="width:100%" role="button">Continue</button>
                 </div>
+                </form>
+              </div>
             </div>
+          </div>
+          <div class="" style="padding:16px; position:relative; bottom:0; border-top:1px solid #eee; background:#fff;">
+            Questions? <a href="#">Chat with us</a>
           </div>
           <div class="" style="padding:16px; position:relative; bottom:0; background:#eee;">
             Not a Sam's Club member? <a href="#">Join us</a>
