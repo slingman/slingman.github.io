@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="180px" height="115px"
+	 viewBox="0 0 180 115" enable-background="new 0 0 180 115" xml:space="preserve">
+<title>Group</title>
+<desc>Created with Sketch.</desc>
+<g id="_x30_2-Register" sketch:type="MSPage">
+	<g id="Group" transform="translate(-70.000000, -135.000000)" sketch:type="MSLayerGroup">
+		<g transform="translate(0.000000, 118.000000)">
+			<g transform="translate(70.000000, 17.000000)">
+				<path id="Rectangle-770" sketch:type="MSShapeGroup" fill="#FFFFFF" stroke="#000000" stroke-opacity="0.25" d="M8,0h164
+					c4.418,0,8,3.582,8,8v99c0,4.418-3.582,8-8,8H8c-4.418,0-8-3.582-8-8V8C0,3.582,3.582,0,8,0z"/>
+				<rect id="Rectangle-770_1_" y="10" sketch:type="MSShapeGroup" fill="#424242" width="180" height="18">
+				</rect>
+				
+					<rect id="Rectangle-770_2_" x="12" y="67" sketch:type="MSShapeGroup" opacity="0.2" fill="#424242" enable-background="new    " width="30" height="8">
+				</rect>
+				<g id="Rectangle-770_3_" transform="translate(49.000000, 93.000000)" sketch:type="MSShapeGroup" opacity="0.2">
+					<rect fill="#424242" width="1" height="12"/>
+					<rect x="5" fill="#424242" width="1" height="12"/>
+					<rect x="2" fill="#424242" width="2" height="12"/>
+					<rect x="11" fill="#424242" width="1" height="12"/>
+					<rect x="14" fill="#424242" width="1" height="12"/>
+					<rect x="8" fill="#424242" width="2" height="12"/>
+					<rect x="35" fill="#424242" width="1" height="12"/>
+					<rect x="41" fill="#424242" width="1" height="12"/>
+					<rect x="43" fill="#424242" width="1" height="12"/>
+					<rect x="32" fill="#424242" width="2" height="12"/>
+					<rect x="28" fill="#424242" width="1" height="12"/>
+					<rect x="20" fill="#424242" width="1" height="12"/>
+					<rect x="16" fill="#424242" width="1" height="12"/>
+					<rect x="22" fill="#424242" width="2" height="12"/>
+					<rect x="25" fill="#424242" width="2" height="12"/>
+					<rect x="37" fill="#424242" width="2" height="12"/>
+					<rect x="81" fill="#424242" width="1" height="12"/>
+					<rect x="78" fill="#424242" width="2" height="12"/>
+					<rect x="74" fill="#424242" width="1" height="12"/>
+					<rect x="66" fill="#424242" width="1" height="12"/>
+					<rect x="68" fill="#424242" width="2" height="12"/>
+					<rect x="71" fill="#424242" width="2" height="12"/>
+					<rect x="63" fill="#424242" width="1" height="12"/>
+					<rect x="60" fill="#424242" width="2" height="12"/>
+					<rect x="56" fill="#424242" width="1" height="12"/>
+					<rect x="48" fill="#424242" width="1" height="12"/>
+					<rect x="50" fill="#424242" width="2" height="12"/>
+					<rect x="44" fill="#424242" width="2" height="12"/>
+					<rect x="53" fill="#424242" width="2" height="12"/>
+				</g>
+				
+					<rect id="Rectangle-770_4_" x="12" y="79" sketch:type="MSShapeGroup" opacity="0.2" fill="#424242" enable-background="new    " width="20" height="1">
+				</rect>
+				
+					<rect id="Rectangle-770_5_" x="75" y="88" sketch:type="MSShapeGroup" opacity="0.2" fill="#424242" enable-background="new    " width="30" height="1">
+				</rect>
+				
+					<rect id="Rectangle-770_6_" x="12" y="5" sketch:type="MSShapeGroup" opacity="0.2" fill="#424242" enable-background="new    " width="140" height="1">
+				</rect>
+				
+					<rect id="Rectangle-770_7_" x="46" y="67" sketch:type="MSShapeGroup" opacity="0.2" fill="#424242" enable-background="new    " width="68" height="8">
+				</rect>
+				
+					<rect id="Rectangle-770_8_" x="128" y="36" sketch:type="MSShapeGroup" opacity="0.15" fill="#424242" enable-background="new    " width="44" height="44">
+				</rect>
+				<path id="Member-Icon" sketch:type="MSShapeGroup" opacity="0.2" enable-background="new    " d="M131,80
+					c0.617-6.339,3.533-11.4,13.84-12.591v-2.046c-1.868-1.453-3.281-3.694-3.923-6.338l0,0c-0.123,0.053-0.249,0.082-0.379,0.082
+					c-1.188,0-2.151-2.443-2.151-3.653s0.964-2.192,2.151-2.192c0.08,0,0.159,0.004,0.236,0.013c0.009-0.045,0.017-0.09,0.026-0.134
+					c-1.367-1.52-0.263-6.218-0.263-8.646c0-2.922,2.86-2.192,3.943-2.192c0-4.019,14.698-5.845,15.415,3.288
+					c0.172,2.187,0.82,6.409-0.707,7.671c1.184,0.005,2.141,0.985,2.141,2.192c0,1.21-0.963,3.653-2.15,3.653
+					c-0.129,0-0.256-0.029-0.379-0.082l0,0c-0.641,2.644-2.055,4.885-3.923,6.338l0,0v2.119c9.909,1.442,12.987,7.249,13.759,12.518
+					H131z"/>
+				<g id="Rectangle-770-_x2B_-101-55555-555555555" transform="translate(6.000000, 47.000000)">
+					
+						<rect id="Rectangle-770_9_" sketch:type="MSShapeGroup" fill="none" stroke="#FF930F" stroke-width="2" width="114" height="25">
+					</rect>
+					<text transform="matrix(1 0 0 1 5.5 17)" fill="#424242" font-family="'HelveticaNeue'" font-size="10">101 55555 55555555</text>
+					<text transform="matrix(1 0 0 1 102.7207 17)" fill="#424242" font-family="'HelveticaNeue'" font-size="10"> </text>
+					<text transform="matrix(1 0 0 1 102.7207 17)" fill="#424242" font-family="'HelveticaNeue'" font-size="10">5</text>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

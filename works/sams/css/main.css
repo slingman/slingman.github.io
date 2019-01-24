@@ -194,6 +194,7 @@ a.btn-secondary {
   border:none;
   color:rgba(66,66,66,1);
   padding:12px 12px 4px 4px;
+  box-shadow:none;
 }
 
 .well .fa-li {
@@ -214,6 +215,11 @@ a.btn-secondary {
 
 .well.success .fa {
   color:#4CA90C;
+}
+
+.well.fyi {
+  background:#FFF6DE;
+  padding-left:14px;
 }
 
 /*** No-Gutter Grid ***/

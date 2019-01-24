@@ -33,7 +33,7 @@
     <header class="navbar navbar-fixed-top">
       <div class="container">
         <div class="nav navbar-nav">
-          <a class="navbar-brand" href="#">Sams's Club - Login - Lost or stolen card</a>
+          <a class="navbar-brand" href="#">Sams's Club - Login - Membership number has email</a>
         </div>
       </div>
     </header>
@@ -42,28 +42,16 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-5 col-sm-offset-3 col-md-offset-4">
-          <div class="well page-error">
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fa fa-exclamation-circle fa-lg"></i></span> Your membership card was recently reported lost or stolen.  For your security, please enter your information again</li>
+          <div class="well fyi">
+            <ul class="list-unstyled">
+              <li>There’s already an account for that membership. Please use it to sign in </li>
             </ul>
           </div>
           <div class="main-form-title">Sign in to your account</div>
           <form action="#" method="get" data-toggle="validator" data-disable="false"> <!-- data-disable sets the CTA to disabled state -->
           <div class="main-form">
             <div class="form-group">
-              <input class="form-control" type="number" id="membership_number" required autocomplete="membership_number" name="membership_number" data-required-error="Please enter your membership number" data-error="Please check your membership number. Then try again."/>
-              <label for="membership_number">New membership number</label>
-              <div class="icon-info">
-                <a data-container="body" data-toggle="popover" data-popover-content="#membership-card" data-placement="auto bottom">
-                  <i class="fa fa-question-circle fa-lg"></i>
-                </a>
-              </div>
-              <div class="help-block with-errors" style="top:18px;"></div>
-              <div class="help-text">13 or 17 digit number on the back of your new membership card</div>
-            </div>
-            <br>
-            <div class="form-group">
-              <input class="form-control" type="email" id="email" required autocomplete="email" name="email" data-required-error="Please enter an email" data-error="Please use the proper format (email@domain.com)"/>
+              <input class="filled" type="email" id="email" value="email_of_member@gmail.com" required autocomplete="email" name="email" data-required-error="Please enter an email" data-error="Please use the proper format (email@domain.com)"/>
               <label for="email">Email</label>
               <div class="help-block with-errors"></div>
             </div>
@@ -130,20 +118,6 @@
       </div>
     </div>
 
-    <!-- Content for membership number location popover -->
-    <div class="hidden" id="membership-card">
-      <div class="popover-body">
-        <div class="popover-membership-card-wrap text-center">
-          <ul class="list-unstyled list-inline">
-            <li class="text-center">
-              <img src="../images/membership-registration-card.svg" width="120"><br><br>
-              <div>13 or 17 digits on back of the card</div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    
     <footer class="footer">
       <div class="container" >
         <div class="row footer-links">
