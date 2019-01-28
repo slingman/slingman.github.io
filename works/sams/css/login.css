@@ -145,11 +145,12 @@
   font-weight:500;
 }
 
+.perks .media {
+  margin-bottom:4px;
+}
+
 .perks .media:first-child {
   margin-top:-8px;
-}
-.perks .media:last-child {
-  margin-bottom:8px;
 }
 
 .registration-success .fa-check-circle {
