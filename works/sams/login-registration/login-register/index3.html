@@ -49,14 +49,18 @@
 
     <!-- Begin page content -->
     <div class="container">
-      <div class="row no-gutters">
+      <div class="row no-gutters" id="myGroup">
         <p></p><br>
         <div class="col-xs-12 col-sm-5">
           <!-- sign in -->
-          <button type="button" class="btn btn-primary btn-lg" style="width:100%" role="button">Sign in</button>
-          <div class="collapse" id="content_register">
-            <div class="well">
-              register content
+          <div class="panel">
+            <button class="btn btn-primary" type="button" data-parent="#myGroup" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+              Content 1
+            </button>
+            <div class="collapse" id="collapseExample1" >
+              <div class="card card-body">
+                  Content one here
+              </div>
             </div>
           </div>
         </div>
@@ -65,10 +69,14 @@
         </div>
         <div class="col-xs-12 col-sm-5">
           <!-- register -->
-          <button type="button" class="btn btn-primary btn-lg" style="width:100%" role="button">Continue</button>
-          <div class="collapse" id="content_register">
-            <div class="well">
-              register content
+          <div class="panel">
+            <button class="btn btn-primary" type="button"  data-parent="#myGroup" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+              Content 2
+            </button>
+            <div class="collapse" id="collapseExample2">
+              <div class="card card-body">
+                  Content two here
+              </div>
             </div>
           </div>
         </div>

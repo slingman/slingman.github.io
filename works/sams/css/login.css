@@ -169,6 +169,13 @@ div.vertical-line {
   left:100px;
 }
 
+
+@media (min-width: 769px) {
+  .container {
+    max-width:1140px;
+  }
+}
+
 /* body margins left and right are 8px until 480px */
 @media (max-width: 480px) {
   .container {
