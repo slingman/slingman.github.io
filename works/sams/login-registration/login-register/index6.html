@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sams's Club - Sign in - Register for an online account</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/0.3.7/awesome-bootstrap-checkbox.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../fonts/fonts-sams.css">
+    <link rel="stylesheet" type="text/css" href="../../fonts/fonts-aktiv.css">
+    <link rel="stylesheet" type="text/css" href="../../fonts/fonts-bree.css">
+    <link rel="stylesheet" type="text/css" href="../../fonts/fonts-services.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/simple-header.css">
+    <link rel="stylesheet" type="text/css" href="../../css/login.css">
+    <link rel="stylesheet" type="text/css" href="../../css/floating-labels.css">
+    <link rel="stylesheet" type="text/css" href="../../css/simple-footer.css">
+    <link rel="shortcut icon" href="../../images/favicon.png">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+    /*body {
+      background: url(../images/bg_bananas.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }*/
+
+    .nav-tabs {
+      border-bottom:none;
+      font-size:18px;
+      margin-bottom:32px;
+    }
+
+    .nav-tabs li > a,
+    .nav-tabs li > a:hover,
+    .nav-tabs li > a:focus {
+      background:transparent;
+      border:none;
+      padding:13px 10px 6px 10px;
+      margin-right:12px;
+    }
+
+    .nav-tabs li.active > a,
+    .nav-tabs li.active > a:hover,
+    .nav-tabs li.active > a:focus {
+      border:none;
+      border-bottom:3px solid #1977d3;
+      background-color:transparent;
+    }
+
+    .main-content {
+      border:1px solid #eee;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 480px) {
+      .main-form-title {
+        margin-top:0;
+      }
+    }
+    </style>
+  </head>
+
+  <body class="" style="padding-top:60px;">
+
+    <!-- Fixed navbar -->
+    <header class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="nav navbar-nav">
+            <a class="navbar-brand" href="#">Sams's Club - Register for an online account</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="row">
+        <p></p><br><p></p>
+
+        <!-- bounce -->
+        <div class="col-xs-12 col-sm-4">
+          <div style="background:#fff; padding:16px; min-height:365px; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
+            <p style="font-size:20px; font-weight:500">Sign in</p><br>
+            <form action="#" method="get" data-toggle="validator" data-disable="false"> <!-- data-disable sets the CTA to disabled state -->
+            <div class="main-form">
+              <div class="form-group has-error has-danger">
+                <input class="form-control filled" type="email" id="email1" value="email-not-correct@email.com" required autocomplete="email" name="email" data-required-error="Please enter an email" data-error="Please use the proper format (email@domain.com)"/>
+                <label for="email">Email</label>
+                <div class="help-block with-errors">Please check the email and try again</div>
+                <div class="help-block"  style="top:16px;"><a href="../forgot-email">Forgot email</a></div>
+              </div>
+              <!--div class="form-group">
+                <input class="form-control" type="password" id="password" required name="login[password]" autocomplete="password" name="password" data-error="Please enter your password"/>
+                <label for="password">Password</label>
+                <div class="hide-show">
+                  <span>Show</span>
+                </div>
+                <div class="help-block with-errors"></div>
+              </div-->
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%" role="button">Sign in</button>
+            </div>
+            </form>
+            <div class="row no-gutters keep-signed-in">
+              <div class="col-xs-12">
+                <div class="checkbox checkbox-primary savings">
+                  <input type="checkbox" class="styled" checked="checked" id="savings">
+                  <label for="savings">
+                    We'll keep you signed in on this device
+                  </label>
+                  <i class="fa fa-question-circle fa-lg" style="color:#1977D3;"></i>
+                </div>
+              </div>
+            </div>
+            <div style="position:absolute; right:20px;">
+              <div class="animated infinite bounce delay-1s"><img src="../images/icon_chat.svg"></div>
+            </div>
+          </div>
+          <div class="" style="padding:16px; position:relative; bottom:0; background:#eee; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
+            Not a Sam's Club member? <a href="#">Join us</a>
+          </div>
+        </div>
+
+        <!-- heartbeat -->
+        <div class="col-xs-12 col-sm-4">
+          <div style="background:#fff; padding:16px; min-height:365px; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
+            <p style="font-size:20px; font-weight:500">Sign in</p><br>
+            <form action="#" method="get" data-toggle="validator" data-disable="false"> <!-- data-disable sets the CTA to disabled state -->
+            <div class="main-form">
+              <div class="form-group has-error has-danger">
+                <input class="form-control filled" type="email" value="spelt-wrong-email@cc.com" id="email2" required autocomplete="email" name="email" data-required-error="Please enter an email" data-error="Please use the proper format (email@domain.com)"/>
+                <label for="email">Email</label>
+                <div class="help-block with-errors">Please check the email and try again</div>
+                <div class="help-block" style="top:16px;"><a href="../forgot-email">Forgot email</a></div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%" role="button">Sign in</button>
+            </div>
+            </form>
+            <div class="row no-gutters keep-signed-in">
+              <div class="col-xs-12">
+                <div class="checkbox checkbox-primary savings">
+                  <input type="checkbox" class="styled" checked="checked" id="savings">
+                  <label for="savings">
+                    We'll keep you signed in on this device
+                  </label>
+                  <i class="fa fa-question-circle fa-lg" style="color:#1977D3;"></i>
+                </div>
+              </div>
+            </div>
+            <div style="position:absolute; right:20px;">
+              <div class="animated infinite heartBeat delay-1s"><img src="../images/icon_chat.svg"></div>
+            </div>
+          </div>
+          <div class="" style="padding:16px; position:relative; bottom:0; background:#eee; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
+            Not a Sam's Club member? <a href="#">Join us</a>
+          </div>
+        </div>
+
+        <!-- wobble -->
+        <div class="col-xs-12 col-sm-4">
+          <div style="background:#fff; padding:16px; min-height:365px; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
+            <p style="font-size:20px; font-weight:500">Sign in</p><br>
+            <form action="#" method="get" data-toggle="validator" data-disable="false"> <!-- data-disable sets the CTA to disabled state -->
+            <div class="main-form">
+              <div class="form-group has-error has-danger">
+                <input class="form-control filled" type="email" id="email3" value="email-is-weird@email.com" required autocomplete="email" name="email" data-required-error="Please enter an email" data-error="Please use the proper format (email@domain.com)"/>
+                <label for="email">Email</label>
+                <div class="help-block with-errors">Please check the email and try again</div>
+                <div class="help-block" style="top:16px;"><a href="../forgot-email">Forgot email</a></div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%" role="button">Sign in</button>
+            </div>
+            </form>
+            <div class="row no-gutters keep-signed-in">
+              <div class="col-xs-12">
+                <div class="checkbox checkbox-primary savings">
+                  <input type="checkbox" class="styled" checked="checked" id="savings">
+                  <label for="savings">
+                    We'll keep you signed in on this device
+                  </label>
+                  <i class="fa fa-question-circle fa-lg" style="color:#1977D3;"></i>
+                </div>
+              </div>
+            </div>
+            <div style="position:absolute; right:20px;">
+              <div class="animated infinite wobble delay-1s"><img src="../images/icon_chat.svg"></div>
+            </div>
+          </div>
+          <div class="" style="padding:16px; position:relative; bottom:0; background:#eee; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
+            Not a Sam's Club member? <a href="#">Join us</a>
+          </div>
+        </div>
+      </div>
+      <p></p><br>
+      <div class="row">
+        <p></p><br><p></p>
+
+        <!-- zoomInRight -->
+        <div class="col-xs-12 col-sm-4">
+          <div style="background:#fff; padding:16px; min-height:365px; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
+            <p style="font-size:20px; font-weight:500">Sign in</p><br>
+            <form action="#" method="get" data-toggle="validator" data-disable="false"> <!-- data-disable sets the CTA to disabled state -->
+            <div class="main-form">
+              <div class="form-group has-error has-danger">
+                <input class="form-control filled" type="email" id="email4" value="wrong-email-entered@cc.com" equired autocomplete="email" name="email" data-required-error="Please enter an email" data-error="Please use the proper format (email@domain.com)"/>
+                <label for="email">Email</label>
+                <div class="help-block"  style="top:16px;"><a href="../forgot-email">Forgot email</a></div>
+                <div class="help-block with-errors">Please check the email and try again</div>
+
+              </div>
+              <!--div class="form-group">
+                <input class="form-control" type="password" id="password" required name="login[password]" autocomplete="password" name="password" data-error="Please enter your password"/>
+                <label for="password">Password</label>
+                <div class="hide-show">
+                  <span>Show</span>
+                </div>
+                <div class="help-block with-errors"></div>
+              </div-->
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%" role="button">Sign in</button>
+            </div>
+            </form>
+            <div class="row no-gutters keep-signed-in">
+              <div class="col-xs-12">
+                <div class="checkbox checkbox-primary savings">
+                  <input type="checkbox" class="styled" checked="checked" id="savings">
+                  <label for="savings">
+                    We'll keep you signed in on this device
+                  </label>
+                  <i class="fa fa-question-circle fa-lg" style="color:#1977D3;"></i>
+                </div>
+              </div>
+            </div>
+            <div style="position:absolute; right:20px;">
+              <div class="animated infinite zoomInRight delay-1s"><img src="../images/icon_chat.svg"></div>
+            </div>
+          </div>
+          <div class="" style="padding:16px; position:relative; bottom:0; background:#eee; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
+            Not a Sam's Club member? <a href="#">Join us</a>
+          </div>
+        </div>
+
+        <!-- jackInTheBox -->
+        <div class="col-xs-12 col-sm-4">
+          <div style="background:#fff; padding:16px; min-height:365px; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
+            <p style="font-size:20px; font-weight:500">Sign in</p><br>
+            <form action="#" method="get" data-toggle="validator" data-disable="false"> <!-- data-disable sets the CTA to disabled state -->
+            <div class="main-form">
+              <div class="form-group has-error has-danger">
+                <input class="form-control filled" type="email" id="email4" value="wrong-email-entered@cc.com" equired autocomplete="email" name="email" data-required-error="Please enter an email" data-error="Please use the proper format (email@domain.com)"/>
+                <label for="email">Email</label>
+                <div class="help-block with-errors">Please check the email and try again</div>
+                <div class="help-block" style="top:16px;"><a href="../forgot-email">Forgot email</a></div>
+              </div>
+              <!--div class="form-group">
+                <input class="form-control" type="password" id="password" required name="login[password]" autocomplete="password" name="password" data-error="Please enter your password"/>
+                <label for="password">Password</label>
+                <div class="hide-show">
+                  <span>Show</span>
+                </div>
+                <div class="help-block with-errors"></div>
+              </div-->
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%" role="button">Sign in</button>
+            </div>
+            </form>
+            <div class="row no-gutters keep-signed-in">
+              <div class="col-xs-12">
+                <div class="checkbox checkbox-primary savings">
+                  <input type="checkbox" class="styled" checked="checked" id="savings">
+                  <label for="savings">
+                    We'll keep you signed in on this device
+                  </label>
+                  <i class="fa fa-question-circle fa-lg" style="color:#1977D3;"></i>
+                </div>
+              </div>
+            </div>
+            <div style="position:absolute; right:20px;">
+              <div class="animated infinite jackInTheBox delay-1s"><img src="../images/icon_chat.svg"></div>
+            </div>
+          </div>
+          <div class="" style="padding:16px; position:relative; bottom:0; background:#eee; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
+            Not a Sam's Club member? <a href="#">Join us</a>
+          </div>
+        </div>
+
+        <!-- fadeInRightBig -->
+        <div class="col-xs-12 col-sm-4">
+          <div style="background:#fff; padding:16px; min-height:365px; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
+            <p style="font-size:20px; font-weight:500">Sign in</p><br>
+            <form action="#" method="get" data-toggle="validator" data-disable="false"> <!-- data-disable sets the CTA to disabled state -->
+            <div class="main-form">
+              <div class="form-group has-error has-danger">
+                <input class="form-control filled" type="email" id="email4" value="wrong-email-entered@cc.com" equired autocomplete="email" name="email" data-required-error="Please enter an email" data-error="Please use the proper format (email@domain.com)"/>
+                <label for="email">Email</label>
+                <div class="help-block with-errors">Please check the email and try again</div>
+                <div class="help-block" style="top:16px;"><a href="../forgot-email">Forgot email</a></div>
+              </div>
+              <!--div class="form-group">
+                <input class="form-control" type="password" id="password" required name="login[password]" autocomplete="password" name="password" data-error="Please enter your password"/>
+                <label for="password">Password</label>
+                <div class="hide-show">
+                  <span>Show</span>
+                </div>
+                <div class="help-block with-errors"></div>
+              </div-->
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%" role="button">Sign in</button>
+            </div>
+            </form>
+            <div class="row no-gutters keep-signed-in">
+              <div class="col-xs-12">
+                <div class="checkbox checkbox-primary savings">
+                  <input type="checkbox" class="styled" checked="checked" id="savings">
+                  <label for="savings">
+                    We'll keep you signed in on this device
+                  </label>
+                  <i class="fa fa-question-circle fa-lg" style="color:#1977D3;"></i>
+                </div>
+              </div>
+            </div>
+            <div style="position:absolute; right:20px;">
+              <div class="animated infinite fadeInRightBig delay-1s"><img src="../images/icon_chat.svg"></div>
+            </div>
+          </div>
+          <div class="" style="padding:16px; position:relative; bottom:0; background:#eee; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
+            Not a Sam's Club member? <a href="#">Join us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <p></p><br>
+        <h1>&nbsp; Bigger chat icon</h1>
+        <p></p><br>
+      </div>
+
+      <div class="row">
+        <!-- fadeInRightBig -->
+        <div class="col-xs-12 col-sm-4">
+          <div style="background:#fff; padding:16px; min-height:365px; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
+            <p style="font-size:20px; font-weight:500">Sign in</p><br>
+            <form action="#" method="get" data-toggle="validator" data-disable="false"> <!-- data-disable sets the CTA to disabled state -->
+            <div class="main-form">
+              <div class="form-group has-error has-danger">
+                <input class="form-control filled" type="email" id="email4" value="wrong-email-entered@cc.com" equired autocomplete="email" name="email" data-required-error="Please enter an email" data-error="Please use the proper format (email@domain.com)"/>
+                <label for="email">Email</label>
+                <div class="help-block with-errors">Please check the email and try again</div>
+                <div class="help-block" style="top:16px;"><a href="../forgot-email">Forgot email</a></div>
+              </div>
+              <!--div class="form-group">
+                <input class="form-control" type="password" id="password" required name="login[password]" autocomplete="password" name="password" data-error="Please enter your password"/>
+                <label for="password">Password</label>
+                <div class="hide-show">
+                  <span>Show</span>
+                </div>
+                <div class="help-block with-errors"></div>
+              </div-->
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%" role="button">Sign in</button>
+            </div>
+            </form>
+            <div class="row no-gutters keep-signed-in">
+              <div class="col-xs-12">
+                <div class="checkbox checkbox-primary savings">
+                  <input type="checkbox" class="styled" checked="checked" id="savings">
+                  <label for="savings">
+                    We'll keep you signed in on this device
+                  </label>
+                  <i class="fa fa-question-circle fa-lg" style="color:#1977D3;"></i>
+                </div>
+              </div>
+            </div>
+            <div style="position:absolute; right:16px;">
+              <div class="animated lightSpeedIn delay-1s"><img src="../images/icon_chat_xl.svg"></div>
+            </div>
+          </div>
+          <div class="" style="padding:16px; position:relative; bottom:0; background:#eee; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
+            Not a Sam's Club member? <a href="#">Join us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Content for membership number location popover -->
+    <div class="hidden" id="membership-card">
+      <div class="popover-body">
+        <div class="popover-membership-card-wrap text-center">
+          <ul class="list-unstyled list-inline">
+            <li class="text-center">
+              <img src="../images/membership-registration-card.svg" width="120"><br><br>
+              <div>13 or 17 digits on back of the card</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer-links">
+          <div class="col-xs-12 col-sm-7">
+            <p class="main">Help center &nbsp;&nbsp;|&nbsp;&nbsp; Terms &nbsp;&nbsp;|&nbsp;&nbsp; Privacy &nbsp;&nbsp;|&nbsp;&nbsp; CA privacy rights</p>
+          </div>
+          <div class="col-xs-12 col-sm-5">
+            <p class="copyright">&copy; 2019, Sam’s West, Inc. All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/jquery.dotdotdot.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
+  </body>
+</html>
