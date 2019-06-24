@@ -286,7 +286,7 @@
               </div>
             </div>
             <div style="position:absolute; right:20px;">
-              <div class="animated infinite jackInTheBox delay-1s"><img src="../images/icon_chat.svg"></div>
+              <div class="animated infinite jackInTheBox delay-2s"><img src="../images/icon_chat.svg"></div>
             </div>
           </div>
           <div class="" style="padding:16px; position:relative; bottom:0; background:#eee; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
@@ -340,7 +340,7 @@
 
       <div class="row">
         <p></p><br>
-        <h1>&nbsp; Bigger chat icon</h1>
+        <h1 class="aktiv">&nbsp; Bigger chat icon</h1>
         <p></p><br>
       </div>
 
@@ -380,7 +380,7 @@
               </div>
             </div>
             <div style="position:absolute; right:15px;">
-              <div class="animated lightSpeedIn delay-1s"><img src="../images/icon_chat_xl.svg"></div>
+              <div class="animated slower lightSpeedIn delay-3s"><img src="../images/icon_chat_xl.svg"></div>
             </div>
           </div>
           <div class="" style="padding:16px; position:relative; bottom:0; background:#eee; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
@@ -388,8 +388,60 @@
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <p></p><br>
+        <h1 class="aktiv">&nbsp; Text</h1>
+        <p></p><br>
+      </div>
+
+      <div class="row">
+        <!-- fadeInRightBig -->
+        <div class="col-xs-12 col-sm-4">
+          <div style="background:#fff; padding:16px; min-height:325px; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4); border-radius:4px;">
+            <p style="font-size:20px; font-weight:500">Sign in</p><br>
+            <form action="#" method="get" data-toggle="validator" data-disable="false"> <!-- data-disable sets the CTA to disabled state -->
+            <div class="main-form">
+              <div class="form-group has-error has-danger">
+                <input class="form-control filled" type="email" id="email4" value="wrong-email-entered@cc.com" equired autocomplete="email" name="email" data-required-error="Please enter an email" data-error="Please use the proper format (email@domain.com)"/>
+                <label for="email">Email</label>
+                <div class="help-block with-errors">Please check the email and try again</div>
+                <div class="help-block" style="top:16px;"><a href="../forgot-email">Forgot email</a></div>
+              </div>
+              <!--div class="form-group">
+                <input class="form-control" type="password" id="password" required name="login[password]" autocomplete="password" name="password" data-error="Please enter your password"/>
+                <label for="password">Password</label>
+                <div class="hide-show">
+                  <span>Show</span>
+                </div>
+                <div class="help-block with-errors"></div>
+              </div-->
+
+              <div style="position:absolute; left:30px; margin-top:-8px;">
+                <div class="animated bounceInUp delay-3s" style="font-size:12px;">Having trouble? <a href="#">Chat with us</a></div>
+              </div>
+
+              <div class="checkbox checkbox-primary">
+                <input type="checkbox" class="styled" checked="checked" id="keep-signed-in">
+                <label for="keep-signed-in">
+                  We'll keep you signed in on this device
+                </label>
+                <i class="fa fa-question-circle fa-lg" style="color:#1977D3;"></i>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%; margin-top:16px;" role="button">Sign in</button>
+            </div>
+            </form>
+          </div>
+          <div class="" style="padding:16px; position:relative; bottom:0; background:#eee; box-shadow: 0 0 4px 0 rgba(66, 66, 66, 0.4);">
+            Not a Sam's Club member? <a href="#">Join us</a>
+          </div>
+        </div>
+      </div>
+
     </div>
 
+    <p></p><br>
+    <p></p><br>
 
     <!-- Content for membership number location popover -->
     <div class="hidden" id="membership-card">
