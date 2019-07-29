@@ -142,6 +142,7 @@ body > .container {
 
 .main .page-block {
   padding:16px;
+  border-radius:4px;
   border:1px solid rgba(66,66,66,0.2);
 }
 
@@ -190,12 +191,19 @@ body > .container {
   margin-top:-10px;
 }
 
-.main .email-notifications .checkbox {
-  margin-top:0;
+.main.email-notifications .checkbox {
+
+  font-size: 16px;
 }
 
-.main .email-notifications .checkbox label {
+.main.email-notifications .checkbox label {
+  font-weight:600;
+}
 
+.main.email-notifications .checkbox label .subtext {
+  font-weight:normal;
+  font-size:14px;
+  color:rgba(66,66,66,0.6);
 }
 
 .main .add,
