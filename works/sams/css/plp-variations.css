@@ -1,7 +1,6 @@
 body {
   font-family: canada-type-gibson, sans-serif;
   font-weight:normal;
-  font-size:14px;
 }
 
 .btn {
@@ -48,6 +47,10 @@ body {
 
 .grid_tiles .flag {
   font-weight:normal;
+}
+
+.grid_tiles .tile_info .title a {
+  font-weight:400;
 }
 
 /** Changes specific to making the width 1140px **/
