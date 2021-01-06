@@ -1,6 +1,7 @@
 body {
   font-family: canada-type-gibson, sans-serif;
-  font-weight:normal
+  font-weight:normal;
+  font-size:14px;
 }
 
 .btn {
@@ -26,6 +27,18 @@ body {
   border:none;
   border-bottom:3px solid #1977d3;
   background-color:transparent;
+}
+
+.header-links {
+  font-size:14px;
+}
+
+.header-links a {
+  font-weight:400;
+}
+
+.sidebar {
+  font-size:16px;
 }
 
 .grid_tiles .pricing .dollar,
