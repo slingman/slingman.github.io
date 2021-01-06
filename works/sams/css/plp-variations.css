@@ -1,3 +1,11 @@
+body {
+  font-family: canada-type-gibson, sans-serif;
+  font-weight:normal
+}
+
+.btn {
+  font-weight:normal;
+}
 
 .nav-tabs {
   border-bottom:none;
@@ -20,6 +28,10 @@
   background-color:transparent;
 }
 
+.grid_tiles .pricing .dollar,
+.list_tiles .pricing .dollar {
+  font-weight:500;
+}
 
 /** Changes specific to making the width 1140px **/
 
