@@ -49,9 +49,14 @@ body {
   font-weight:normal;
 }
 
+.grid_tiles .tile_info .title {
+  font-size:16px;
+}
+
 .grid_tiles .tile_info .title a {
   font-weight:400;
 }
+
 
 /** Changes specific to making the width 1140px **/
 
