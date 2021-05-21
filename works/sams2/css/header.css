@@ -1,5 +1,7 @@
+
 .navbar-brand {
-  display: block;
-  text-indent: -9999px;
-  background: url(../images/logo_sams_full.svg);
+  width: 176px;
+  height: 53px;
+  background: #fff url(../images/logo_sams_full.svg) no-repeat left center;
+  background-size:176px 53px;
 }
